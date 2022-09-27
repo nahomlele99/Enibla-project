@@ -59,7 +59,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(290, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(374, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(161, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -307,7 +307,7 @@
             this.kgPhotoBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.kgPhotoBox1.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
             this.kgPhotoBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.kgPhotoBox1.BorderSize = 2;
+            this.kgPhotoBox1.BorderSize = 3;
             this.kgPhotoBox1.GradientAngle = 50F;
             this.kgPhotoBox1.Location = new System.Drawing.Point(669, 78);
             this.kgPhotoBox1.Name = "kgPhotoBox1";
