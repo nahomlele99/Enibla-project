@@ -290,7 +290,7 @@
             this.DrinksTab.Location = new System.Drawing.Point(4, 29);
             this.DrinksTab.Name = "DrinksTab";
             this.DrinksTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DrinksTab.Size = new System.Drawing.Size(723, 467);
+            this.DrinksTab.Size = new System.Drawing.Size(723, 525);
             this.DrinksTab.TabIndex = 1;
             this.DrinksTab.Text = "Drinks";
             this.DrinksTab.UseVisualStyleBackColor = true;
@@ -300,7 +300,7 @@
             this.locationTab.Location = new System.Drawing.Point(4, 29);
             this.locationTab.Name = "locationTab";
             this.locationTab.Padding = new System.Windows.Forms.Padding(3);
-            this.locationTab.Size = new System.Drawing.Size(723, 467);
+            this.locationTab.Size = new System.Drawing.Size(723, 525);
             this.locationTab.TabIndex = 2;
             this.locationTab.Text = "Locations";
             this.locationTab.UseVisualStyleBackColor = true;
@@ -310,7 +310,7 @@
             this.costTab.Location = new System.Drawing.Point(4, 29);
             this.costTab.Name = "costTab";
             this.costTab.Padding = new System.Windows.Forms.Padding(3);
-            this.costTab.Size = new System.Drawing.Size(723, 467);
+            this.costTab.Size = new System.Drawing.Size(723, 525);
             this.costTab.TabIndex = 3;
             this.costTab.Text = "Cost";
             this.costTab.UseVisualStyleBackColor = true;

@@ -29,6 +29,7 @@ namespace Enibla_project
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("username " + Uname.Text +" "+ Pword.Text);
             string connection = @"Data Source=REVISION-PC\SQLEXPRESS;Initial Catalog=Enibla;Integrated Security=True";
             string query1 = "Select Username , Password from client where Username = '"+Uname.Text+"' and Password = '"+Pword.Text+"';";
             SqlConnection con = new SqlConnection(connection);
@@ -47,6 +48,16 @@ namespace Enibla_project
                 MessageBox.Show("please check your username or passsword");
             }
 
+        }
+
+        private void label4_MouseEnter(object sender, EventArgs e)
+        {
+            label4.Font = new Font("Microsoft Sans Serif", 12);
+        }
+
+        private void label4_MouseLeave(object sender, EventArgs e)
+        {
+            label4.Font = new Font("Microsoft Sans Serif", 14);
         }
     }
 }

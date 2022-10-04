@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Terms and Conditions 
+ 
+These Sign In App terms of service(this Agreement) are entered into by Sign In App and the entity or person agreeing to this Agreement(you or “your”) and govern your access to and use of our products. Sign In App has the meaning given here and “we” or “us” means Sign In App. 
+This Agreement is effective when you click to accept it (the Effective Date). If you are accepting on behalf of a company, you represent and warrant that (i) you have full legal authority to bind that company to this Agreement; (ii) you have read and understand this Agreement; and (iii) you agree, on behalf of that company, to this Agreement. Definitions of capitalised terms are in Schedule 
+1.REGISTRATION AND PLACING ORDER 
+
+In order to access and use the App you shall be required to purchase a Subscription by submitting an Order to us(via the Website or by email). By submitting your Order, you consent to us conducting verification and security procedures in respect of the information provided in the Order. 
+
+ The Product consists of a Reception App and a Companion App that you must download from the relevant App - Store onto your Device, and a Management Portal through which you may manage your use of the App. 
+ Upon the submission of the Order you will have the option to
+(i) make payment for the Fees on the Website, or
+(ii) be sent an invoice for the Fees, payable in accordance with clause 8.4. 
+ 
+On our acceptance of your first Order, you shall be sent an email(“Confirmation Email”) confirming your registration with us and details of how to log in. Further Confirmation Emails shall be sent on our acceptance of any subsequent Orders you send to us. 
+ You hereby warrant that the information provided by you is true, accurate and correct.You further warrant that you shall promptly notify us in the event of any changes to such information provided. 
+ 
+Each Order will specify your Scope of Use for the applicable Product, which may include: (a) number and type of Users; 
+(b) storage or capacity of Content; 
+(c) numbers of Devices, licenses, copies or instances; 
+(d) number of Site(s); 
+(e) the duration of your Subscription Term or
+(f) other restrictions. 
+
+ You may only use the Reception App for the purposes of the Site(s) you have designated in your Order for which you have paid the required Fees.You may increase the number of Sites by placing a new Order and must pay the applicable Fees for the increased number of Sites. 
+ 
+PROVISION OF THE PRODUCT 
+ 
+Following the conclusion of your Order in accordance with clause 
+1, we will provide the Products in accordance with this Agreement(including the Order, the SLA and any other document or terms referred to in this Agreement) and you may use the Product in accordance with this Agreement for the duration of the Subscription Term.
+USING THE PRODUCT
+ 
+Subject to the terms, conditions and restrictions set forth in this Agreement, we grant you a revocable, non-exclusive, non-transferable (without a right to sub-licence) license to install and use the Reception App referred to in your Order during the applicable Subscription Term, in accordance with this Agreement and the applicable Scope of Use. 
+ Subject to the terms, conditions and restrictions set forth in this, we grant you a revocable, non-exclusive, non-transferable(without a right to sub-licence) license to install and use the Companion App during the applicable Subscription Term for the purpose of accessing and managing your use of the Reception App alongside the Management Portal.
+ Unless otherwise specified in your Order, for each Site that you purchase, you may install one production instance of the Reception App on multiple Devices owned or operated by you (or your third party service providers so long as you remain responsible for their compliance with this Agreement), provided that such Devices shall operate within the Site in accordance with clause 
+1.7.
+ You shall not, and shall procure that Users shall not, except as expressly permitted in this Agreement
+(i) modify, translate, create or attempt to create derivative copies of or copy the App in whole or in part; 
+(ii) reverse engineer, decompile, disassemble or otherwise reduce the object code of the Apps to source code form; 
+(iii) circumvent, interfere with, disrupt or disable any security or other technological features or measures of the App; 
+(iv) distribute, sub-licence, assign, share, timeshare, resell, rent, lease, transmit, grant a security interest in or otherwise transfer the Product or your right to use the Apps.</value>
+  </data>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAHCAAAAEAIACoDgAAFgAAACgAAAAcAAAAQAAAAAEAIAAAAAAAAA4AACMuAAAjLgAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wDX7P4A+Pz/AP///wAAAAAAAAAAAAAA
+        AAD///8A////AP///wD///8G////D////xr///8n////Mf///zn///9B////RP///0T///9B////Pv//
+        /zf///8r////H////xL///8IgcX8AP///wb///9G/f7/lP7+/2r///8FAAAAAAAAAAAAAAAA////B///
+        /2f5/P+d6/b+t9nt/svK5/3bwuP957zg/e633v3ztN399rLc/fiy3P33td399rrf/fXA4v3xxuX96s/p
+        /uDd7/7Q6vX+vPr9/5f5/P+nuN798X7E+//h8f7i////IAAAAAAAAAAAAAAAAP///wj4/P+8jcv7/02u
+        +v86pfn/L6D4/ymd+P8mnPj/JJv4/yOa+P8imvj/Ipr4/yOa+P8lm/j/J5z4/yue+P8xofn/OqX5/2i6
+        +v/e8P7/ks38/yqe+P8zovn/2e7+4////yIAAAAAAAAAAAAAAAD///8A/P7/f4HF+/8alvj/Hpj4/x+Z
+        +P8gmfj/IJn4/yCZ+P8gmfj/IJn4/yCZ+P8gmfj/IJn4/yCZ+P8fmfj/Hpj4/y6f+P+t2fz/icn7/yOa
+        +P8bl/j/XbX6//H5/7n///8KAAAAAAAAAAAAAAAA////AP///z2+4f3yKZ34/yCZ+P8gmfj/IJn4/yCZ
+        +P8gmfj/IJn4/yCZ+P8gmfj/IJn4/yCZ+P8gmfj/IJn4/yKa+P+Wz/z/ntP8/yWb+P8fmfj/Ipr4/6fW
+        /Pr///9h////AAAAAAAAAAAAAAAAAAAAAAD///8O7Pb+wFOx+v8dmPj/IJn4/yCZ+P8gmfj/IJn4/yCZ
+        +P8gmfj/IJn4/yCZ+P8gmfj/IJn4/x2Y+P9ht/r/vOD9/zSi+f8emPj/HZj4/1Sx+v/n9P7J////Ff//
+        /wAAAAAAAAAAAAAAAAAAAAAA////AP///2qe0/z8IJn4/yCZ+P8gmfj/IJn4/yCZ+P8gmfj/IJn4/yCZ
+        +P8gmfj/IJn4/x+Z+P8sn/j/uN79/2S4+v8dl/j/H5n4/yid+P+74P3+////ev///wAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP///wD///8a4/L+0Eut+f8dmPj/IJn4/yCZ+P8gmfj/IJn4/yCZ+P8gmfj/IJn4/yCZ
+        +P8dl/j/bbz6/7Hb/f8mnPj/H5n4/yOb+P9KrPn/fcP7/+Xz/sb///8ZAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA////AP///2Ws2fz5Jpz4/x+Z+P8gmfj/IJn4/yCZ+P8gmfj/IJn4/yCZ+P8gmfj/I5v4/67a
+        /f9tvPr/G5f4/yGZ+P9+xPv/4vL+4rvg/e3n9P6v////DQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /wD///8N8/r/rHzD+/8emPj/IJn4/yCZ+P8gmfj/IJn4/yCZ+P8gmfj/H5n4/zCg+f+74P3/PKb5/ySb
+        +P+Dxvv/7/j/x////zP///85////I////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP//
+        /yjm9P7OaLr6/x6Y+P8fmfj/IJn4/yCZ+P8gmfj/IJn4/x2X+P87pfn/y+f9/3vD+/+t2vz79fr/sv//
+        /yj///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////MuXz
+        /st6wvv/KZ34/xyX+P8dmPj/HZf4/x2Y+P85pPn/pNX8+/n8/7/7/f+j////Yf///xD///8A////AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8N////Mv///zH///+U/P7//sLj
+        /f97w/v/WrP6/2C2+v+PzPz/2+/+//////H///9i////Nf///yT///8C////AAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A+Pz/bMrn/e664P3vvuH9+r/i/f/B4/3/vuH9/rXd
+        /f+33v3/v+L9/8Di/f++4f3/vOH99bvg/e/a7v7d////Mv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////BtHq/rFDqfn/NKL5/0Wq+f9Rr/r/WrP6/121+v9gtvr/Ybf6/2C2
+        +v9ctfr/UrD6/0Sp+f8xoPn/cb77//T6/2z///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP///xre8P7dqdj8/6nY/P+i1fz/mND8/47L+/+GyPv/hMf7/4TH+/+HyPv/jcv7/5bP
+        /P+f0/z/o9X8/7fe/f/1+v+q////BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD///8M////gfP5/9C+4f3tmND8+XzD+/9puvr/Ybf6/161+v9ctPr/X7b6/2u7+v97w/v/k838+rfe
+        /e3t9/7O////cv///wUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP//
+        /wD///8V////MP///0v///9h+vz/cvb7/330+v+A8/n/gPT6/3z7/f9y////Yv///0z///8x////E///
+        /wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP//
+        /wD///8A/f7/APX6/wDt9/4A7ff+AOn1/gDp9f4A9vv/AP3+/wD///8A////AP///wD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD///8A////AP///1D///8q////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP//
+        /yv////f////p////wr///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wj///+h////////
+        //f///9h////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///9P////9P//////////////1P//
+        /yD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8P////vf/////2+///+v3///////7///+A////AQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD///8A////T/v9//en1/z/VLH6/2a5+v/P6f7/////2v///yAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA////Av///5rT6/7/MaH4/xyX+P8alvj/WrP6//P6//3///9fAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /wb///+3w+T9/yWb+P8fmfj/HJf4/0Sq+f/t9/7/////cgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8B////iu73
+        /v9puvr/J5z4/y+g+f+b0fz//f7/9P///0IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///yT////I8fj//8jm
+        /f/T6/7/+/3/+////5T///8JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////JP///4b///+1////qf//
+        /2X///8O////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////B////wT///8A////AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////D4AAQQwAAAEMAA
+        ABDgAAAQ4AAAMOAAADDwAABw8AAAMPgAADD4AABw/AAD8P4AB/D4AAfw+AAH8PAAB/DwAAPw8AAD8PwA
+        D/D////w//P/8P/h//D/wf/w/8D/8P+Af/D/gH/w/wB/8P8Af/D/AH/w/4B/8P/A//D/8//w
+</value>
+  </data>
+</root>
