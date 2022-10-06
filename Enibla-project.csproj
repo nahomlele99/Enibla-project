@@ -229,11 +229,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="imagerestaurant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="imagerestaurant.Designer.cs">
+      <DependentUpon>imagerestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopping.Designer.cs">
+      <DependentUpon>Shopping.cs</DependentUpon>
     </Compile>
     <Compile Include="termsAndConditions.cs">
       <SubType>Form</SubType>
@@ -298,8 +316,17 @@
       <DependentUpon>SignupPage.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imagerestaurant.resx">
+      <DependentUpon>imagerestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopping.resx">
+      <DependentUpon>Shopping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="termsAndConditions.resx">
       <DependentUpon>termsAndConditions.cs</DependentUpon>

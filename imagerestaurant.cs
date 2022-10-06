@@ -16,5 +16,29 @@ namespace Enibla_project
         {
             InitializeComponent();
         }
+
+        private void imagerestaurant_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(pictureBox1.Visible == true)
+            {
+                pictureBox2.Visible = true;
+                pictureBox1.Visible = false;
+            }
+            else if(pictureBox2.Visible == true)
+            {
+                pictureBox2.Visible = false;
+                pictureBox1.Visible = true;
+            }
+        }
     }
 }

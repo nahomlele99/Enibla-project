@@ -93,8 +93,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(301, 63);
             this.button1.TabIndex = 2;
-            this.button1.Text = "SHOP";
+            this.button1.Text = "Shop";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -103,7 +104,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(301, 63);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Employee";
+            this.button4.Text = "Employees";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // AdminPage
