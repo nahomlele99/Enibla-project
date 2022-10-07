@@ -16,7 +16,7 @@ namespace Enibla_project
         {
             InitializeComponent();
         }
-        int intImgNum = 0;
+       
         private void timer1_Tick(object sender, EventArgs e)
         {
             
@@ -44,9 +44,10 @@ namespace Enibla_project
                 ActiveMdiChild.Close();
 
             }
-            ViewProduct form = new ViewProduct();
+            Availableproduct form = new Availableproduct();
             form.MdiParent = this;
             form.Show();
+           
         }
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,9 +57,9 @@ namespace Enibla_project
                 ActiveMdiChild.Close();
 
             }
-            AddFoodProduct form = new AddFoodProduct();
-            form.MdiParent = this;
-            form.Show();
+            //AddFoodProduct form = new AddFoodProduct();
+           // form.MdiParent = this;
+           // form.Show();
 
         }
     }

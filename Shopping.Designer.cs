@@ -33,7 +33,6 @@
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hireDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.imagerestaurant1 = new Enibla_project.imagerestaurant();
             this.availablefoodsanddrinksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAllEquipmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,27 +84,18 @@
             this.hireDeliveryToolStripMenuItem.Text = "Hire Delivery";
             this.hireDeliveryToolStripMenuItem.Click += new System.EventHandler(this.hireDeliveryToolStripMenuItem_Click);
             // 
-            // imagerestaurant1
-            // 
-            this.imagerestaurant1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.imagerestaurant1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imagerestaurant1.BackgroundImage")));
-            this.imagerestaurant1.Location = new System.Drawing.Point(-6, 92);
-            this.imagerestaurant1.Name = "imagerestaurant1";
-            this.imagerestaurant1.Size = new System.Drawing.Size(932, 358);
-            this.imagerestaurant1.TabIndex = 1;
-            // 
             // availablefoodsanddrinksToolStripMenuItem
             // 
             this.availablefoodsanddrinksToolStripMenuItem.Name = "availablefoodsanddrinksToolStripMenuItem";
-            this.availablefoodsanddrinksToolStripMenuItem.Size = new System.Drawing.Size(430, 28);
-            this.availablefoodsanddrinksToolStripMenuItem.Text = "Available Food and Drink products ";
+            this.availablefoodsanddrinksToolStripMenuItem.Size = new System.Drawing.Size(454, 28);
+            this.availablefoodsanddrinksToolStripMenuItem.Text = "Available Food and Drink Ingrediates ";
             this.availablefoodsanddrinksToolStripMenuItem.Click += new System.EventHandler(this.availablefoodsanddrinksToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(430, 28);
-            this.addToolStripMenuItem.Text = "ADD food and drink products";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(454, 28);
+            this.addToolStripMenuItem.Text = "ADD food and drink Ingrediates";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // viewAllEquipmentsToolStripMenuItem
@@ -134,7 +124,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(921, 450);
             this.ControlBox = false;
-            this.Controls.Add(this.imagerestaurant1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -147,7 +136,6 @@
         }
 
         #endregion
-        private imagerestaurant imagerestaurant1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem productsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem utilitiesToolStripMenuItem;

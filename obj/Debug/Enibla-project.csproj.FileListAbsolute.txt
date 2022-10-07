@@ -116,3 +116,4 @@ C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla-project.csproj.Fo
 C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla-project.csproj.CopyComplete
 C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla-project.exe
 C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla-project.pdb
+C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla_project.Availableproduct.resources
