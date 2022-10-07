@@ -31,5 +31,12 @@ namespace Enibla_project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Shopping shop = new Shopping();
+            shop.Show();
+            this.Hide();
+        }
     }
 }

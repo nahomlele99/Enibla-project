@@ -39,9 +39,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.kgPhotoBox22 = new Enibla_project.KGPhotoBox2();
             this.kgPhotoBox21 = new Enibla_project.KGPhotoBox2();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).BeginInit();
@@ -185,6 +186,11 @@
             this.label6.MouseEnter += new System.EventHandler(this.label6_MouseEnter);
             this.label6.MouseLeave += new System.EventHandler(this.label6_MouseLeave);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 20;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // kgPhotoBox22
             // 
             this.kgPhotoBox22.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -215,10 +221,13 @@
             this.kgPhotoBox21.MouseEnter += new System.EventHandler(this.bunifuThinButton21_MouseEnter);
             this.kgPhotoBox21.MouseLeave += new System.EventHandler(this.bunifuThinButton21_MouseLeave);
             // 
-            // bunifuElipse1
+            // menuStrip1
             // 
-            this.bunifuElipse1.ElipseRadius = 20;
-            this.bunifuElipse1.TargetControl = this;
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(921, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // joinAsPage
             // 
@@ -263,5 +272,6 @@
         private KGPhotoBox2 kgPhotoBox21;
         private KGPhotoBox2 kgPhotoBox22;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

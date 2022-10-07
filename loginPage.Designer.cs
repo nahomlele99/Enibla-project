@@ -106,7 +106,7 @@
             this.Uname.BorderSize = 1;
             this.Uname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Uname.ForeColor = System.Drawing.Color.DimGray;
-            this.Uname.Location = new System.Drawing.Point(384, 228);
+            this.Uname.Location = new System.Drawing.Point(371, 233);
             this.Uname.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Uname.Multiline = false;
             this.Uname.Name = "Uname";
@@ -118,6 +118,7 @@
             this.Uname.TabIndex = 30;
             this.Uname.Texts = "";
             this.Uname.UnderlinedStyle = false;
+            this.Uname._TextChanged += new System.EventHandler(this.Uname__TextChanged);
             // 
             // kgPhotoBox22
             // 
@@ -256,6 +257,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(316, 39);
             this.bunifuThinButton22.TabIndex = 18;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuThinButton21
             // 

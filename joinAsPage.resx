@@ -1783,6 +1783,9 @@
         5+fnn9X6ur9Gzsys6xM5M4ueyJlZ9ETOzKIncmYWvFL+BSEVXfAn9LboAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="kgPhotoBox22.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABWQAAAUyCAYAAACJWv1bAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu
@@ -3907,9 +3910,6 @@
         AAAAAMDS/t//9/8DBdhz74Q2jjsAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAHCAAAAEAIACoDgAAFgAAACgAAAAcAAAAQAAAAAEAIAAAAAAAAA4AACMuAAAjLgAAAAAAAAAA
@@ -3977,4 +3977,7 @@
         D/D////w//P/8P/h//D/wf/w/8D/8P+Af/D/gH/w/wB/8P8Af/D/AH/w/4B/8P/A//D/8//w
 </value>
   </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>141, 17</value>
+  </metadata>
 </root>

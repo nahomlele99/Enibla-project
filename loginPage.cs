@@ -59,5 +59,15 @@ namespace Enibla_project
         {
             label4.Font = new Font("Microsoft Sans Serif", 14);
         }
+
+        private void Uname__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
