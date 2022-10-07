@@ -56,3 +56,4 @@ C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.sear
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.KGTextBox.resources
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.KGPhotoBox2.resources
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.termsAndConditions.resources
+C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.AdminPage.resources
