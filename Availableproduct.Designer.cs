@@ -29,42 +29,46 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Availableproduct));
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAvaialble = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuThinButton22
+            // btnAvaialble
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Ingrediates Available";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(37, 33);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(316, 39);
-            this.bunifuThinButton22.TabIndex = 34;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAvaialble.ActiveBorderThickness = 1;
+            this.btnAvaialble.ActiveCornerRadius = 20;
+            this.btnAvaialble.ActiveFillColor = System.Drawing.Color.Black;
+            this.btnAvaialble.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnAvaialble.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnAvaialble.BackColor = System.Drawing.Color.Black;
+            this.btnAvaialble.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAvaialble.BackgroundImage")));
+            this.btnAvaialble.ButtonText = "Ingrediates Available";
+            this.btnAvaialble.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAvaialble.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAvaialble.ForeColor = System.Drawing.Color.Black;
+            this.btnAvaialble.IdleBorderThickness = 1;
+            this.btnAvaialble.IdleCornerRadius = 20;
+            this.btnAvaialble.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAvaialble.IdleForecolor = System.Drawing.Color.Black;
+            this.btnAvaialble.IdleLineColor = System.Drawing.Color.Black;
+            this.btnAvaialble.Location = new System.Drawing.Point(37, 33);
+            this.btnAvaialble.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAvaialble.Name = "btnAvaialble";
+            this.btnAvaialble.Size = new System.Drawing.Size(316, 39);
+            this.btnAvaialble.TabIndex = 34;
+            this.btnAvaialble.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAvaialble.Click += new System.EventHandler(this.btnAvaialble_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 188);
+            this.dataGridView1.Location = new System.Drawing.Point(-2, 101);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(888, 281);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(1109, 398);
             this.dataGridView1.TabIndex = 36;
             // 
             // Availableproduct
@@ -75,8 +79,9 @@
             this.ClientSize = new System.Drawing.Size(1119, 500);
             this.ControlBox = false;
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.bunifuThinButton22);
+            this.Controls.Add(this.btnAvaialble);
             this.Name = "Availableproduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.Availableproduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -84,7 +89,7 @@
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAvaialble;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
