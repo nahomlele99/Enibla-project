@@ -57,9 +57,9 @@ namespace Enibla_project
                 ActiveMdiChild.Close();
 
             }
-            //AddFoodProduct form = new AddFoodProduct();
-           // form.MdiParent = this;
-           // form.Show();
+            AddFoodProduct form = new AddFoodProduct();
+            form.MdiParent = this;
+            form.Show();
 
         }
     }

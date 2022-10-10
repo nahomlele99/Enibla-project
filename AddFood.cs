@@ -16,5 +16,65 @@ namespace Enibla_project
         {
             InitializeComponent();
         }
+
+        private void lblmilkproduct_Click(object sender, EventArgs e)
+        {
+            EggProducts form = new EggProducts();
+            form.Show();
+            this.Hide();
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblfruits_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVegetables_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOther_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGrain_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblherbs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblpasta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Shopping form = new Shopping();
+            form.Show();
+            this.Hide();
+        }
     }
 }

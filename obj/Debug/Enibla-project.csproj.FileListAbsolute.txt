@@ -136,3 +136,5 @@ C:\Users\DELL\Documents\GitHub\Enibla-project\bin\Debug\System.Diagnostics.Diagn
 C:\Users\DELL\Documents\GitHub\Enibla-project\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\DELL\Documents\GitHub\Enibla-project\bin\Debug\EntityFramework.xml
 C:\Users\DELL\Documents\GitHub\Enibla-project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla_project.AddFoodProduct.resources
+C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla_project.EggProducts.resources

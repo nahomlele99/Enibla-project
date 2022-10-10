@@ -44,8 +44,8 @@ namespace Enibla_project
 
         private void Availableproduct_Load(object sender, EventArgs e)
         {
-            fd = new FoodandDrinks();
-            fd.AddProducts();
+           // fd = new FoodandDrinks();
+           // fd.AddProducts();
 
                 
 
