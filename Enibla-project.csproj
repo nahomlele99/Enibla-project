@@ -226,6 +226,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddFoodProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFoodProduct.Designer.cs">
+      <DependentUpon>AddFoodProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
