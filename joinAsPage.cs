@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,6 +27,7 @@ namespace Enibla_project
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            
             SignupPage signup = new SignupPage();
             signup.Show();
             this.Hide();
@@ -71,6 +73,22 @@ namespace Enibla_project
             this.Hide();
 
             //hotel signup area
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            timer1.Interval = 10000;
+            timer1.Start();
+            while (deliveryMan.Location.X != 989)
+            {
+                deliveryMan.Location = new Point(deliveryMan.Location.X + 1, deliveryMan.Location.Y);
+                Thread.Sleep(10);
+                timer1.Enabled = true;
+                if (deliveryMan.Location.X == 967){
+                    panel1.BackColor = Color.FromArgb(248, 152, 34);
+                }
+            }
+
         }
     }
 }

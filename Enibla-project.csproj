@@ -251,6 +251,9 @@
       <DependentUpon>imagerestaurant.cs</DependentUpon>
     </Compile>
     <Compile Include="FoodandDrinks.cs" />
+    <Compile Include="KGComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Shopping.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="imagerestaurant.resx">
       <DependentUpon>imagerestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KGComboBox.resx">
+      <DependentUpon>KGComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shopping.resx">
       <DependentUpon>Shopping.cs</DependentUpon>

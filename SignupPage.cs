@@ -14,6 +14,7 @@ namespace Enibla_project
     {
         public SignupPage()
         {
+            
             InitializeComponent();
         }
         string imglocation= "";
@@ -33,7 +34,14 @@ namespace Enibla_project
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            
+            User user = new User();
+            user.FullName = fName.Texts;
+            user.Phonenumber = Pnumber.Texts;
+            user.Email = Email.Texts;
+            user.Username=Uname.Texts;
+            user.Phonenumber = Pword.Texts;
+
+
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)

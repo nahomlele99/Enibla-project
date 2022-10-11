@@ -42,10 +42,14 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.kgPhotoBox22 = new Enibla_project.KGPhotoBox2();
             this.kgPhotoBox21 = new Enibla_project.KGPhotoBox2();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.label7 = new System.Windows.Forms.Label();
+            this.deliveryMan = new Enibla_project.KGPhotoBox2();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deliveryMan)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -165,7 +169,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(421, 464);
+            this.label5.Location = new System.Drawing.Point(413, 500);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 20);
             this.label5.TabIndex = 9;
@@ -177,7 +181,7 @@
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.label6.Location = new System.Drawing.Point(555, 460);
+            this.label6.Location = new System.Drawing.Point(548, 496);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 24);
             this.label6.TabIndex = 10;
@@ -221,13 +225,34 @@
             this.kgPhotoBox21.MouseEnter += new System.EventHandler(this.bunifuThinButton21_MouseEnter);
             this.kgPhotoBox21.MouseLeave += new System.EventHandler(this.bunifuThinButton21_MouseLeave);
             // 
-            // menuStrip1
+            // label7
             // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(921, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.label7.Location = new System.Drawing.Point(696, 468);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(188, 24);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Start Delivering > > > ";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // deliveryMan
+            // 
+            this.deliveryMan.Image = ((System.Drawing.Image)(resources.GetObject("deliveryMan.Image")));
+            this.deliveryMan.Location = new System.Drawing.Point(826, 455);
+            this.deliveryMan.Name = "deliveryMan";
+            this.deliveryMan.Size = new System.Drawing.Size(45, 51);
+            this.deliveryMan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.deliveryMan.TabIndex = 15;
+            this.deliveryMan.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(996, 390);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 139);
+            this.panel1.TabIndex = 0;
             // 
             // joinAsPage
             // 
@@ -235,6 +260,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 541);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.deliveryMan);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.kgPhotoBox22);
             this.Controls.Add(this.kgPhotoBox21);
             this.Controls.Add(this.label6);
@@ -253,6 +281,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deliveryMan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,6 +301,9 @@
         private KGPhotoBox2 kgPhotoBox21;
         private KGPhotoBox2 kgPhotoBox22;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Panel panel1;
+        private KGPhotoBox2 deliveryMan;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Timer timer1;
     }
 }
