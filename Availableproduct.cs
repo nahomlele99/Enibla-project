@@ -16,7 +16,7 @@ namespace Enibla_project
     public partial class Availableproduct : Form
     {
         FoodandDrinks fd;
-        SqlConnection conn = new SqlConnection("Data Source= DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog= AvailableProducts;Integrated security=true;");
+       // SqlConnection conn = new SqlConnection("Data Source= DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog= AvailableProducts;Integrated security=true;");
         public Availableproduct()
         {
             InitializeComponent();
@@ -56,7 +56,7 @@ namespace Enibla_project
         }
 
         private void btnAvaialble_Click(object sender, EventArgs e)
-        {
+        { /*
            // string path = "Data Source= DESKTOP-8I5JD62\\\\SQLEXPRESS;Initial Catalog= AvailableProducts;Integrated security=true;";
             string query = "SELECT * FROM AvailableProducts";
 
@@ -68,6 +68,11 @@ namespace Enibla_project
             dataGridView1.DataSource = ds.Tables[0];
             conn.Close();
 
+            */
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
