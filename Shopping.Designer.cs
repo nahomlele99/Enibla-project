@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shopping));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.utilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hireDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.availablefoodsanddrinksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAllEquipmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hireDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viaEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viaPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -65,25 +65,6 @@
             this.productsToolStripMenuItem.Text = "Products";
             this.productsToolStripMenuItem.Click += new System.EventHandler(this.productsToolStripMenuItem_Click);
             // 
-            // utilitiesToolStripMenuItem
-            // 
-            this.utilitiesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewAllEquipmentsToolStripMenuItem});
-            this.utilitiesToolStripMenuItem.Name = "utilitiesToolStripMenuItem";
-            this.utilitiesToolStripMenuItem.Size = new System.Drawing.Size(103, 27);
-            this.utilitiesToolStripMenuItem.Text = "Utilities";
-            this.utilitiesToolStripMenuItem.Click += new System.EventHandler(this.utilitiesToolStripMenuItem_Click);
-            // 
-            // hireDeliveryToolStripMenuItem
-            // 
-            this.hireDeliveryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viaEmailToolStripMenuItem,
-            this.viaPhoneToolStripMenuItem});
-            this.hireDeliveryToolStripMenuItem.Name = "hireDeliveryToolStripMenuItem";
-            this.hireDeliveryToolStripMenuItem.Size = new System.Drawing.Size(156, 27);
-            this.hireDeliveryToolStripMenuItem.Text = "Hire Delivery";
-            this.hireDeliveryToolStripMenuItem.Click += new System.EventHandler(this.hireDeliveryToolStripMenuItem_Click);
-            // 
             // availablefoodsanddrinksToolStripMenuItem
             // 
             this.availablefoodsanddrinksToolStripMenuItem.Name = "availablefoodsanddrinksToolStripMenuItem";
@@ -98,17 +79,37 @@
             this.addToolStripMenuItem.Text = "ADD food and drink Ingrediates";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
+            // utilitiesToolStripMenuItem
+            // 
+            this.utilitiesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewAllEquipmentsToolStripMenuItem});
+            this.utilitiesToolStripMenuItem.Name = "utilitiesToolStripMenuItem";
+            this.utilitiesToolStripMenuItem.Size = new System.Drawing.Size(103, 27);
+            this.utilitiesToolStripMenuItem.Text = "Utilities";
+            this.utilitiesToolStripMenuItem.Click += new System.EventHandler(this.utilitiesToolStripMenuItem_Click);
+            // 
             // viewAllEquipmentsToolStripMenuItem
             // 
             this.viewAllEquipmentsToolStripMenuItem.Name = "viewAllEquipmentsToolStripMenuItem";
             this.viewAllEquipmentsToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
             this.viewAllEquipmentsToolStripMenuItem.Text = "View All Equipments";
             // 
+            // hireDeliveryToolStripMenuItem
+            // 
+            this.hireDeliveryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viaEmailToolStripMenuItem,
+            this.viaPhoneToolStripMenuItem});
+            this.hireDeliveryToolStripMenuItem.Name = "hireDeliveryToolStripMenuItem";
+            this.hireDeliveryToolStripMenuItem.Size = new System.Drawing.Size(156, 27);
+            this.hireDeliveryToolStripMenuItem.Text = "Hire Delivery";
+            this.hireDeliveryToolStripMenuItem.Click += new System.EventHandler(this.hireDeliveryToolStripMenuItem_Click);
+            // 
             // viaEmailToolStripMenuItem
             // 
             this.viaEmailToolStripMenuItem.Name = "viaEmailToolStripMenuItem";
             this.viaEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
             this.viaEmailToolStripMenuItem.Text = "Via Emial";
+            this.viaEmailToolStripMenuItem.Click += new System.EventHandler(this.viaEmailToolStripMenuItem_Click);
             // 
             // viaPhoneToolStripMenuItem
             // 

@@ -67,5 +67,20 @@ namespace Enibla_project
         {
             this.Hide();
         }
+
+        private void lblegg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblegg_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show("Chicken eggs provide high-quality and easily usable protein. Besides, they contain Vitamin A, K and B2, minerals and fat. The largest amount is found in egg yolks and consists of unsaturated fatty acids. Eggs also contain cholesterol which can have an adverse effect on the blood lipid levels. For a healthy and balanced diet, you need not worry about too high consumption of egg. It ultimately always depends on the quantity", lblegg);
+        }
+
+        private void lblmilk_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show("Milk and milk products form part of a mixed, balanced diet. They provide high-quality protein and are a good source of Vitamin D and calcium. This trio is necessary for building and maintaining bone mass. Be it for muesli, tasty desserts or cooking and baking, milk can be used in diverse ways. Milk should be stored in the refrigerator to ensure optimal shelf life", lblmilk);
+        }
     }
 }

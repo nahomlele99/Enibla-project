@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EggProducts));
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,15 +41,11 @@
             this.lblmilk = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // label1
             // 
@@ -156,6 +151,8 @@
             this.lblegg.Size = new System.Drawing.Size(42, 23);
             this.lblegg.TabIndex = 9;
             this.lblegg.Text = "Egg";
+            this.lblegg.Click += new System.EventHandler(this.lblegg_Click);
+            this.lblegg.MouseHover += new System.EventHandler(this.lblegg_MouseHover);
             // 
             // lblmilk
             // 
@@ -166,6 +163,7 @@
             this.lblmilk.Size = new System.Drawing.Size(49, 23);
             this.lblmilk.TabIndex = 10;
             this.lblmilk.Text = "Milk";
+            this.lblmilk.MouseHover += new System.EventHandler(this.lblmilk_MouseHover);
             // 
             // btnSave
             // 
@@ -212,7 +210,6 @@
             this.Name = "EggProducts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.EggProducts_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -222,8 +219,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -235,5 +230,6 @@
         private System.Windows.Forms.Label lblegg;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -62,5 +62,10 @@ namespace Enibla_project
             form.Show();
 
         }
+
+        private void viaEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
