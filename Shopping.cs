@@ -44,7 +44,7 @@ namespace Enibla_project
                 ActiveMdiChild.Close();
 
             }
-            Availableproduct form = new Availableproduct();
+            AvailableProduct form = new AvailableProduct();
             form.MdiParent = this;
             form.Show();
            

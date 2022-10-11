@@ -29,18 +29,18 @@ namespace Enibla_project
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            if (Roles.SelectedItem.ToString() == "User" && Uname.Texts == "Admin" && Pword.Texts == "admin") {
+            if (comboBox1.SelectedItem.ToString() == "User" && Uname.Texts == "Admin" && Pword.Texts == "admin") {
                 HomePage home = new HomePage();
                 home.Show();
                 this.Hide();
             }
-            else if (Roles.SelectedItem.ToString() == "Service Provider" && Uname.Texts == "SAdmin" && Pword.Texts == "Sadmin")
+            else if (comboBox1.SelectedItem.ToString() == "Service Provider" && Uname.Texts == "SAdmin" && Pword.Texts == "Sadmin")
             {
                 AdminPage SP = new AdminPage();
                 SP.Show();
                 this.Hide();
             }
-            else if(Roles.SelectedItem.ToString() == "Service Provider")
+            else if(comboBox1.SelectedItem.ToString() == "Service Provider")
             {
                 MessageBox.Show("Not Currently Working");
             }

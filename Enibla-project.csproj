@@ -315,11 +315,11 @@
     <Compile Include="AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Availableproduct.cs">
+    <Compile Include="AvailableProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Availableproduct.Designer.cs">
-      <DependentUpon>Availableproduct.cs</DependentUpon>
+    <Compile Include="AvailableProduct.Designer.cs">
+      <DependentUpon>AvailableProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="EggProducts.cs">
       <SubType>Form</SubType>
@@ -415,8 +415,8 @@
     <EmbeddedResource Include="AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Availableproduct.resx">
-      <DependentUpon>Availableproduct.cs</DependentUpon>
+    <EmbeddedResource Include="AvailableProduct.resx">
+      <DependentUpon>AvailableProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EggProducts.resx">
       <DependentUpon>EggProducts.cs</DependentUpon>
