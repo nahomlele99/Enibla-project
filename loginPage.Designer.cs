@@ -106,7 +106,7 @@
             this.Uname.BorderSize = 1;
             this.Uname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Uname.ForeColor = System.Drawing.Color.DimGray;
-            this.Uname.Location = new System.Drawing.Point(371, 233);
+            this.Uname.Location = new System.Drawing.Point(384, 233);
             this.Uname.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Uname.Multiline = false;
             this.Uname.Name = "Uname";
@@ -118,7 +118,6 @@
             this.Uname.TabIndex = 30;
             this.Uname.Texts = "";
             this.Uname.UnderlinedStyle = false;
-            this.Uname._TextChanged += new System.EventHandler(this.Uname__TextChanged);
             // 
             // kgPhotoBox22
             // 
