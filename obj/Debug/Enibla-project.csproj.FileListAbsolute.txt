@@ -46,7 +46,6 @@ C:\Users\User\Documents\C# projects\Enibla-project\bin\Debug\System.Text.Encodin
 C:\Users\User\Documents\C# projects\Enibla-project\bin\Debug\System.Threading.AccessControl.xml
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla-project.csproj.Fody.CopyLocal.cache
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.loginPage.resources
-C:\Users\User\Documents\C# projects\Enibla-project\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.SignupPage.resources
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.joinAsPage.resources
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.HomePage.resources
@@ -117,3 +116,7 @@ C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla-project.csproj.Co
 C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla-project.exe
 C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla-project.pdb
 C:\Users\DELL\Documents\GitHub\Enibla-project\obj\Debug\Enibla_project.Availableproduct.resources
+C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.AdminPage.resources
+C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.Availableproduct.resources
+C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.imagerestaurant.resources
+C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla_project.Shopping.resources
