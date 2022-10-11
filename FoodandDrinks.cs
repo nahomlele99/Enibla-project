@@ -47,6 +47,23 @@ namespace Enibla_project
             return DisplayAll().FindAll(p => p.ProductName == ProductsName);
 
         }
+        public void AddProducts()
+        {
+            string path = "Data Source= DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog= AvailableProducts;Integrated security=true;";
+            string query2 = "insert into AvailableProducts([PrCode],[PrName],[Pr.Quantity]) values(112,'Milk',200),(113,'Sugar',30)";
+            string query1 = "SET IDENTITY_INSERT AvailableProducts ON";
+            SqlConnection conn;
+            conn = new SqlConnection(path);
+            conn.Open();
+            SqlCommand cmd;
+            cmd = new SqlCommand(query1, conn);
+            cmd.ExecuteNonQuery();
+            cmd = new SqlCommand(query2, conn);
+            cmd.ExecuteNonQuery();
+
+
+
+        }
 
         public List<FoodandDrinks> Displayy()
         {

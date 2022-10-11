@@ -44,7 +44,7 @@ namespace Enibla_project
                 ActiveMdiChild.Close();
 
             }
-            Availableproduct form = new Availableproduct();
+            AvailableProduct form = new AvailableProduct();
             form.MdiParent = this;
             form.Show();
            
@@ -57,10 +57,22 @@ namespace Enibla_project
                 ActiveMdiChild.Close();
 
             }
-            //AddFoodProduct form = new AddFoodProduct();
-           // form.MdiParent = this;
-           // form.Show();
+            AddFoodProduct form = new AddFoodProduct();
+            form.MdiParent = this;
+            form.Show();
 
+        }
+
+        private void viaEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void viaPhoneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeliveryOptions form = new DeliveryOptions();
+            form.Show();
+            this.Hide();
         }
     }
 }
