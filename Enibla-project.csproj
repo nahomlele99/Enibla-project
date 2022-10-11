@@ -321,6 +321,12 @@
     <Compile Include="AvailableProduct.Designer.cs">
       <DependentUpon>AvailableProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeliveryOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryOptions.Designer.cs">
+      <DependentUpon>DeliveryOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="EggProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -417,6 +423,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AvailableProduct.resx">
       <DependentUpon>AvailableProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryOptions.resx">
+      <DependentUpon>DeliveryOptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EggProducts.resx">
       <DependentUpon>EggProducts.cs</DependentUpon>

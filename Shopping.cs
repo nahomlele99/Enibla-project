@@ -65,7 +65,14 @@ namespace Enibla_project
 
         private void viaEmailToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void viaPhoneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeliveryOptions form = new DeliveryOptions();
+            form.Show();
+            this.Hide();
         }
     }
 }

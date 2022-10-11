@@ -107,15 +107,16 @@
             // viaEmailToolStripMenuItem
             // 
             this.viaEmailToolStripMenuItem.Name = "viaEmailToolStripMenuItem";
-            this.viaEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
-            this.viaEmailToolStripMenuItem.Text = "Via Emial";
+            this.viaEmailToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
+            this.viaEmailToolStripMenuItem.Text = "Via Phone";
             this.viaEmailToolStripMenuItem.Click += new System.EventHandler(this.viaEmailToolStripMenuItem_Click);
             // 
             // viaPhoneToolStripMenuItem
             // 
             this.viaPhoneToolStripMenuItem.Name = "viaPhoneToolStripMenuItem";
-            this.viaPhoneToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
-            this.viaPhoneToolStripMenuItem.Text = "Via Phone";
+            this.viaPhoneToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
+            this.viaPhoneToolStripMenuItem.Text = "Via Internet";
+            this.viaPhoneToolStripMenuItem.Click += new System.EventHandler(this.viaPhoneToolStripMenuItem_Click);
             // 
             // Shopping
             // 

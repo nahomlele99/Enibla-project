@@ -220,3 +220,4 @@ C:\Users\DELL\Documents\GitHub\timetravelerrepository\bin\Debug\System.Threading
 C:\Users\DELL\Documents\GitHub\timetravelerrepository\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\DELL\Documents\GitHub\timetravelerrepository\obj\Debug\Enibla-project.csproj.Fody.CopyLocal.cache
 C:\Users\DELL\Documents\GitHub\timetravelerrepository\obj\Debug\Enibla-project.csproj.CopyComplete
+C:\Users\DELL\Documents\GitHub\timetravelerrepository\obj\Debug\Enibla_project.DeliveryOptions.resources
