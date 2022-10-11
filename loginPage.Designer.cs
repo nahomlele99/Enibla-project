@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPage));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Roles = new Combo.KGComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.Pword = new Enibla_project.KGTextBox();
             this.Uname = new Enibla_project.KGTextBox();
             this.kgPhotoBox22 = new Enibla_project.KGPhotoBox2();
@@ -45,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).BeginInit();
@@ -55,6 +59,8 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.Roles);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.Pword);
             this.panel1.Controls.Add(this.Uname);
             this.panel1.Controls.Add(this.kgPhotoBox22);
@@ -74,6 +80,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1320, 604);
             this.panel1.TabIndex = 0;
+            // 
+            // Roles
+            // 
+            this.Roles.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Roles.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.Roles.BorderSize = 1;
+            this.Roles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.Roles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Roles.ForeColor = System.Drawing.Color.DimGray;
+            this.Roles.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.Roles.Items.AddRange(new object[] {
+            "User",
+            "Service Provider",
+            "Delivery"});
+            this.Roles.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.Roles.ListTextColor = System.Drawing.Color.DimGray;
+            this.Roles.Location = new System.Drawing.Point(384, 182);
+            this.Roles.MinimumSize = new System.Drawing.Size(200, 30);
+            this.Roles.Name = "Roles";
+            this.Roles.Padding = new System.Windows.Forms.Padding(1);
+            this.Roles.Size = new System.Drawing.Size(410, 30);
+            this.Roles.TabIndex = 34;
+            this.Roles.Texts = "";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(253, 194);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 18);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Roles";
             // 
             // Pword
             // 
@@ -321,6 +362,11 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // loginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -359,5 +405,8 @@
         private KGPhotoBox2 kgPhotoBox21;
         private KGTextBox Pword;
         private KGTextBox Uname;
+        private System.Windows.Forms.Label label8;
+        private Combo.KGComboBox Roles;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

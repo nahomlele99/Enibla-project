@@ -29,19 +29,20 @@ namespace Enibla_project
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("username " + Uname.Text +" "+ Pword.Text);
-            string connection = @"Data Source=REVISION-PC\SQLEXPRESS;Initial Catalog=Enibla;Integrated Security=True";
-            string query1 = "Select Username , Password from client where Username = '"+Uname.Text+"' and Password = '"+Pword.Text+"';";
-            SqlConnection con = new SqlConnection(connection);
-            SqlDataAdapter sda = new SqlDataAdapter(query1, con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-
-            if (dt.Rows.Count == 1)
-            {
-                HomePage hotel = new HomePage();
-                hotel.Show();
+            if (Roles.SelectedItem.ToString() == "User" && Uname.Texts == "Admin" && Pword.Texts == "admin") {
+                HomePage home = new HomePage();
+                home.Show();
                 this.Hide();
+            }
+            else if (Roles.SelectedItem.ToString() == "Service Provider" && Uname.Texts == "SAdmin" && Pword.Texts == "Sadmin")
+            {
+                AdminPage SP = new AdminPage();
+                SP.Show();
+                this.Hide();
+            }
+            else if(Roles.SelectedItem.ToString() == "Service Provider")
+            {
+                MessageBox.Show("Not Currently Working");
             }
             else
             {
