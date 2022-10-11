@@ -72,8 +72,7 @@ namespace Enibla_project
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            Shopping form = new Shopping();
-            form.Show();
+            
             this.Hide();
         }
     }

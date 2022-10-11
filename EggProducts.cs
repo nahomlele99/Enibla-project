@@ -14,7 +14,7 @@ namespace Enibla_project
 {
     public partial class EggProducts : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source= DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog= AvailableProducts;Integrated security=true;");
+        //SqlConnection conn = new SqlConnection("Data Source= DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog= AvailableProducts;Integrated security=true;");
         const int eggid = 100;
         const int milkid = 101;
         public EggProducts()
@@ -32,7 +32,7 @@ namespace Enibla_project
 
         }
         private void  btnSave_Click(object sender, EventArgs e)
-        {
+        {/*
             try
             {
                 conn.Open();
@@ -60,6 +60,7 @@ namespace Enibla_project
             {
                 MessageBox.Show(ex.Message);
             }
+            */
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
