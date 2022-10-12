@@ -90,5 +90,15 @@ namespace Enibla_project
             }
 
         }
+
+        private void label7_MouseEnter(object sender, EventArgs e)
+        {
+            deliveryMan.Location = new Point(deliveryMan.Location.X + 4, deliveryMan.Location.Y);
+        }
+
+        private void label7_MouseLeave(object sender, EventArgs e)
+        {
+            deliveryMan.Location = new Point(deliveryMan.Location.X - 4, deliveryMan.Location.Y);
+        }
     }
 }
