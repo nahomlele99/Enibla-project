@@ -60,3 +60,5 @@ C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla-project.cspr
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla-project.exe
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Enibla-project.pdb
 C:\Users\User\Documents\C# projects\Enibla-project\obj\Debug\Combo.KGComboBox.resources
+C:\Users\User\Documents\C# projects\Enibla-project\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\C# projects\Enibla-project\bin\Debug\EntityFramework.SqlServer.xml

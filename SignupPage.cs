@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace Enibla_project
             InitializeComponent();
         }
         string imglocation= "";
+        Image imgimage = null;
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -38,9 +40,18 @@ namespace Enibla_project
             user.FullName = fName.Texts;
             user.Phonenumber = Pnumber.Texts;
             user.Email = Email.Texts;
+            user.gender = 'M';
             user.Username=Uname.Texts;
-            user.Phonenumber = Pword.Texts;
-
+            user.Password = Pword.Texts;
+            user.Filename = imglocation;
+            user.Images=ConvertImageToBytes(imgimage);
+            if(user.save())
+            {
+                loginPage login = new loginPage();
+                login.Show();
+                this.Hide();
+            }
+            
 
         }
 
@@ -50,8 +61,24 @@ namespace Enibla_project
             dialog.Filter = "png files (* png)|*.png|jpg files (*.jpg)|*.jpg|All file(*.*)|*.*";
             if(dialog.ShowDialog() == DialogResult.OK)
             {
+                imgimage= Image.FromFile(dialog.FileName);
                 imglocation = dialog.FileName.ToString();
                 profilepic.ImageLocation= imglocation;
+            }
+        }
+        byte[] ConvertImageToBytes(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                img.Save(ms,System.Drawing.Imaging.ImageFormat.Png);
+                return ms.ToArray();
+            }    
+        }
+        public Image ConvertByteToImage(byte[] data)
+        {
+            using(MemoryStream ms = new MemoryStream())
+            {
+                return Image.FromStream(ms);
             }
         }
 
