@@ -36,7 +36,6 @@
             this.utilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAllEquipmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hireDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viaEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viaPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -97,19 +96,11 @@
             // hireDeliveryToolStripMenuItem
             // 
             this.hireDeliveryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viaEmailToolStripMenuItem,
             this.viaPhoneToolStripMenuItem});
             this.hireDeliveryToolStripMenuItem.Name = "hireDeliveryToolStripMenuItem";
             this.hireDeliveryToolStripMenuItem.Size = new System.Drawing.Size(156, 27);
             this.hireDeliveryToolStripMenuItem.Text = "Hire Delivery";
             this.hireDeliveryToolStripMenuItem.Click += new System.EventHandler(this.hireDeliveryToolStripMenuItem_Click);
-            // 
-            // viaEmailToolStripMenuItem
-            // 
-            this.viaEmailToolStripMenuItem.Name = "viaEmailToolStripMenuItem";
-            this.viaEmailToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
-            this.viaEmailToolStripMenuItem.Text = "Via Phone";
-            this.viaEmailToolStripMenuItem.Click += new System.EventHandler(this.viaEmailToolStripMenuItem_Click);
             // 
             // viaPhoneToolStripMenuItem
             // 
@@ -145,7 +136,6 @@
         private System.Windows.Forms.ToolStripMenuItem availablefoodsanddrinksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewAllEquipmentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viaEmailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viaPhoneToolStripMenuItem;
     }
 }

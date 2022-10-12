@@ -45,6 +45,10 @@
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.cmboCountry = new System.Windows.Forms.ComboBox();
             this.cmboType = new System.Windows.Forms.ComboBox();
+            this.lblphone = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmboproducttype = new System.Windows.Forms.ComboBox();
+            this.txtphone = new Enibla_project.KGTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDelivery)).BeginInit();
             this.pnlDelivery.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +64,10 @@
             // 
             // pnlDelivery
             // 
+            this.pnlDelivery.Controls.Add(this.txtphone);
+            this.pnlDelivery.Controls.Add(this.cmboproducttype);
+            this.pnlDelivery.Controls.Add(this.label2);
+            this.pnlDelivery.Controls.Add(this.lblphone);
             this.pnlDelivery.Controls.Add(this.cmboType);
             this.pnlDelivery.Controls.Add(this.cmboCountry);
             this.pnlDelivery.Controls.Add(this.txtRastName);
@@ -78,13 +86,14 @@
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 62);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Please Insert the Informton Below";
+            this.label1.Text = "Delivery Menu";
             // 
             // lblCmpName
             // 
@@ -137,7 +146,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 339);
+            this.button1.Location = new System.Drawing.Point(0, 386);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 64);
             this.button1.TabIndex = 7;
@@ -147,7 +156,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(188, 339);
+            this.button2.Location = new System.Drawing.Point(189, 389);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 64);
             this.button2.TabIndex = 8;
@@ -213,6 +222,62 @@
             this.cmboType.Size = new System.Drawing.Size(121, 21);
             this.cmboType.TabIndex = 12;
             // 
+            // lblphone
+            // 
+            this.lblphone.AutoSize = true;
+            this.lblphone.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblphone.ForeColor = System.Drawing.Color.Gray;
+            this.lblphone.Location = new System.Drawing.Point(12, 258);
+            this.lblphone.Name = "lblphone";
+            this.lblphone.Size = new System.Drawing.Size(124, 21);
+            this.lblphone.TabIndex = 13;
+            this.lblphone.Text = "Contact Phone";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(12, 312);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 21);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Delivery Product";
+            // 
+            // cmboproducttype
+            // 
+            this.cmboproducttype.FormattingEnabled = true;
+            this.cmboproducttype.Items.AddRange(new object[] {
+            "Uber",
+            "Airplane Package",
+            "Train"});
+            this.cmboproducttype.Location = new System.Drawing.Point(171, 315);
+            this.cmboproducttype.Name = "cmboproducttype";
+            this.cmboproducttype.Size = new System.Drawing.Size(121, 21);
+            this.cmboproducttype.TabIndex = 15;
+            // 
+            // txtphone
+            // 
+            this.txtphone.BackColor = System.Drawing.SystemColors.Window;
+            this.txtphone.BorderColor = System.Drawing.Color.Orange;
+            this.txtphone.BorderFocusColor = System.Drawing.Color.White;
+            this.txtphone.BorderRadius = 0;
+            this.txtphone.BorderSize = 2;
+            this.txtphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtphone.ForeColor = System.Drawing.Color.DimGray;
+            this.txtphone.Location = new System.Drawing.Point(144, 258);
+            this.txtphone.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.txtphone.Multiline = false;
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtphone.PasswordChar = false;
+            this.txtphone.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtphone.PlaceholderText = "";
+            this.txtphone.Size = new System.Drawing.Size(151, 29);
+            this.txtphone.TabIndex = 16;
+            this.txtphone.Texts = "";
+            this.txtphone.UnderlinedStyle = false;
+            // 
             // DeliveryOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,5 +313,9 @@
         private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
         private System.Windows.Forms.ComboBox cmboCountry;
         private System.Windows.Forms.ComboBox cmboType;
+        private KGTextBox txtphone;
+        private System.Windows.Forms.ComboBox cmboproducttype;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblphone;
     }
 }
