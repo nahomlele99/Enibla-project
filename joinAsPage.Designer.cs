@@ -40,16 +40,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.kgPhotoBox22 = new Enibla_project.KGPhotoBox2();
-            this.kgPhotoBox21 = new Enibla_project.KGPhotoBox2();
             this.label7 = new System.Windows.Forms.Label();
-            this.deliveryMan = new Enibla_project.KGPhotoBox2();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.deliveryMan = new Enibla_project.KGPhotoBox2();
+            this.kgPhotoBox22 = new Enibla_project.KGPhotoBox2();
+            this.kgPhotoBox21 = new Enibla_project.KGPhotoBox2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deliveryMan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deliveryMan)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -195,6 +195,38 @@
             this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.label7.Location = new System.Drawing.Point(696, 468);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(188, 24);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Start Delivering > > > ";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.label7.MouseEnter += new System.EventHandler(this.label7_MouseEnter);
+            this.label7.MouseLeave += new System.EventHandler(this.label7_MouseLeave);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(996, 390);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 139);
+            this.panel1.TabIndex = 0;
+            // 
+            // deliveryMan
+            // 
+            this.deliveryMan.Image = ((System.Drawing.Image)(resources.GetObject("deliveryMan.Image")));
+            this.deliveryMan.Location = new System.Drawing.Point(826, 455);
+            this.deliveryMan.Name = "deliveryMan";
+            this.deliveryMan.Size = new System.Drawing.Size(45, 51);
+            this.deliveryMan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.deliveryMan.TabIndex = 15;
+            this.deliveryMan.TabStop = false;
+            // 
             // kgPhotoBox22
             // 
             this.kgPhotoBox22.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -225,35 +257,6 @@
             this.kgPhotoBox21.MouseEnter += new System.EventHandler(this.bunifuThinButton21_MouseEnter);
             this.kgPhotoBox21.MouseLeave += new System.EventHandler(this.bunifuThinButton21_MouseLeave);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.label7.Location = new System.Drawing.Point(696, 468);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(188, 24);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Start Delivering > > > ";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // deliveryMan
-            // 
-            this.deliveryMan.Image = ((System.Drawing.Image)(resources.GetObject("deliveryMan.Image")));
-            this.deliveryMan.Location = new System.Drawing.Point(826, 455);
-            this.deliveryMan.Name = "deliveryMan";
-            this.deliveryMan.Size = new System.Drawing.Size(45, 51);
-            this.deliveryMan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.deliveryMan.TabIndex = 15;
-            this.deliveryMan.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(996, 390);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 139);
-            this.panel1.TabIndex = 0;
-            // 
             // joinAsPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,9 +282,9 @@
             this.Name = "joinAsPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deliveryMan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deliveryMan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

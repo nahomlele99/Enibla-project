@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Enibla_project
 {
@@ -29,10 +30,27 @@ namespace Enibla_project
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem.ToString() == "User" && Uname.Texts == "Admin" && Pword.Texts == "admin") {
-                HomePage home = new HomePage();
-                home.Show();
-                this.Hide();
+            if (Roles.SelectedItem.ToString() == "User")
+            {
+                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
+                {
+                    if (c.State == System.Data.ConnectionState.Closed)
+                        c.Open();
+                    string query = "select * from Users where Username = @Username And Password = @Password";
+                    using (SqlCommand cmd = new SqlCommand(query, c))
+                    {
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        cmd.Parameters.AddWithValue("@Username", Uname.Texts);
+                        cmd.Parameters.AddWithValue("@Password", Pword.Texts);
+                        Console.WriteLine(query);
+                        if (cmd.ExecuteReader().Read())
+                        {
+                            HomePage home = new HomePage();
+                            home.Show();
+                            this.Hide();
+                        }
+                    }
+                }
             }
             else if (comboBox1.SelectedItem.ToString() == "Service Provider" && Uname.Texts == "SAdmin" && Pword.Texts == "Sadmin")
             {
@@ -40,7 +58,7 @@ namespace Enibla_project
                 SP.Show();
                 this.Hide();
             }
-            else if(comboBox1.SelectedItem.ToString() == "Service Provider")
+            else if (Roles.SelectedItem.ToString() == "Service Provider")
             {
                 MessageBox.Show("Not Currently Working");
             }
