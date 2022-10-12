@@ -144,8 +144,13 @@
             // randomHome1
             // 
             this.randomHome1.BackColor = System.Drawing.Color.White;
+            this.randomHome1.FileName = "";
+            this.randomHome1.Ingredient = "bro no wifi in the house ";
             this.randomHome1.Location = new System.Drawing.Point(85, 0);
             this.randomHome1.Name = "randomHome1";
+            this.randomHome1.Prices = 86.67D;
+            this.randomHome1.ProductNames = null;
+            this.randomHome1.ProductPics = ((System.Drawing.Image)(resources.GetObject("randomHome1.ProductPics")));
             this.randomHome1.Size = new System.Drawing.Size(281, 653);
             this.randomHome1.TabIndex = 0;
             // 

@@ -270,6 +270,7 @@
     <Compile Include="KGComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Products.cs" />
     <Compile Include="Shopping.cs">
       <SubType>Form</SubType>
     </Compile>

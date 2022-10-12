@@ -22,7 +22,7 @@ namespace Enibla_project
         public Byte[] Images { get; set; }
         public string Email { get; set; }
 
-        public List<User> users = new List<User>();
+        public static List<User> users = new List<User>();
         public bool save()
         {
             using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))

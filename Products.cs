@@ -20,6 +20,7 @@ namespace Enibla_project
         public Image productPicture { get; set; }
         public string picFileName { get; set; }
 
+        public static List<Products> products = new List<Products>();
         public void save()
         {
             //insert it to the data base
@@ -28,11 +29,15 @@ namespace Enibla_project
         {
             //featch data from a data base and convert it to alist of objects
         }
-        public static void load()
-        {
+        //public static IEnumerable<Products> Load()
+        //{
+       //     foreach(Products i in products){
+               //yield return i;
+            //}
+            
             //loads the data initaly to the list in order to do search and other staff from it
             //it is also helpfull for auto suggestion part
-        }
+        //}
 
     }
 }

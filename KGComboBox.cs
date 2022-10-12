@@ -135,7 +135,7 @@ namespace Combo
 
         //Properties
         //-> Appearance
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public new Color BackColor
         {
             get { return backColor; }
@@ -146,7 +146,7 @@ namespace Combo
                 btnIcon.BackColor = backColor;
             }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public Color IconColor
         {
             get { return iconColor; }
@@ -156,7 +156,7 @@ namespace Combo
                 btnIcon.Invalidate();//Redraw icon
             }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public Color ListBackColor
         {
             get { return listBackColor; }
@@ -166,7 +166,7 @@ namespace Combo
                 cmbList.BackColor = listBackColor;
             }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public Color ListTextColor
         {
             get { return listTextColor; }
@@ -176,7 +176,7 @@ namespace Combo
                 cmbList.ForeColor = listTextColor;
             }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public Color BorderColor
         {
             get { return borderColor; }
@@ -186,7 +186,7 @@ namespace Combo
                 base.BackColor = borderColor; //Border Color
             }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public int BorderSize
         {
             get { return borderSize; }
@@ -197,7 +197,7 @@ namespace Combo
                 AdjustComboBoxDimensions();
             }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public override Color ForeColor
         {
             get { return base.ForeColor; }
@@ -207,7 +207,7 @@ namespace Combo
                 lblText.ForeColor = value;
             }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public override Font Font
         {
             get { return base.Font; }
@@ -218,13 +218,13 @@ namespace Combo
                 cmbList.Font = value;//Optional
             }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public string Texts
         {
             get { return lblText.Text; }
             set { lblText.Text = value; }
         }
-        [Category("RJ Code - Appearance")]
+        [Category("KG Code - Appearance")]
         public ComboBoxStyle DropDownStyle
         {
             get { return cmbList.DropDownStyle; }
@@ -237,7 +237,7 @@ namespace Combo
 
         //Properties
         //-> Data
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         [Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
         [Localizable(true)]
@@ -246,7 +246,7 @@ namespace Combo
         {
             get { return cmbList.Items; }
         }
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [AttributeProvider(typeof(IListSource))]
         [DefaultValue(null)]
         public object DataSource
@@ -254,7 +254,7 @@ namespace Combo
             get { return cmbList.DataSource; }
             set { cmbList.DataSource = value; }
         }
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [Browsable(true)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         [Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
@@ -265,7 +265,7 @@ namespace Combo
             get { return cmbList.AutoCompleteCustomSource; }
             set { cmbList.AutoCompleteCustomSource = value; }
         }
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [Browsable(true)]
         [DefaultValue(AutoCompleteSource.None)]
         [EditorBrowsable(EditorBrowsableState.Always)]
@@ -274,7 +274,7 @@ namespace Combo
             get { return cmbList.AutoCompleteSource; }
             set { cmbList.AutoCompleteSource = value; }
         }
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [Browsable(true)]
         [DefaultValue(AutoCompleteMode.None)]
         [EditorBrowsable(EditorBrowsableState.Always)]
@@ -283,7 +283,7 @@ namespace Combo
             get { return cmbList.AutoCompleteMode; }
             set { cmbList.AutoCompleteMode = value; }
         }
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [Bindable(true)]
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -292,7 +292,7 @@ namespace Combo
             get { return cmbList.SelectedItem; }
             set { cmbList.SelectedItem = value; }
         }
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int SelectedIndex
@@ -300,7 +300,7 @@ namespace Combo
             get { return cmbList.SelectedIndex; }
             set { cmbList.SelectedIndex = value; }
         }
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [DefaultValue("")]
         [Editor("System.Windows.Forms.Design.DataMemberFieldEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
         [TypeConverter("System.Windows.Forms.Design.DataMemberFieldConverter, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
@@ -309,7 +309,7 @@ namespace Combo
             get { return cmbList.DisplayMember; }
             set { cmbList.DisplayMember = value; }
         }
-        [Category("RJ Code - Data")]
+        [Category("KG Code - Data")]
         [DefaultValue("")]
         [Editor("System.Windows.Forms.Design.DataMemberFieldEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
         public string ValueMember
