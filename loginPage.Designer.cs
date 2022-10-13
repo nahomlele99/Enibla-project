@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPage));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Roles = new Combo.KGComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Pword = new Enibla_project.KGTextBox();
             this.Uname = new Enibla_project.KGTextBox();
@@ -49,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Roles = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).BeginInit();
@@ -80,30 +80,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1320, 604);
             this.panel1.TabIndex = 0;
-            // 
-            // Roles
-            // 
-            this.Roles.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Roles.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.Roles.BorderSize = 1;
-            this.Roles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.Roles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Roles.ForeColor = System.Drawing.Color.DimGray;
-            this.Roles.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.Roles.Items.AddRange(new object[] {
-            "User",
-            "Service Provider",
-            "Delivery Man"});
-            this.Roles.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.Roles.ListTextColor = System.Drawing.Color.DimGray;
-            this.Roles.Location = new System.Drawing.Point(384, 182);
-            this.Roles.MinimumSize = new System.Drawing.Size(200, 30);
-            this.Roles.Name = "Roles";
-            this.Roles.Padding = new System.Windows.Forms.Padding(1);
-            this.Roles.Size = new System.Drawing.Size(410, 30);
-            this.Roles.TabIndex = 34;
-            this.Roles.Texts = "";
-            this.Roles.OnSelectedIndexChanged += new System.EventHandler(this.Roles_OnSelectedIndexChanged);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label8
             // 
@@ -368,6 +345,18 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // Roles
+            // 
+            this.Roles.FormattingEnabled = true;
+            this.Roles.Items.AddRange(new object[] {
+            "User",
+            "Service Provider",
+            "Delivery"});
+            this.Roles.Location = new System.Drawing.Point(384, 191);
+            this.Roles.Name = "Roles";
+            this.Roles.Size = new System.Drawing.Size(410, 21);
+            this.Roles.TabIndex = 33;
+            // 
             // loginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,6 +398,6 @@
         private System.Windows.Forms.Label label8;
        // private Combo.KGComboBox Roles;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Combo.KGComboBox Roles;
+        private System.Windows.Forms.ComboBox Roles;
     }
 }
