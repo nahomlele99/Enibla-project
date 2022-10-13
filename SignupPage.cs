@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Enibla_project
 {
@@ -20,7 +21,7 @@ namespace Enibla_project
         }
         string imglocation= "";
         Image imgimage = null;
-
+        SqlConnection c = new SqlConnection();
         private void label8_Click(object sender, EventArgs e)
         {
             loginPage login = new loginPage();
@@ -36,16 +37,17 @@ namespace Enibla_project
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            
             User user = new User();
             user.FullName = fName.Texts;
             user.Phonenumber = Pnumber.Texts;
             user.Email = Email.Texts;
-            user.gender = 'M';
+            user.Gender = 'M';
             user.Username=Uname.Texts;
             user.Password = Pword.Texts;
             user.Filename = imglocation;
             user.Images=ConvertImageToBytes(imgimage);
-            if(user.save())
+            if(user.save(c))
             {
                 loginPage login = new loginPage();
                 login.Show();
@@ -85,7 +87,7 @@ namespace Enibla_project
         private void bunifuThinButton23_MouseEnter(object sender, EventArgs e)
         {
             pictureBox4.BackColor = System.Drawing.Color.White;
-            pictureBox4.Image = Image.FromFile(@"C:\Users\User\Documents\C# projects\Icons used\upload in orange.png");
+            pictureBox4.Image = Image.FromFile(@"C:\Users\Dell\Documents\orange.png");
 
         }
 
@@ -93,8 +95,93 @@ namespace Enibla_project
         {
             Color Mytheme = ColorTranslator.FromHtml("#F7971F");
             pictureBox4.BackColor = Mytheme;
-            pictureBox4.Image = Image.FromFile(@"C:\Users\User\Documents\C# projects\Icons used\Enebla icon-01.png");
+            pictureBox4.Image = Image.FromFile(@"C:\Users\Dell\Documents\icon 1.png");
 
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void profilepic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pword__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Uname__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pnumber__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fName__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

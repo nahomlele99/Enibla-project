@@ -289,11 +289,19 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Products.cs" />
+    <Compile Include="ServiceProvider.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Shopping.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Shopping.Designer.cs">
       <DependentUpon>Shopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpRestaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpRestaurant.Designer.cs">
+      <DependentUpon>SignUpRestaurant.cs</DependentUpon>
     </Compile>
     <Compile Include="termsAndConditions.cs">
       <SubType>Form</SubType>
@@ -378,6 +386,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Shopping.resx">
       <DependentUpon>Shopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpRestaurant.resx">
+      <DependentUpon>SignUpRestaurant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="termsAndConditions.resx">
       <DependentUpon>termsAndConditions.cs</DependentUpon>

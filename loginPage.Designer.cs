@@ -31,7 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPage));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Roles = new Combo.KGComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.Pword = new Enibla_project.KGTextBox();
+            this.Uname = new Enibla_project.KGTextBox();
+            this.kgPhotoBox22 = new Enibla_project.KGPhotoBox2();
+            this.kgPhotoBox21 = new Enibla_project.KGPhotoBox2();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,15 +49,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Roles = new Combo.KGComboBox();
-            this.Pword = new Enibla_project.KGTextBox();
-            this.Uname = new Enibla_project.KGTextBox();
-            this.kgPhotoBox22 = new Enibla_project.KGPhotoBox2();
-            this.kgPhotoBox21 = new Enibla_project.KGPhotoBox2();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,6 +81,30 @@
             this.panel1.Size = new System.Drawing.Size(1320, 604);
             this.panel1.TabIndex = 0;
             // 
+            // Roles
+            // 
+            this.Roles.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Roles.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.Roles.BorderSize = 1;
+            this.Roles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.Roles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Roles.ForeColor = System.Drawing.Color.DimGray;
+            this.Roles.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.Roles.Items.AddRange(new object[] {
+            "User",
+            "Service Provider",
+            "Delivery Man"});
+            this.Roles.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.Roles.ListTextColor = System.Drawing.Color.DimGray;
+            this.Roles.Location = new System.Drawing.Point(384, 182);
+            this.Roles.MinimumSize = new System.Drawing.Size(200, 30);
+            this.Roles.Name = "Roles";
+            this.Roles.Padding = new System.Windows.Forms.Padding(1);
+            this.Roles.Size = new System.Drawing.Size(410, 30);
+            this.Roles.TabIndex = 34;
+            this.Roles.Texts = "";
+            this.Roles.OnSelectedIndexChanged += new System.EventHandler(this.Roles_OnSelectedIndexChanged);
+            // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -92,6 +116,71 @@
             this.label8.Size = new System.Drawing.Size(52, 18);
             this.label8.TabIndex = 32;
             this.label8.Text = "Roles";
+            // 
+            // Pword
+            // 
+            this.Pword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.Pword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.Pword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.Pword.BorderRadius = 8;
+            this.Pword.BorderSize = 1;
+            this.Pword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pword.ForeColor = System.Drawing.Color.DimGray;
+            this.Pword.Location = new System.Drawing.Point(384, 277);
+            this.Pword.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.Pword.Multiline = false;
+            this.Pword.Name = "Pword";
+            this.Pword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.Pword.PasswordChar = true;
+            this.Pword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.Pword.PlaceholderText = "";
+            this.Pword.Size = new System.Drawing.Size(410, 29);
+            this.Pword.TabIndex = 31;
+            this.Pword.Texts = "";
+            this.Pword.UnderlinedStyle = false;
+            // 
+            // Uname
+            // 
+            this.Uname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.Uname.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.Uname.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.Uname.BorderRadius = 8;
+            this.Uname.BorderSize = 1;
+            this.Uname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Uname.ForeColor = System.Drawing.Color.DimGray;
+            this.Uname.Location = new System.Drawing.Point(384, 233);
+            this.Uname.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.Uname.Multiline = false;
+            this.Uname.Name = "Uname";
+            this.Uname.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.Uname.PasswordChar = false;
+            this.Uname.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.Uname.PlaceholderText = "";
+            this.Uname.Size = new System.Drawing.Size(410, 29);
+            this.Uname.TabIndex = 30;
+            this.Uname.Texts = "";
+            this.Uname.UnderlinedStyle = false;
+            // 
+            // kgPhotoBox22
+            // 
+            this.kgPhotoBox22.Image = ((System.Drawing.Image)(resources.GetObject("kgPhotoBox22.Image")));
+            this.kgPhotoBox22.Location = new System.Drawing.Point(438, 542);
+            this.kgPhotoBox22.Name = "kgPhotoBox22";
+            this.kgPhotoBox22.Size = new System.Drawing.Size(19, 19);
+            this.kgPhotoBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.kgPhotoBox22.TabIndex = 29;
+            this.kgPhotoBox22.TabStop = false;
+            // 
+            // kgPhotoBox21
+            // 
+            this.kgPhotoBox21.BackColor = System.Drawing.Color.Transparent;
+            this.kgPhotoBox21.Image = ((System.Drawing.Image)(resources.GetObject("kgPhotoBox21.Image")));
+            this.kgPhotoBox21.Location = new System.Drawing.Point(438, 493);
+            this.kgPhotoBox21.Name = "kgPhotoBox21";
+            this.kgPhotoBox21.Size = new System.Drawing.Size(19, 19);
+            this.kgPhotoBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.kgPhotoBox21.TabIndex = 28;
+            this.kgPhotoBox21.TabStop = false;
             // 
             // label7
             // 
@@ -279,94 +368,6 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // Roles
-            // 
-            this.Roles.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Roles.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.Roles.BorderSize = 1;
-            this.Roles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.Roles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Roles.ForeColor = System.Drawing.Color.DimGray;
-            this.Roles.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.Roles.Items.AddRange(new object[] {
-            "User",
-            "Service Provider",
-            "Delivery Man"});
-            this.Roles.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.Roles.ListTextColor = System.Drawing.Color.DimGray;
-            this.Roles.Location = new System.Drawing.Point(384, 182);
-            this.Roles.MinimumSize = new System.Drawing.Size(200, 30);
-            this.Roles.Name = "Roles";
-            this.Roles.Padding = new System.Windows.Forms.Padding(1);
-            this.Roles.Size = new System.Drawing.Size(410, 30);
-            this.Roles.TabIndex = 34;
-            this.Roles.Texts = "";
-            // 
-            // Pword
-            // 
-            this.Pword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.Pword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.Pword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.Pword.BorderRadius = 8;
-            this.Pword.BorderSize = 1;
-            this.Pword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pword.ForeColor = System.Drawing.Color.DimGray;
-            this.Pword.Location = new System.Drawing.Point(384, 277);
-            this.Pword.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.Pword.Multiline = false;
-            this.Pword.Name = "Pword";
-            this.Pword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.Pword.PasswordChar = true;
-            this.Pword.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.Pword.PlaceholderText = "";
-            this.Pword.Size = new System.Drawing.Size(410, 29);
-            this.Pword.TabIndex = 31;
-            this.Pword.Texts = "";
-            this.Pword.UnderlinedStyle = false;
-            // 
-            // Uname
-            // 
-            this.Uname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.Uname.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.Uname.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.Uname.BorderRadius = 8;
-            this.Uname.BorderSize = 1;
-            this.Uname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Uname.ForeColor = System.Drawing.Color.DimGray;
-            this.Uname.Location = new System.Drawing.Point(384, 233);
-            this.Uname.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.Uname.Multiline = false;
-            this.Uname.Name = "Uname";
-            this.Uname.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.Uname.PasswordChar = false;
-            this.Uname.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.Uname.PlaceholderText = "";
-            this.Uname.Size = new System.Drawing.Size(410, 29);
-            this.Uname.TabIndex = 30;
-            this.Uname.Texts = "";
-            this.Uname.UnderlinedStyle = false;
-            // 
-            // kgPhotoBox22
-            // 
-            this.kgPhotoBox22.Image = ((System.Drawing.Image)(resources.GetObject("kgPhotoBox22.Image")));
-            this.kgPhotoBox22.Location = new System.Drawing.Point(438, 542);
-            this.kgPhotoBox22.Name = "kgPhotoBox22";
-            this.kgPhotoBox22.Size = new System.Drawing.Size(19, 19);
-            this.kgPhotoBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.kgPhotoBox22.TabIndex = 29;
-            this.kgPhotoBox22.TabStop = false;
-            // 
-            // kgPhotoBox21
-            // 
-            this.kgPhotoBox21.BackColor = System.Drawing.Color.Transparent;
-            this.kgPhotoBox21.Image = ((System.Drawing.Image)(resources.GetObject("kgPhotoBox21.Image")));
-            this.kgPhotoBox21.Location = new System.Drawing.Point(438, 493);
-            this.kgPhotoBox21.Name = "kgPhotoBox21";
-            this.kgPhotoBox21.Size = new System.Drawing.Size(19, 19);
-            this.kgPhotoBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.kgPhotoBox21.TabIndex = 28;
-            this.kgPhotoBox21.TabStop = false;
-            // 
             // loginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,9 +381,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
