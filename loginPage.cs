@@ -52,7 +52,7 @@ namespace Enibla_project
                     }
                 }
             }
-            else if (comboBox1.SelectedItem.ToString() == "Service Provider" && Uname.Texts == "SAdmin" && Pword.Texts == "Sadmin")
+            else if (Roles.SelectedItem.ToString() == "Service Provider" && Uname.Texts == "SAdmin" && Pword.Texts == "Sadmin")
             {
                 AdminPage SP = new AdminPage();
                 SP.Show();
