@@ -246,11 +246,11 @@
     <Compile Include="AddFood.Designer.cs">
       <DependentUpon>AddFood.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminPage.cs">
+    <Compile Include="AdminPage2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPage.Designer.cs">
-      <DependentUpon>AdminPage.cs</DependentUpon>
+    <Compile Include="AdminPage2.Designer.cs">
+      <DependentUpon>AdminPage2.cs</DependentUpon>
     </Compile>
     <Compile Include="AvailableProduct.cs">
       <SubType>Form</SubType>
@@ -369,8 +369,8 @@
     <EmbeddedResource Include="AddFood.resx">
       <DependentUpon>AddFood.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminPage.resx">
-      <DependentUpon>AdminPage.cs</DependentUpon>
+    <EmbeddedResource Include="AdminPage2.resx">
+      <DependentUpon>AdminPage2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AvailableProduct.resx">
       <DependentUpon>AvailableProduct.cs</DependentUpon>

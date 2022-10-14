@@ -298,3 +298,4 @@ C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla-projec
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla-project.exe
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla-project.pdb
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.SignUpRestaurant.resources
+C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.AdminPage2.resources

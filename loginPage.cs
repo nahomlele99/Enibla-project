@@ -67,7 +67,7 @@ namespace Enibla_project
                         Console.WriteLine(query);
                         if (cmd.ExecuteReader().Read())
                         {
-                            AdminPage SP = new AdminPage();
+                            AdminPage2 SP = new AdminPage2();
                             SP.Show();
                             this.Hide();
                         }
@@ -102,6 +102,11 @@ namespace Enibla_project
         }
 
         private void Roles_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
