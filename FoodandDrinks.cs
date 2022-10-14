@@ -10,7 +10,7 @@ namespace Enibla_project
 {
     public class FoodandDrinks
     {
-        public  int HotelID { get; set; }
+        public  int RestaurantID { get; set; }
         public int ProductID { get; set; }
         public string ProductName { get; set; }
         public string Ingridents { get; set; }
@@ -18,12 +18,7 @@ namespace Enibla_project
         public string GoodType{ get; set; }
         public string Filename { get; set; }
         public byte[] Images { get; set; }
-        public int bread { get; set; }
-        public int egg { get; set; }
-        public string cheese { get; set; }
-        public string redwine { get; set; }
-        public string coca { get; set; }
-        public int pasta{ get; set; }
+        public string Quantity { get; set; }
 
         private static List<FoodandDrinks> list = new List<FoodandDrinks>();
 
@@ -50,14 +45,13 @@ namespace Enibla_project
         public void AddProducts()
         {
             string path = "Data Source= DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog= AvailableProducts;Integrated security=true;";
-            string query2 = "insert into AvailableProducts([PrCode],[PrName],[Pr.Quantity]) values(112,'Milk',200),(113,'Sugar',30)";
-            string query1 = "SET IDENTITY_INSERT AvailableProducts ON";
+            string query2 = "insert into AvailableProducts([ResID],[PrCode],[PrName],[PrQuantity]) values(@ResID,@PrCode,@PrName,@PrQuantity)";
+           
             SqlConnection conn;
             conn = new SqlConnection(path);
             conn.Open();
             SqlCommand cmd;
-            cmd = new SqlCommand(query1, conn);
-            cmd.ExecuteNonQuery();
+            
             cmd = new SqlCommand(query2, conn);
             cmd.ExecuteNonQuery();
 

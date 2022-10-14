@@ -17,8 +17,8 @@ namespace Enibla_project
         public int Amount { get; set; }
         public bool status { get; set; }    
         public string categorie { get; set; }
-        public Image productPicture { get; set; }
-        public string picFileName { get; set; }
+        
+        
 
         public static List<Products> products = new List<Products>();
         public void save()
