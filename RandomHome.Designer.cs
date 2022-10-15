@@ -62,6 +62,7 @@
             this.ProductName.Size = new System.Drawing.Size(184, 39);
             this.ProductName.TabIndex = 1;
             this.ProductName.Text = "Mahberawi";
+            this.ProductName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProductPic
             // 

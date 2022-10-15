@@ -21,7 +21,7 @@ namespace Enibla_project
 
         private void HomePage_Load(object sender, EventArgs e)
         {
-            Products.Load("Sheraton");
+
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace Enibla_project
         private void HistoryPic_MouseEnter(object sender, EventArgs e)
         {
             HistoryPic.BackColor = System.Drawing.Color.White;
-            HistoryPic.Image = Image.FromFile(@"C:\Users\User\Documents\C# projects\Icons used\Enebla_Icons-11.png");
+            HistoryPic.Image = Image.FromFile(@"C:\Users\User\Documents\C# projects\Icons used\Enebla_Icons_-09.png");
 
             HistoryButton.IdleFillColor = System.Drawing.Color.White;
 
@@ -78,7 +78,7 @@ namespace Enibla_project
         {
             Color Mytheme = ColorTranslator.FromHtml("#F7971F");
             HistoryPic.BackColor = Mytheme;
-            HistoryPic.Image = Image.FromFile(@"C:\Users\User\Documents\C# projects\Icons used\Enebla_Icons_-09.png");
+            HistoryPic.Image = Image.FromFile(@"C:\Users\User\Documents\C# projects\Icons used\Enebla_Icons-11.png");
             HistoryButton.IdleFillColor = Mytheme;
 
         }
@@ -101,9 +101,11 @@ namespace Enibla_project
 
         }
 
-        private void randomHotelHome1_Load(object sender, EventArgs e)
+        private void SettingButton_Click(object sender, EventArgs e)
         {
-
+            SettingPage settings = new SettingPage();
+            settings.Show();
+            this.Hide();
         }
     }
 }

@@ -37,6 +37,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>Webcam References\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>Webcam References\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>Webcam References\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.6.0.0\lib\net40\Bunifu.UI.WinForms.dll</HintPath>
     </Reference>
@@ -52,8 +61,8 @@
     <Reference Include="Cyotek.Collections.Generic.CircularBuffer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
       <HintPath>packages\Cyotek.CircularBuffer.1.2.1\lib\net48\Cyotek.Collections.Generic.CircularBuffer.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
-      <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    <Reference Include="DarrenLee.Media">
+      <HintPath>Webcam References\DarrenLee.Media.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
@@ -249,11 +258,11 @@
     <Compile Include="AddFood.Designer.cs">
       <DependentUpon>AddFood.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminPage2.cs">
+    <Compile Include="AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPage2.Designer.cs">
-      <DependentUpon>AdminPage2.cs</DependentUpon>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
     <Compile Include="AvailableProduct.cs">
       <SubType>Form</SubType>
@@ -261,23 +270,11 @@
     <Compile Include="AvailableProduct.Designer.cs">
       <DependentUpon>AvailableProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="DelieveryLogin.cs">
+    <Compile Include="CameraForProPic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DelieveryLogin.Designer.cs">
-      <DependentUpon>DelieveryLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DeliveryHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeliveryHome.Designer.cs">
-      <DependentUpon>DeliveryHome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EggProducts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EggProducts.Designer.cs">
-      <DependentUpon>EggProducts.cs</DependentUpon>
+    <Compile Include="CameraForProPic.Designer.cs">
+      <DependentUpon>CameraForProPic.cs</DependentUpon>
     </Compile>
     <Compile Include="EniblaDBDataSet.cs">
       <DependentUpon>EniblaDBDataSet.xsd</DependentUpon>
@@ -303,19 +300,17 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Products.cs" />
-    <Compile Include="ServiceProvider.cs" />
-    <Compile Include="Settings.cs" />
+    <Compile Include="SettingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingPage.Designer.cs">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shopping.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Shopping.Designer.cs">
       <DependentUpon>Shopping.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SignUpRestaurant.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SignUpRestaurant.Designer.cs">
-      <DependentUpon>SignUpRestaurant.cs</DependentUpon>
     </Compile>
     <Compile Include="termsAndConditions.cs">
       <SubType>Form</SubType>
@@ -383,20 +378,14 @@
     <EmbeddedResource Include="AddFood.resx">
       <DependentUpon>AddFood.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminPage2.resx">
-      <DependentUpon>AdminPage2.cs</DependentUpon>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AvailableProduct.resx">
       <DependentUpon>AvailableProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DelieveryLogin.resx">
-      <DependentUpon>DelieveryLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeliveryHome.resx">
-      <DependentUpon>DeliveryHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EggProducts.resx">
-      <DependentUpon>EggProducts.cs</DependentUpon>
+    <EmbeddedResource Include="CameraForProPic.resx">
+      <DependentUpon>CameraForProPic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -404,11 +393,11 @@
     <EmbeddedResource Include="imagerestaurant.resx">
       <DependentUpon>imagerestaurant.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SettingPage.resx">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Shopping.resx">
       <DependentUpon>Shopping.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SignUpRestaurant.resx">
-      <DependentUpon>SignUpRestaurant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="termsAndConditions.resx">
       <DependentUpon>termsAndConditions.cs</DependentUpon>
@@ -429,14 +418,13 @@
       <DependentUpon>loginPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
+      <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RandomHome.resx">
       <DependentUpon>RandomHome.cs</DependentUpon>
@@ -471,8 +459,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\pizza2.webp" />
-    <None Include="Resources\route-optimisation.gif.crdownload" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -488,90 +474,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Image1.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\girl.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\perosn3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\perons2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-map-64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-wine-glass-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-benzene-ring-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-pie-chart-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-plus-math-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pizza.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pizza3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\food..jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-notification-64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-diamond-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-shopping-cart.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blackperson.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-us-dollar-circled-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-eat-64 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\map2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-search-90.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\flow.htm" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\curves.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\not2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-user-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\route-optimisation2.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-address-90.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-clock-90.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pasta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />

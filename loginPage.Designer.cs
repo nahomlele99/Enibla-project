@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPage));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Roles = new System.Windows.Forms.ComboBox();
+            this.Roles = new Combo.KGComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Pword = new Enibla_project.KGTextBox();
             this.Uname = new Enibla_project.KGTextBox();
@@ -80,19 +80,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1320, 604);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Roles
             // 
-            this.Roles.FormattingEnabled = true;
+            this.Roles.AutoCompleteCustomSource.AddRange(new string[] {
+            "User",
+            "Service Provider",
+            "Delivery Man"});
+            this.Roles.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.Roles.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.Roles.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Roles.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.Roles.BorderSize = 1;
+            this.Roles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.Roles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Roles.ForeColor = System.Drawing.Color.DimGray;
+            this.Roles.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
             this.Roles.Items.AddRange(new object[] {
             "User",
             "Service Provider",
-            "Delivery"});
-            this.Roles.Location = new System.Drawing.Point(384, 191);
+            "Delivery Man"});
+            this.Roles.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.Roles.ListTextColor = System.Drawing.Color.DimGray;
+            this.Roles.Location = new System.Drawing.Point(384, 182);
+            this.Roles.MinimumSize = new System.Drawing.Size(200, 30);
             this.Roles.Name = "Roles";
-            this.Roles.Size = new System.Drawing.Size(410, 21);
+            this.Roles.Padding = new System.Windows.Forms.Padding(1);
+            this.Roles.Size = new System.Drawing.Size(410, 30);
             this.Roles.TabIndex = 33;
+            this.Roles.Texts = "";
             // 
             // label8
             // 
@@ -398,6 +414,6 @@
         private System.Windows.Forms.Label label8;
        // private Combo.KGComboBox Roles;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.ComboBox Roles;
+        private Combo.KGComboBox Roles;
     }
 }

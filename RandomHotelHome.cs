@@ -21,10 +21,5 @@ namespace Enibla_project
         {
             MessageBox.Show("shows other hotel");
         }
-
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
-        {
-            //calles load of  picture from product page
-        }
     }
 }

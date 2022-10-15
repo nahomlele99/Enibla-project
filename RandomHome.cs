@@ -14,18 +14,23 @@ namespace Enibla_project
     {
         #region properties
         
-
-        
+        private string _ProductName;
+        private string _Ingredients;
+        private Image _ProductPic;
+        private double _Price;
+        private string _filename;
+        Products p;
 
         [Category("KG Code - Appearance")]
         public  String ProductNames {
             get
             {
-               return ProductNames;
+               return _ProductName;
             }
             set
             {
-                ProductName.Text = ProductNames;
+                _ProductName = p.ProductName;
+                ProductName.Text = p.ProductName;
             } 
         }
         [Category("KG Code - Appearance")]
@@ -33,11 +38,12 @@ namespace Enibla_project
         {
             get
             {
-                return ProductPics;
+                return _ProductPic;
             }
             set
             {
-                ProductPic.Image = ProductPics;
+                _ProductPic = p.productPicture;
+                ProductPic.Image = p.productPicture;
             }
         }
         [Category("KG Code - Appearance")]
@@ -45,12 +51,12 @@ namespace Enibla_project
         {
             get
             {
-                return FileName;
+                return _filename;
             }
             set
             {
-                
-               ProductPic.ImageLocation = FileName;
+                _filename= p.picFileName;
+                ProductPic.ImageLocation = p.picFileName;
 
             }
         }
@@ -59,11 +65,12 @@ namespace Enibla_project
         {
             get
             {
-                return Ingredient;
+                return _Ingredients;
             }
             set
             {
-                Ingredients.Text = Ingredient;
+                _Ingredients = p.Ingredients;
+                Ingredients.Text = p.Ingredients;
             }
         }
         [Category("KG Code - Appearance")]
@@ -71,27 +78,25 @@ namespace Enibla_project
         {
             get
             {
-                return Prices;
+                return _Price;
             }
             set
             {
-
-                Price.Text = Prices.ToString();
+                _Price = p.Price;
+                Price.Text = p.Price.ToString();
             }
         }
 
         #endregion
-
-
         public RandomHome()
         {
             InitializeComponent();
-            
+            p =Products.LoadToPage(0);
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-
+            //order page is loaded with the drinks manuall
         }
     }
 }

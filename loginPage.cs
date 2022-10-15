@@ -32,7 +32,7 @@ namespace Enibla_project
         {
             if (Roles.SelectedItem.ToString() == "User")
             {
-                using (SqlConnection c = new SqlConnection("Data Source =DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog = EniblaDBs; Integrated Security = True;"))
+                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
                 {
                     if (c.State == System.Data.ConnectionState.Closed)
                         c.Open();
@@ -52,28 +52,11 @@ namespace Enibla_project
                     }
                 }
             }
-            else if (Roles.SelectedItem.ToString() == "Service Provider" )
+            else if (Roles.SelectedItem.ToString() == "Service Provider" && Uname.Texts == "SAdmin" && Pword.Texts == "Sadmin")
             {
-                using (SqlConnection c = new SqlConnection("Data Source =DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog = EniblaDBs; Integrated Security = True;"))
-                {
-                    if (c.State == System.Data.ConnectionState.Closed)
-                        c.Open();
-                    string query = "select * from ServiceProviders where Username = @Username And Password = @Password";
-                    using (SqlCommand cmd = new SqlCommand(query, c))
-                    {
-                        cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.Parameters.AddWithValue("@Username", Uname.Texts);
-                        cmd.Parameters.AddWithValue("@Password", Pword.Texts);
-                        Console.WriteLine(query);
-                        if (cmd.ExecuteReader().Read())
-                        {
-                            AdminPage2 SP = new AdminPage2();
-                            SP.Show();
-                            this.Hide();
-                        }
-                    }
-                }
-              
+                AdminPage SP = new AdminPage();
+                SP.Show();
+                this.Hide();
             }
             else if (Roles.SelectedItem.ToString() == "Service Provider")
             {
@@ -97,16 +80,6 @@ namespace Enibla_project
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Roles_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

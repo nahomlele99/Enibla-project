@@ -67,7 +67,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -75,12 +74,11 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.label1.Location = new System.Drawing.Point(281, 184);
+            this.label1.Location = new System.Drawing.Point(279, 184);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Sign Up";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -92,7 +90,6 @@
             this.label2.Size = new System.Drawing.Size(320, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Create an account and choose the favorite menu ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -103,7 +100,6 @@
             this.label3.Size = new System.Drawing.Size(77, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Phone n&o";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -115,7 +111,6 @@
             this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Full name";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -126,7 +121,6 @@
             this.label5.Size = new System.Drawing.Size(48, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Email";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -137,7 +131,6 @@
             this.label6.Size = new System.Drawing.Size(78, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Password";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // bunifuThinButton21
             // 
@@ -248,7 +241,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
@@ -260,7 +252,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // bunifuThinButton23
             // 
@@ -299,7 +290,6 @@
             this.label11.Size = new System.Drawing.Size(83, 20);
             this.label11.TabIndex = 27;
             this.label11.Text = "Username";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // Pword
             // 
@@ -322,7 +312,6 @@
             this.Pword.TabIndex = 26;
             this.Pword.Texts = "";
             this.Pword.UnderlinedStyle = false;
-            this.Pword._TextChanged += new System.EventHandler(this.Pword__TextChanged);
             // 
             // Uname
             // 
@@ -345,7 +334,6 @@
             this.Uname.TabIndex = 25;
             this.Uname.Texts = "";
             this.Uname.UnderlinedStyle = false;
-            this.Uname._TextChanged += new System.EventHandler(this.Uname__TextChanged);
             // 
             // Email
             // 
@@ -368,7 +356,6 @@
             this.Email.TabIndex = 24;
             this.Email.Texts = "";
             this.Email.UnderlinedStyle = false;
-            this.Email._TextChanged += new System.EventHandler(this.Email__TextChanged);
             // 
             // Pnumber
             // 
@@ -391,7 +378,6 @@
             this.Pnumber.TabIndex = 23;
             this.Pnumber.Texts = "";
             this.Pnumber.UnderlinedStyle = false;
-            this.Pnumber._TextChanged += new System.EventHandler(this.Pnumber__TextChanged);
             // 
             // fName
             // 
@@ -414,7 +400,6 @@
             this.fName.TabIndex = 22;
             this.fName.Texts = "";
             this.fName.UnderlinedStyle = false;
-            this.fName._TextChanged += new System.EventHandler(this.fName__TextChanged);
             // 
             // profilepic
             // 
@@ -430,7 +415,6 @@
             this.profilepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilepic.TabIndex = 21;
             this.profilepic.TabStop = false;
-            this.profilepic.Click += new System.EventHandler(this.profilepic_Click);
             // 
             // SignupPage
             // 
