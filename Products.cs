@@ -17,27 +17,38 @@ namespace Enibla_project
         public int Amount { get; set; }
         public bool status { get; set; }    
         public string categorie { get; set; }
-        
-        
+        public Image productPicture { get; set; }
+        public string picFileName { get; set; }
 
         public static List<Products> products = new List<Products>();
+        static Products inital = new Products();
+
         public void save()
         {
-            //insert it to the data base
+            
+
         }
         public void getAll()
         {
-            //featch data from a data base and convert it to alist of objects
+            //featch data from a database
         }
-        //public static IEnumerable<Products> Load()
-        //{
-       //     foreach(Products i in products){
-               //yield return i;
-            //}
-            
-            //loads the data initaly to the list in order to do search and other staff from it
-            //it is also helpfull for auto suggestion part
-        //}
+        public void LoadToList()
+        {
+            //this method is called by getAll method which helps to load the data recived to copy to the list
+        }
+        public static Products LoadToPage(int i)
+        {
+            inital.ProductName = "Ertib";
+            inital.picFileName = @"C:\Users\User\Pictures\tegabino ena beyaynet.jpg";
+            inital.Ingredients = "dinich be alicha ena bekey tekekilo zeyit wst yinekerina keza tetebso keweta buhal kundu berbere, kororima, chaw ena rosmerin tedergo be mitmita tashto yemibela";
+            inital.Price = 110.00;
+            products.Add(inital);
+            if (i < products.Count) {
+                Products p = products.ElementAtOrDefault(i);
+                return p;
+            }
+            return null;
+        }
 
     }
 }

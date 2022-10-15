@@ -246,23 +246,17 @@
     <Compile Include="AddFood.Designer.cs">
       <DependentUpon>AddFood.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminPage2.cs">
+    <Compile Include="AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPage2.Designer.cs">
-      <DependentUpon>AdminPage2.cs</DependentUpon>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
     <Compile Include="AvailableProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AvailableProduct.Designer.cs">
       <DependentUpon>AvailableProduct.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EggProducts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EggProducts.Designer.cs">
-      <DependentUpon>EggProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="EniblaDBDataSet.cs">
       <DependentUpon>EniblaDBDataSet.xsd</DependentUpon>
@@ -284,24 +278,21 @@
     <Compile Include="imagerestaurant.Designer.cs">
       <DependentUpon>imagerestaurant.cs</DependentUpon>
     </Compile>
-    <Compile Include="FoodandDrinks.cs" />
     <Compile Include="KGComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Products.cs" />
-    <Compile Include="ServiceProvider.cs" />
-    <Compile Include="Settings.cs" />
+    <Compile Include="SettingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingPage.Designer.cs">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shopping.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Shopping.Designer.cs">
       <DependentUpon>Shopping.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SignUpRestaurant.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SignUpRestaurant.Designer.cs">
-      <DependentUpon>SignUpRestaurant.cs</DependentUpon>
     </Compile>
     <Compile Include="termsAndConditions.cs">
       <SubType>Form</SubType>
@@ -369,14 +360,11 @@
     <EmbeddedResource Include="AddFood.resx">
       <DependentUpon>AddFood.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminPage2.resx">
-      <DependentUpon>AdminPage2.cs</DependentUpon>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AvailableProduct.resx">
       <DependentUpon>AvailableProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EggProducts.resx">
-      <DependentUpon>EggProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -384,11 +372,11 @@
     <EmbeddedResource Include="imagerestaurant.resx">
       <DependentUpon>imagerestaurant.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SettingPage.resx">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Shopping.resx">
       <DependentUpon>Shopping.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SignUpRestaurant.resx">
-      <DependentUpon>SignUpRestaurant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="termsAndConditions.resx">
       <DependentUpon>termsAndConditions.cs</DependentUpon>

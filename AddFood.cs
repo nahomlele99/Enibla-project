@@ -19,9 +19,9 @@ namespace Enibla_project
 
         private void lblmilkproduct_Click(object sender, EventArgs e)
         {
-            EggProducts form = new EggProducts();
-            form.Show();
-            this.Hide();
+            //EggProducts form = new EggProducts();
+            //form.Show();
+            //this.Hide();
 
         }
 

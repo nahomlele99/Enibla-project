@@ -19,7 +19,7 @@ namespace Enibla_project
         private Image _ProductPic;
         private double _Price;
         private string _filename;
-        Products p = new Products();
+        Products p;
 
         [Category("KG Code - Appearance")]
         public  String ProductNames {
@@ -42,8 +42,8 @@ namespace Enibla_project
             }
             set
             {
-                _ProductPic = value;
-                ProductPic.Image = value;
+                _ProductPic = p.productPicture;
+                ProductPic.Image = p.productPicture;
             }
         }
         [Category("KG Code - Appearance")]
@@ -55,8 +55,8 @@ namespace Enibla_project
             }
             set
             {
-                _filename= value;
-                ProductPic.ImageLocation = value;
+                _filename= p.picFileName;
+                ProductPic.ImageLocation = p.picFileName;
 
             }
         }
@@ -69,8 +69,8 @@ namespace Enibla_project
             }
             set
             {
-                _Ingredients = value;
-                Ingredients.Text = value;
+                _Ingredients = p.Ingredients;
+                Ingredients.Text = p.Ingredients;
             }
         }
         [Category("KG Code - Appearance")]
@@ -82,8 +82,8 @@ namespace Enibla_project
             }
             set
             {
-                _Price = value;
-                Price.Text = value.ToString();
+                _Price = p.Price;
+                Price.Text = p.Price.ToString();
             }
         }
 
@@ -91,13 +91,12 @@ namespace Enibla_project
         public RandomHome()
         {
             InitializeComponent();
-            
-           // Load();
+            p =Products.LoadToPage(0);
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-
+            //order page is loaded with the drinks manuall
         }
     }
 }

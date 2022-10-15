@@ -110,6 +110,7 @@
             this.SettingButton.Size = new System.Drawing.Size(61, 70);
             this.SettingButton.TabIndex = 3;
             this.SettingButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SettingButton.Click += new System.EventHandler(this.SettingButton_Click);
             this.SettingButton.MouseEnter += new System.EventHandler(this.SettingPic_MouseEnter);
             this.SettingButton.MouseLeave += new System.EventHandler(this.SettingPic_MouseLeave);
             // 
@@ -222,7 +223,7 @@
             // searchPic
             // 
             this.searchPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.searchPic.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.searchPic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.searchPic.Image = ((System.Drawing.Image)(resources.GetObject("searchPic.Image")));
             this.searchPic.Location = new System.Drawing.Point(45, 247);
             this.searchPic.Name = "searchPic";
@@ -232,6 +233,7 @@
             this.searchPic.TabStop = false;
             this.searchPic.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.searchPic.MouseLeave += new System.EventHandler(this.bunifuThinButton23_DragLeave);
+            this.searchPic.MouseHover += new System.EventHandler(this.pictureBox4_MouseEnter);
             // 
             // SettingPic
             // 
@@ -243,8 +245,10 @@
             this.SettingPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SettingPic.TabIndex = 14;
             this.SettingPic.TabStop = false;
+            this.SettingPic.Click += new System.EventHandler(this.SettingButton_Click);
             this.SettingPic.MouseEnter += new System.EventHandler(this.SettingPic_MouseEnter);
             this.SettingPic.MouseLeave += new System.EventHandler(this.SettingPic_MouseLeave);
+            this.SettingPic.MouseHover += new System.EventHandler(this.SettingPic_MouseEnter);
             // 
             // HistoryPic
             // 
@@ -258,6 +262,7 @@
             this.HistoryPic.TabStop = false;
             this.HistoryPic.MouseEnter += new System.EventHandler(this.HistoryPic_MouseEnter);
             this.HistoryPic.MouseLeave += new System.EventHandler(this.HistoryPic_MouseLeave);
+            this.HistoryPic.MouseHover += new System.EventHandler(this.HistoryPic_MouseEnter);
             // 
             // LogoutPic
             // 
@@ -271,6 +276,7 @@
             this.LogoutPic.TabStop = false;
             this.LogoutPic.MouseEnter += new System.EventHandler(this.LogoutPic_MouseEnter);
             this.LogoutPic.MouseLeave += new System.EventHandler(this.LogoutPic_MouseLeave);
+            this.LogoutPic.MouseHover += new System.EventHandler(this.LogoutPic_MouseEnter);
             // 
             // HomePage
             // 

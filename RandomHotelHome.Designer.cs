@@ -38,6 +38,7 @@
             this.distancelabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.randomHome1 = new Enibla_project.RandomHome();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -141,16 +142,42 @@
             this.webBrowser1.TabIndex = 10;
             this.webBrowser1.Url = new System.Uri(resources.GetString("webBrowser1.Url"), System.UriKind.Absolute);
             // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = ">";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 30;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Silver;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(366, 233);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(37, 57);
+            this.bunifuThinButton21.TabIndex = 11;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // randomHome1
             // 
             this.randomHome1.BackColor = System.Drawing.Color.White;
-            this.randomHome1.FileName = "";
-            this.randomHome1.Ingredient = "bro no wifi in the house ";
+            this.randomHome1.FileName = "C:\\Users\\User\\Pictures\\tegabino ena beyaynet.jpg";
+            this.randomHome1.Ingredient = "dinich be alicha ena bekey tekekilo zeyit wst yinekerina keza tetebso keweta buha" +
+    "l kundu berbere, kororima, chaw ena rosmerin tedergo be mitmita tashto yemibela";
             this.randomHome1.Location = new System.Drawing.Point(85, 0);
             this.randomHome1.Name = "randomHome1";
-            this.randomHome1.Prices = 86.67D;
-            this.randomHome1.ProductNames = null;
-            this.randomHome1.ProductPics = ((System.Drawing.Image)(resources.GetObject("randomHome1.ProductPics")));
+            this.randomHome1.Prices = 110D;
+            this.randomHome1.ProductNames = "Ertib";
+            this.randomHome1.ProductPics = null;
             this.randomHome1.Size = new System.Drawing.Size(281, 653);
             this.randomHome1.TabIndex = 0;
             // 
@@ -160,6 +187,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.distancelabel);
@@ -192,5 +220,6 @@
         private System.Windows.Forms.Label distancelabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }
 }
