@@ -31,11 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPage));
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
             this.Roles = new Combo.KGComboBox();
-=======
-            this.Roles = new System.Windows.Forms.ComboBox();
->>>>>>> 5647f5a765c9a35d5a0e7946f030ebdf1cfc53a8
             this.label8 = new System.Windows.Forms.Label();
             this.Pword = new Enibla_project.KGTextBox();
             this.Uname = new Enibla_project.KGTextBox();
@@ -113,18 +109,6 @@
             this.Roles.Size = new System.Drawing.Size(410, 30);
             this.Roles.TabIndex = 33;
             this.Roles.Texts = "";
-            // 
-            // Roles
-            // 
-            this.Roles.FormattingEnabled = true;
-            this.Roles.Items.AddRange(new object[] {
-            "User",
-            "Service Provider",
-            "Delivery"});
-            this.Roles.Location = new System.Drawing.Point(384, 191);
-            this.Roles.Name = "Roles";
-            this.Roles.Size = new System.Drawing.Size(410, 21);
-            this.Roles.TabIndex = 33;
             // 
             // label8
             // 

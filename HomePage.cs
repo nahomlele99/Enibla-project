@@ -101,17 +101,11 @@ namespace Enibla_project
 
         }
 
-<<<<<<< HEAD
         private void SettingButton_Click(object sender, EventArgs e)
         {
             SettingPage settings = new SettingPage();
             settings.Show();
             this.Hide();
-=======
-        private void randomHotelHome1_Load(object sender, EventArgs e)
-        {
-
->>>>>>> 5647f5a765c9a35d5a0e7946f030ebdf1cfc53a8
         }
     }
 }

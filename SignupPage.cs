@@ -97,5 +97,15 @@ namespace Enibla_project
 
 
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            CameraForProPic Takepic = new CameraForProPic();
+            Takepic.Show();
+            //imgimage = Image.FromFile(Takepic.photo());
+            imglocation = Takepic.photo();
+            profilepic.ImageLocation = imglocation;
+
+        }
     }
 }

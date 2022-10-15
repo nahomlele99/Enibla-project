@@ -229,6 +229,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(157, 39);
             this.bunifuThinButton22.TabIndex = 17;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // pictureBox3
             // 
