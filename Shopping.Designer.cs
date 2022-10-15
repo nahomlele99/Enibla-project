@@ -38,7 +38,6 @@
             this.btnFood = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -145,14 +144,6 @@
             this.panel2.Size = new System.Drawing.Size(970, 858);
             this.panel2.TabIndex = 15;
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(166, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(953, 865);
-            this.panel3.TabIndex = 0;
-            this.panel3.Visible = false;
-            // 
             // Shopping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,7 +152,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1118, 854);
             this.ControlBox = false;
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -187,6 +177,5 @@
         private System.Windows.Forms.Button btnFood;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
     }
 }

@@ -134,6 +134,7 @@ namespace Enibla_project
             }
             catch (SqlException ex)
             {
+                MessageBox.Show(ex.Message);
                 return false;
             }
             //featch data from a data base and convert it to alist of objects
@@ -162,7 +163,9 @@ namespace Enibla_project
             }
             catch (SqlException ex)
             {
+                MessageBox.Show(ex.Message);
                 return false;
+                
             }
             //featch data from a data base and convert it to alist of objects
         }
@@ -186,9 +189,53 @@ namespace Enibla_project
             }
             catch (SqlException ex)
             {
+                MessageBox.Show(ex.Message);
                 return false;
             }
 
+        }
+        public static bool saveIngridient(Products product)
+        {
+            SqlConnection c;
+            try
+            {
+                //ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString
+                using (c = new SqlConnection("Data Source =DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog = EniblaDBs; Integrated Security = True;"))
+                {
+                    if (c.State == System.Data.ConnectionState.Closed)
+                        c.Open();
+                    string query = "Insert into Ingridients values (@IngID, @Ingridient,@FoodID)";
+                    using (SqlCommand cmd = new SqlCommand(query, c))
+                    {
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        cmd.Parameters.AddWithValue("@IngID", product.ProductID);
+                        cmd.Parameters.AddWithValue("@Ingridient", product.ProductName);
+                        cmd.Parameters.AddWithValue("@Ingridient", product.Ingredients);
+                        cmd.Parameters.AddWithValue("@Price", product.Price);
+                        cmd.Parameters.AddWithValue("@Amount", product.Amount);
+                        cmd.Parameters.AddWithValue("@Categorie", product.categorie);
+                        cmd.Parameters.AddWithValue("@RestID", product.RestaurantID);
+
+
+                        if (cmd.ExecuteNonQuery() == 1)
+                        {
+                            return true;
+                        }
+
+                    }
+                }
+                return true;
+            }
+
+            catch (SqlException ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                return false;
+
+
+            }
+            //insert it to the data base
         }
         //public static IEnumerable<Products> Load()
         //{

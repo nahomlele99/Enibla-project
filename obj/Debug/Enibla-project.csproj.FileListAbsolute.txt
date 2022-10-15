@@ -272,9 +272,7 @@ C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\bin\Debug\System.Thread
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla-project.csproj.AssemblyReference.cache
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla-project.csproj.SuggestedBindingRedirects.cache
-C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla-project.exe.config
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.AddFoodProduct.resources
-C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.AdminPage.resources
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.AvailableProduct.resources
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.EggProducts.resources
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.Form1.resources
@@ -299,3 +297,5 @@ C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla-projec
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla-project.pdb
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.SignUpRestaurant.resources
 C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.AdminPage2.resources
+C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.DelieveryLogin.resources
+C:\Users\DELL\Documents\GitHub\EniblaMain\Enibla-project\obj\Debug\Enibla_project.DeliveryHome.resources
