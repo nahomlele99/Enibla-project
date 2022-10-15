@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPage));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Roles = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Pword = new Enibla_project.KGTextBox();
             this.Uname = new Enibla_project.KGTextBox();
@@ -48,7 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Roles = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).BeginInit();
@@ -81,6 +81,18 @@
             this.panel1.Size = new System.Drawing.Size(1320, 604);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Roles
+            // 
+            this.Roles.FormattingEnabled = true;
+            this.Roles.Items.AddRange(new object[] {
+            "User",
+            "Service Provider",
+            "Delivery"});
+            this.Roles.Location = new System.Drawing.Point(384, 191);
+            this.Roles.Name = "Roles";
+            this.Roles.Size = new System.Drawing.Size(410, 21);
+            this.Roles.TabIndex = 33;
             // 
             // label8
             // 
@@ -344,18 +356,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // Roles
-            // 
-            this.Roles.FormattingEnabled = true;
-            this.Roles.Items.AddRange(new object[] {
-            "User",
-            "Service Provider",
-            "Delivery"});
-            this.Roles.Location = new System.Drawing.Point(384, 191);
-            this.Roles.Name = "Roles";
-            this.Roles.Size = new System.Drawing.Size(410, 21);
-            this.Roles.TabIndex = 33;
             // 
             // loginPage
             // 

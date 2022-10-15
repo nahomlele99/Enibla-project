@@ -100,5 +100,10 @@ namespace Enibla_project
             LogoutPic.Image = Image.FromFile(@"C:\Users\User\Documents\C# projects\Icons used\Enebla_Icons-12.png");
 
         }
+
+        private void randomHotelHome1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
