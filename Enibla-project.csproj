@@ -52,6 +52,9 @@
     <Reference Include="Cyotek.Collections.Generic.CircularBuffer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
       <HintPath>packages\Cyotek.CircularBuffer.1.2.1\lib\net48\Cyotek.Collections.Generic.CircularBuffer.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
     </Reference>
@@ -258,6 +261,27 @@
     <Compile Include="AvailableProduct.Designer.cs">
       <DependentUpon>AvailableProduct.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="DelieveryLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelieveryLogin.Designer.cs">
+      <DependentUpon>DelieveryLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryHome.Designer.cs">
+      <DependentUpon>DeliveryHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EggProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EggProducts.Designer.cs">
+      <DependentUpon>EggProducts.cs</DependentUpon>
+    </Compile>
+>>>>>>> 5647f5a765c9a35d5a0e7946f030ebdf1cfc53a8
     <Compile Include="EniblaDBDataSet.cs">
       <DependentUpon>EniblaDBDataSet.xsd</DependentUpon>
     </Compile>
@@ -366,6 +390,18 @@
     <EmbeddedResource Include="AvailableProduct.resx">
       <DependentUpon>AvailableProduct.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="DelieveryLogin.resx">
+      <DependentUpon>DelieveryLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryHome.resx">
+      <DependentUpon>DeliveryHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EggProducts.resx">
+      <DependentUpon>EggProducts.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 5647f5a765c9a35d5a0e7946f030ebdf1cfc53a8
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -397,13 +433,14 @@
       <DependentUpon>loginPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RandomHome.resx">
       <DependentUpon>RandomHome.cs</DependentUpon>
@@ -438,6 +475,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\pizza2.webp" />
+    <None Include="Resources\route-optimisation.gif.crdownload" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -453,6 +492,90 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perosn3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perons2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-map-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-wine-glass-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-benzene-ring-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pie-chart-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-math-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food..jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-notification-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-diamond-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackperson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-us-dollar-circled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eat-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flow.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\route-optimisation2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-address-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clock-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />

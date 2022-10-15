@@ -209,6 +209,7 @@
             this.randomHotelHome1.Name = "randomHotelHome1";
             this.randomHotelHome1.Size = new System.Drawing.Size(871, 653);
             this.randomHotelHome1.TabIndex = 11;
+            this.randomHotelHome1.Load += new System.EventHandler(this.randomHotelHome1_Load);
             // 
             // kgPhotoBox21
             // 

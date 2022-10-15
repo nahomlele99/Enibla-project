@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shopping));
+<<<<<<< HEAD
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.availablefoodsanddrinksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +39,22 @@
             this.hireDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viaPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+=======
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSnack = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnDrink = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnFood = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+>>>>>>> 5647f5a765c9a35d5a0e7946f030ebdf1cfc53a8
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -104,10 +121,29 @@
             // 
             // viaPhoneToolStripMenuItem
             // 
+<<<<<<< HEAD
             this.viaPhoneToolStripMenuItem.Name = "viaPhoneToolStripMenuItem";
             this.viaPhoneToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
             this.viaPhoneToolStripMenuItem.Text = "Via Internet";
             this.viaPhoneToolStripMenuItem.Click += new System.EventHandler(this.viaPhoneToolStripMenuItem_Click);
+=======
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(29, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 61);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(163, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(970, 858);
+            this.panel2.TabIndex = 15;
+>>>>>>> 5647f5a765c9a35d5a0e7946f030ebdf1cfc53a8
             // 
             // Shopping
             // 
@@ -117,7 +153,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(921, 450);
             this.ControlBox = false;
+<<<<<<< HEAD
             this.Controls.Add(this.menuStrip1);
+=======
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
+>>>>>>> 5647f5a765c9a35d5a0e7946f030ebdf1cfc53a8
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Shopping";
@@ -129,6 +171,7 @@
         }
 
         #endregion
+<<<<<<< HEAD
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem productsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem utilitiesToolStripMenuItem;
@@ -137,5 +180,17 @@
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewAllEquipmentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viaPhoneToolStripMenuItem;
+=======
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnSnack;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnDrink;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnFood;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel2;
+>>>>>>> 5647f5a765c9a35d5a0e7946f030ebdf1cfc53a8
     }
 }
