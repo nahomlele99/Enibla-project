@@ -21,7 +21,7 @@ namespace Enibla_project
 
         private void HomePage_Load(object sender, EventArgs e)
         {
-
+            Products.Load("Sheraton");
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)

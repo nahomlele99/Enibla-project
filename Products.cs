@@ -26,6 +26,7 @@ namespace Enibla_project
         public static List<Products> products = new List<Products>();
         public static bool saveFood(Products product)
         {
+<<<<<<< Updated upstream
             SqlConnection c;
             try
             {
@@ -65,6 +66,17 @@ namespace Enibla_project
 
 
             }
+=======
+            Products p = new Products();
+            p.ProductID = "something";
+            p.ProductName = "Beyaynet";
+            p.Ingredients = "blablablablablalbalblablablalbblbalablabl";
+            p.HotelID = "Sheraton";
+            p.Price = 8909.8;
+            p.picFileName = @"C:\Users\User\Pictures\images.png";
+
+            products.Add(p);
+>>>>>>> Stashed changes
             //insert it to the data base
         }
         public static bool saveDrink(Products product)
@@ -139,6 +151,7 @@ namespace Enibla_project
             }
             //featch data from a data base and convert it to alist of objects
         }
+<<<<<<< Updated upstream
         public static bool getOneFood(SqlConnection c)
         {
             try
@@ -246,6 +259,24 @@ namespace Enibla_project
         //loads the data initaly to the list in order to do search and other staff from it
         //it is also helpfull for auto suggestion part
         //}
+=======
+        public static void Load(string hotelId)
+        {
+            foreach(Products i in products){
+               if(i.HotelID == hotelId)
+                {
+                   RandomHome R =new RandomHome();
+                    R.ProductNames = i.ProductName;
+                    R.ProductPics = i.productPicture;
+                    R.Ingredient = i.Ingredients;
+                    R.Prices = i.Price;
+                }
+            }
+            
+            //loads the data initaly to the list in order to do search and other staff from it
+            //it is also helpfull for auto suggestion part
+        }
+>>>>>>> Stashed changes
 
     }
 }

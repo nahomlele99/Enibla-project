@@ -14,23 +14,18 @@ namespace Enibla_project
     {
         #region properties
         
-        private string _ProductName;
-        private string _Ingredients;
-        private Image _ProductPic;
-        private double _Price;
-        private string _filename;
-        Products p = new Products();
+
+        
 
         [Category("KG Code - Appearance")]
         public  String ProductNames {
             get
             {
-               return _ProductName;
+               return ProductNames;
             }
             set
             {
-                _ProductName = p.ProductName;
-                ProductName.Text = p.ProductName;
+                ProductName.Text = ProductNames;
             } 
         }
         [Category("KG Code - Appearance")]
@@ -38,12 +33,11 @@ namespace Enibla_project
         {
             get
             {
-                return _ProductPic;
+                return ProductPics;
             }
             set
             {
-                _ProductPic = value;
-                ProductPic.Image = value;
+                ProductPic.Image = ProductPics;
             }
         }
         [Category("KG Code - Appearance")]
@@ -51,12 +45,12 @@ namespace Enibla_project
         {
             get
             {
-                return _filename;
+                return FileName;
             }
             set
             {
-                _filename= value;
-                ProductPic.ImageLocation = value;
+                
+               ProductPic.ImageLocation = FileName;
 
             }
         }
@@ -65,12 +59,11 @@ namespace Enibla_project
         {
             get
             {
-                return _Ingredients;
+                return Ingredient;
             }
             set
             {
-                _Ingredients = value;
-                Ingredients.Text = value;
+                Ingredients.Text = Ingredient;
             }
         }
         [Category("KG Code - Appearance")]
@@ -78,21 +71,22 @@ namespace Enibla_project
         {
             get
             {
-                return _Price;
+                return Prices;
             }
             set
             {
-                _Price = value;
-                Price.Text = value.ToString();
+
+                Price.Text = Prices.ToString();
             }
         }
 
         #endregion
+
+
         public RandomHome()
         {
             InitializeComponent();
             
-           // Load();
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
