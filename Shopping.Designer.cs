@@ -28,7 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.SuspendLayout();
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Location = new System.Drawing.Point(0, -2);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1208, 114);
+            this.guna2Panel1.TabIndex = 1;
             // 
             // Shopping
             // 
@@ -37,6 +45,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1208, 707);
             this.ControlBox = false;
+            this.Controls.Add(this.guna2Panel1);
             this.IsMdiContainer = true;
             this.Name = "Shopping";
             this.ResumeLayout(false);
@@ -44,5 +53,7 @@
         }
 
         #endregion
+
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

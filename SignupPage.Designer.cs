@@ -52,6 +52,11 @@
             this.Pnumber = new Enibla_project.KGTextBox();
             this.fName = new Enibla_project.KGTextBox();
             this.profilepic = new Enibla_project.KGPhotoBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.txtPhone = new Enibla_project.KGTextBox();
+            this.txtEmail = new Enibla_project.KGTextBox();
+            this.txtUName = new Enibla_project.KGTextBox();
+            this.txtPassword = new Enibla_project.KGTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -388,7 +393,7 @@
             this.fName.BorderSize = 1;
             this.fName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fName.ForeColor = System.Drawing.Color.DimGray;
-            this.fName.Location = new System.Drawing.Point(368, 265);
+            this.fName.Location = new System.Drawing.Point(371, 270);
             this.fName.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.fName.Multiline = false;
             this.fName.Name = "fName";
@@ -416,17 +421,105 @@
             this.profilepic.TabIndex = 21;
             this.profilepic.TabStop = false;
             // 
+            // txtPhone
+            // 
+            this.txtPhone.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPhone.BorderColor = System.Drawing.Color.Gray;
+            this.txtPhone.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.txtPhone.BorderRadius = 8;
+            this.txtPhone.BorderSize = 1;
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPhone.Location = new System.Drawing.Point(371, 305);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.txtPhone.Multiline = false;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPhone.PasswordChar = false;
+            this.txtPhone.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPhone.PlaceholderText = "";
+            this.txtPhone.Size = new System.Drawing.Size(337, 29);
+            this.txtPhone.TabIndex = 28;
+            this.txtPhone.Texts = "";
+            this.txtPhone.UnderlinedStyle = false;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEmail.BorderColor = System.Drawing.Color.Gray;
+            this.txtEmail.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.txtEmail.BorderRadius = 8;
+            this.txtEmail.BorderSize = 1;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEmail.Location = new System.Drawing.Point(371, 340);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.txtEmail.Multiline = false;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEmail.PasswordChar = false;
+            this.txtEmail.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.Size = new System.Drawing.Size(337, 29);
+            this.txtEmail.TabIndex = 29;
+            this.txtEmail.Texts = "";
+            this.txtEmail.UnderlinedStyle = false;
+            // 
+            // txtUName
+            // 
+            this.txtUName.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUName.BorderColor = System.Drawing.Color.Gray;
+            this.txtUName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.txtUName.BorderRadius = 8;
+            this.txtUName.BorderSize = 1;
+            this.txtUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUName.Location = new System.Drawing.Point(371, 374);
+            this.txtUName.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.txtUName.Multiline = false;
+            this.txtUName.Name = "txtUName";
+            this.txtUName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtUName.PasswordChar = false;
+            this.txtUName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtUName.PlaceholderText = "";
+            this.txtUName.Size = new System.Drawing.Size(337, 29);
+            this.txtUName.TabIndex = 30;
+            this.txtUName.Texts = "";
+            this.txtUName.UnderlinedStyle = false;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPassword.BorderColor = System.Drawing.Color.Gray;
+            this.txtPassword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.txtPassword.BorderRadius = 8;
+            this.txtPassword.BorderSize = 1;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPassword.Location = new System.Drawing.Point(371, 409);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.txtPassword.Multiline = false;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPassword.PasswordChar = false;
+            this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.PlaceholderText = "";
+            this.txtPassword.Size = new System.Drawing.Size(337, 29);
+            this.txtPassword.TabIndex = 31;
+            this.txtPassword.Texts = "";
+            this.txtPassword.UnderlinedStyle = false;
+            // 
             // SignupPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1084, 636);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUName);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.Pword);
-            this.Controls.Add(this.Uname);
-            this.Controls.Add(this.Email);
-            this.Controls.Add(this.Pnumber);
             this.Controls.Add(this.fName);
             this.Controls.Add(this.profilepic);
             this.Controls.Add(this.pictureBox4);
@@ -482,5 +575,10 @@
         private KGTextBox Uname;
         private KGTextBox Pword;
         private System.Windows.Forms.Label label11;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private KGTextBox txtPhone;
+        private KGTextBox txtEmail;
+        private KGTextBox txtUName;
+        private KGTextBox txtPassword;
     }
 }
