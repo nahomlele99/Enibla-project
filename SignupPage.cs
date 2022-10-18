@@ -110,5 +110,10 @@ namespace Enibla_project
             profilepic.ImageLocation = imglocation;
             imgimage = Image.FromFile(imglocation);
         }
+
+        private void SignupPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
