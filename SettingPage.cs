@@ -86,5 +86,10 @@ namespace Enibla_project
                 PrivacySecurity.ForeColor = Color.Orange;
             }
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
