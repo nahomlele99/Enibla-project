@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(searchPage));
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -41,30 +40,43 @@
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.Tabs = new System.Windows.Forms.TabControl();
-            this.foodsTab = new System.Windows.Forms.TabPage();
-            this.DrinksTab = new System.Windows.Forms.TabPage();
-            this.locationTab = new System.Windows.Forms.TabPage();
-            this.costTab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.UnderlinePanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.bunifuThinButton27 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.kgTextBox1 = new Enibla_project.KGTextBox();
+            this.searchFlowlayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.searchList1 = new Enibla_project.searchList();
+            this.searchList2 = new Enibla_project.searchList();
+            this.searchList3 = new Enibla_project.searchList();
+            this.searchList4 = new Enibla_project.searchList();
+            this.searchList5 = new Enibla_project.searchList();
+            this.searchList6 = new Enibla_project.searchList();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.searchList7 = new Enibla_project.searchList();
+            this.searchList8 = new Enibla_project.searchList();
+            this.searchList9 = new Enibla_project.searchList();
+            this.searchList10 = new Enibla_project.searchList();
+            this.searchList11 = new Enibla_project.searchList();
+            this.searchList12 = new Enibla_project.searchList();
+            this.searchList13 = new Enibla_project.searchList();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.Tabs.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.searchFlowlayout.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(290, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(369, 20);
-            this.textBox1.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -262,59 +274,6 @@
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
             // 
-            // Tabs
-            // 
-            this.Tabs.Controls.Add(this.foodsTab);
-            this.Tabs.Controls.Add(this.DrinksTab);
-            this.Tabs.Controls.Add(this.locationTab);
-            this.Tabs.Controls.Add(this.costTab);
-            this.Tabs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tabs.Location = new System.Drawing.Point(195, 76);
-            this.Tabs.Name = "Tabs";
-            this.Tabs.SelectedIndex = 0;
-            this.Tabs.Size = new System.Drawing.Size(731, 558);
-            this.Tabs.TabIndex = 22;
-            // 
-            // foodsTab
-            // 
-            this.foodsTab.Location = new System.Drawing.Point(4, 29);
-            this.foodsTab.Name = "foodsTab";
-            this.foodsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.foodsTab.Size = new System.Drawing.Size(723, 525);
-            this.foodsTab.TabIndex = 0;
-            this.foodsTab.Text = "Foods";
-            this.foodsTab.UseVisualStyleBackColor = true;
-            // 
-            // DrinksTab
-            // 
-            this.DrinksTab.Location = new System.Drawing.Point(4, 29);
-            this.DrinksTab.Name = "DrinksTab";
-            this.DrinksTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DrinksTab.Size = new System.Drawing.Size(723, 525);
-            this.DrinksTab.TabIndex = 1;
-            this.DrinksTab.Text = "Drinks";
-            this.DrinksTab.UseVisualStyleBackColor = true;
-            // 
-            // locationTab
-            // 
-            this.locationTab.Location = new System.Drawing.Point(4, 29);
-            this.locationTab.Name = "locationTab";
-            this.locationTab.Padding = new System.Windows.Forms.Padding(3);
-            this.locationTab.Size = new System.Drawing.Size(723, 525);
-            this.locationTab.TabIndex = 2;
-            this.locationTab.Text = "Locations";
-            this.locationTab.UseVisualStyleBackColor = true;
-            // 
-            // costTab
-            // 
-            this.costTab.Location = new System.Drawing.Point(4, 29);
-            this.costTab.Name = "costTab";
-            this.costTab.Padding = new System.Windows.Forms.Padding(3);
-            this.costTab.Size = new System.Drawing.Size(723, 525);
-            this.costTab.TabIndex = 3;
-            this.costTab.Text = "Cost";
-            this.costTab.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
@@ -360,15 +319,290 @@
             this.bunifuThinButton25.TabIndex = 24;
             this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.panel2.Controls.Add(this.UnderlinePanel);
+            this.panel2.Location = new System.Drawing.Point(145, 94);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(776, 3);
+            this.panel2.TabIndex = 26;
+            // 
+            // UnderlinePanel
+            // 
+            this.UnderlinePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.UnderlinePanel.Location = new System.Drawing.Point(200, 0);
+            this.UnderlinePanel.Name = "UnderlinePanel";
+            this.UnderlinePanel.Size = new System.Drawing.Size(26, 5);
+            this.UnderlinePanel.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.label2.Location = new System.Drawing.Point(336, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 18);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Foods";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.label3.Location = new System.Drawing.Point(438, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 18);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Drinks";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.label4.Location = new System.Drawing.Point(549, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 18);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Locations";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.label5.Location = new System.Drawing.Point(658, 73);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 18);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Cost";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // bunifuThinButton27
+            // 
+            this.bunifuThinButton27.ActiveBorderThickness = 1;
+            this.bunifuThinButton27.ActiveCornerRadius = 20;
+            this.bunifuThinButton27.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.bunifuThinButton27.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton27.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(31)))));
+            this.bunifuThinButton27.BackColor = System.Drawing.Color.White;
+            this.bunifuThinButton27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton27.BackgroundImage")));
+            this.bunifuThinButton27.ButtonText = "GO";
+            this.bunifuThinButton27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton27.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton27.IdleBorderThickness = 1;
+            this.bunifuThinButton27.IdleCornerRadius = 20;
+            this.bunifuThinButton27.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton27.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.bunifuThinButton27.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.bunifuThinButton27.Location = new System.Drawing.Point(717, 16);
+            this.bunifuThinButton27.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton27.Name = "bunifuThinButton27";
+            this.bunifuThinButton27.Size = new System.Drawing.Size(41, 41);
+            this.bunifuThinButton27.TabIndex = 32;
+            this.bunifuThinButton27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // kgTextBox1
+            // 
+            this.kgTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.kgTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.kgTextBox1.BorderFocusColor = System.Drawing.Color.White;
+            this.kgTextBox1.BorderRadius = 8;
+            this.kgTextBox1.BorderSize = 1;
+            this.kgTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.kgTextBox1.Location = new System.Drawing.Point(361, 22);
+            this.kgTextBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.kgTextBox1.Multiline = false;
+            this.kgTextBox1.Name = "kgTextBox1";
+            this.kgTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.kgTextBox1.PasswordChar = false;
+            this.kgTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.kgTextBox1.PlaceholderText = "Search";
+            this.kgTextBox1.Size = new System.Drawing.Size(346, 29);
+            this.kgTextBox1.TabIndex = 31;
+            this.kgTextBox1.Texts = "";
+            this.kgTextBox1.UnderlinedStyle = false;
+            // 
+            // searchFlowlayout
+            // 
+            this.searchFlowlayout.AutoScroll = true;
+            this.searchFlowlayout.Controls.Add(this.searchList1);
+            this.searchFlowlayout.Controls.Add(this.searchList2);
+            this.searchFlowlayout.Controls.Add(this.searchList3);
+            this.searchFlowlayout.Controls.Add(this.searchList4);
+            this.searchFlowlayout.Controls.Add(this.searchList5);
+            this.searchFlowlayout.Controls.Add(this.searchList6);
+            this.searchFlowlayout.Controls.Add(this.searchList7);
+            this.searchFlowlayout.Controls.Add(this.searchList8);
+            this.searchFlowlayout.Controls.Add(this.searchList9);
+            this.searchFlowlayout.Controls.Add(this.searchList10);
+            this.searchFlowlayout.Controls.Add(this.searchList11);
+            this.searchFlowlayout.Controls.Add(this.searchList12);
+            this.searchFlowlayout.Controls.Add(this.searchList13);
+            this.searchFlowlayout.Location = new System.Drawing.Point(204, 100);
+            this.searchFlowlayout.Name = "searchFlowlayout";
+            this.searchFlowlayout.Size = new System.Drawing.Size(712, 540);
+            this.searchFlowlayout.TabIndex = 33;
+            // 
+            // searchList1
+            // 
+            this.searchList1.BackColor = System.Drawing.Color.White;
+            this.searchList1.Location = new System.Drawing.Point(30, 20);
+            this.searchList1.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList1.Name = "searchList1";
+            this.searchList1.Size = new System.Drawing.Size(150, 197);
+            this.searchList1.TabIndex = 0;
+            // 
+            // searchList2
+            // 
+            this.searchList2.BackColor = System.Drawing.Color.White;
+            this.searchList2.Location = new System.Drawing.Point(250, 20);
+            this.searchList2.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList2.Name = "searchList2";
+            this.searchList2.Size = new System.Drawing.Size(150, 197);
+            this.searchList2.TabIndex = 1;
+            // 
+            // searchList3
+            // 
+            this.searchList3.BackColor = System.Drawing.Color.White;
+            this.searchList3.Location = new System.Drawing.Point(470, 20);
+            this.searchList3.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList3.Name = "searchList3";
+            this.searchList3.Size = new System.Drawing.Size(150, 197);
+            this.searchList3.TabIndex = 2;
+            // 
+            // searchList4
+            // 
+            this.searchList4.BackColor = System.Drawing.Color.White;
+            this.searchList4.Location = new System.Drawing.Point(30, 267);
+            this.searchList4.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList4.Name = "searchList4";
+            this.searchList4.Size = new System.Drawing.Size(150, 197);
+            this.searchList4.TabIndex = 3;
+            // 
+            // searchList5
+            // 
+            this.searchList5.BackColor = System.Drawing.Color.White;
+            this.searchList5.Location = new System.Drawing.Point(250, 267);
+            this.searchList5.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList5.Name = "searchList5";
+            this.searchList5.Size = new System.Drawing.Size(150, 197);
+            this.searchList5.TabIndex = 4;
+            // 
+            // searchList6
+            // 
+            this.searchList6.BackColor = System.Drawing.Color.White;
+            this.searchList6.Location = new System.Drawing.Point(470, 267);
+            this.searchList6.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList6.Name = "searchList6";
+            this.searchList6.Size = new System.Drawing.Size(150, 197);
+            this.searchList6.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.panel3.Location = new System.Drawing.Point(922, 104);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(3, 563);
+            this.panel3.TabIndex = 34;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.panel4.Location = new System.Drawing.Point(145, -1);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(3, 650);
+            this.panel4.TabIndex = 35;
+            // 
+            // searchList7
+            // 
+            this.searchList7.BackColor = System.Drawing.Color.White;
+            this.searchList7.Location = new System.Drawing.Point(30, 514);
+            this.searchList7.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList7.Name = "searchList7";
+            this.searchList7.Size = new System.Drawing.Size(150, 197);
+            this.searchList7.TabIndex = 6;
+            // 
+            // searchList8
+            // 
+            this.searchList8.BackColor = System.Drawing.Color.White;
+            this.searchList8.Location = new System.Drawing.Point(250, 514);
+            this.searchList8.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList8.Name = "searchList8";
+            this.searchList8.Size = new System.Drawing.Size(150, 197);
+            this.searchList8.TabIndex = 7;
+            // 
+            // searchList9
+            // 
+            this.searchList9.BackColor = System.Drawing.Color.White;
+            this.searchList9.Location = new System.Drawing.Point(470, 514);
+            this.searchList9.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList9.Name = "searchList9";
+            this.searchList9.Size = new System.Drawing.Size(150, 197);
+            this.searchList9.TabIndex = 8;
+            // 
+            // searchList10
+            // 
+            this.searchList10.BackColor = System.Drawing.Color.White;
+            this.searchList10.Location = new System.Drawing.Point(30, 761);
+            this.searchList10.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList10.Name = "searchList10";
+            this.searchList10.Size = new System.Drawing.Size(150, 197);
+            this.searchList10.TabIndex = 9;
+            // 
+            // searchList11
+            // 
+            this.searchList11.BackColor = System.Drawing.Color.White;
+            this.searchList11.Location = new System.Drawing.Point(250, 761);
+            this.searchList11.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList11.Name = "searchList11";
+            this.searchList11.Size = new System.Drawing.Size(150, 197);
+            this.searchList11.TabIndex = 10;
+            // 
+            // searchList12
+            // 
+            this.searchList12.BackColor = System.Drawing.Color.White;
+            this.searchList12.Location = new System.Drawing.Point(470, 761);
+            this.searchList12.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList12.Name = "searchList12";
+            this.searchList12.Size = new System.Drawing.Size(150, 197);
+            this.searchList12.TabIndex = 11;
+            // 
+            // searchList13
+            // 
+            this.searchList13.BackColor = System.Drawing.Color.White;
+            this.searchList13.Location = new System.Drawing.Point(30, 1008);
+            this.searchList13.Margin = new System.Windows.Forms.Padding(30, 20, 40, 30);
+            this.searchList13.Name = "searchList13";
+            this.searchList13.Size = new System.Drawing.Size(150, 197);
+            this.searchList13.TabIndex = 12;
+            // 
             // searchPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1194, 646);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.searchFlowlayout);
+            this.Controls.Add(this.bunifuThinButton27);
+            this.Controls.Add(this.kgTextBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.bunifuThinButton25);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Tabs);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.bunifuThinButton24);
             this.Controls.Add(this.pictureBox4);
@@ -380,7 +614,6 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.bunifuThinButton26);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "searchPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -390,17 +623,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.Tabs.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.searchFlowlayout.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton26;
@@ -412,13 +644,32 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TabControl Tabs;
-        private System.Windows.Forms.TabPage foodsTab;
-        private System.Windows.Forms.TabPage DrinksTab;
-        private System.Windows.Forms.TabPage locationTab;
-        private System.Windows.Forms.TabPage costTab;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel UnderlinePanel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private KGTextBox kgTextBox1;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton27;
+        private System.Windows.Forms.FlowLayoutPanel searchFlowlayout;
+        private searchList searchList1;
+        private searchList searchList2;
+        private searchList searchList3;
+        private searchList searchList4;
+        private searchList searchList5;
+        private searchList searchList6;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private searchList searchList7;
+        private searchList searchList8;
+        private searchList searchList9;
+        private searchList searchList10;
+        private searchList searchList11;
+        private searchList searchList12;
+        private searchList searchList13;
     }
 }

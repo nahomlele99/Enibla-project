@@ -2,68 +2,58 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Services.Description;
-using System.Windows.Forms;
 
 namespace Enibla_project
 {
-    class ServiceProvider
+    public class ServiceProvider
     {
-        public string Name { get; set; }
-        public int Id { get; set; }
-        public string UserName { get; set; }
+        public string ServiceProviderId { get; set; }
+        public string ServiceProviderName { get; set; }
+        public string Username { get; set; }
         public string Password { get; set; }
+        public string Location { get; set; }
+        public string Address { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public string Location { get; set; }
-        public string Filename { get; set; }
+        public string LogoFile { get; set; }
+        public Byte[] Logo { get; set; }
 
-        public Byte[] Images { get; set; }
+        public static List<ServiceProvider> services = new List<ServiceProvider>();
 
-
-        // Products products = new Products();
-        // List<Products> products = new List<Products>();
-        public bool save(SqlConnection c)
+        public bool save()
         {
-            try
+            using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
             {
-                using ( c = new SqlConnection("Data Source =DESKTOP-8I5JD62\\SQLEXPRESS;Initial Catalog = EniblaDBs; Integrated Security = True;"))
+                if (c.State == System.Data.ConnectionState.Closed)
+                    c.Open();
+                string query = "Insert into SerciceProvider values (@ServiceProviderId, @ServiceProviderId, @Username, @Password, @Location, @Address, @PhoneNumber, @Email, @LogoFile, @Logo)";
+                using (SqlCommand cmd = new SqlCommand(query, c))
                 {
-                    if (c.State == System.Data.ConnectionState.Closed)
-                        c.Open();
-                    string query = "Insert into ServiceProviders values (@Id,@Name,@UserName,@Password,@PhoneNumber,@Email,@Location,@Filename,@Images)";
-                    using (SqlCommand cmd = new SqlCommand(query, c))
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.Parameters.AddWithValue("@ServiceProviderId", this.ServiceProviderId);
+                    cmd.Parameters.AddWithValue("@ServiceProviderName", this.ServiceProviderName);
+                    cmd.Parameters.AddWithValue("@Username", this.Username);
+                    cmd.Parameters.AddWithValue("@Password", this.Password);
+                    cmd.Parameters.AddWithValue("@Location", this.Location);
+                    cmd.Parameters.AddWithValue("@Address", this.Address);
+                    cmd.Parameters.AddWithValue("@PhoneNumber", this.PhoneNumber);
+                    cmd.Parameters.AddWithValue("@Email", this.Email);
+                    cmd.Parameters.AddWithValue("@LogoFile", this.LogoFile);
+                    cmd.Parameters.AddWithValue("@Logo", this.Logo);
+
+                    if (cmd.ExecuteNonQuery() == 1)
                     {
-                        cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.Parameters.AddWithValue("@Id", this.Id);
-                        cmd.Parameters.AddWithValue("@Name", this.Name);
-                        cmd.Parameters.AddWithValue("@Username", this.UserName);
-                        cmd.Parameters.AddWithValue("@Password", this.Password);
-                        cmd.Parameters.AddWithValue("@PhoneNumber", this.PhoneNumber);
-                        cmd.Parameters.AddWithValue("@Email", this.Email);
-                        cmd.Parameters.AddWithValue("@Location", this.Location);
-                        cmd.Parameters.AddWithValue("@Filename", this.Location);
-                        cmd.Parameters.AddWithValue("@Images", this.Images);
-                        if (cmd.ExecuteNonQuery() == 1)
-                        {
-                            return true;
-                        }
-
+                        return true;
                     }
+                    else
+                        return false;
                 }
-                return true;
             }
-            catch(SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-                return false;
-
-            }
-
-
         }
     }
+
 }

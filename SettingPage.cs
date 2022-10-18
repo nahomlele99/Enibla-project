@@ -38,7 +38,53 @@ namespace Enibla_project
 
         private void label1_Click(object sender, EventArgs e)
         {
-            //label1.Font.Underline;
+            //PublicProfile.Font.Underline
+        }
+
+        private void HistoryButton_Click(object sender, EventArgs e)
+        {
+            HistoryPage history = new HistoryPage();
+            history.Show();
+            this.Hide();
+        }
+
+        private void panel1_Scroll(object sender, ScrollEventArgs e)
+        {
+            if(e.NewValue <= 0)
+            {
+                PublicProfile.ForeColor= Color.Orange;
+                PersonalInformation.ForeColor = Color.Black;
+                AccountManagement.ForeColor = Color.Black;
+                PrivacySecurity.ForeColor = Color.Black;
+
+
+
+
+            }
+            else if(e.NewValue >= 400 && e.NewValue <= 500)
+            {
+                PersonalInformation.ForeColor= Color.Orange;
+                AccountManagement.ForeColor = Color.Black;
+                PublicProfile.ForeColor = Color.Black;
+                PrivacySecurity.ForeColor = Color.Black;
+
+
+
+            }
+            else if(e.NewValue >= 750 && e.NewValue <= 800)
+            {
+                PublicProfile.ForeColor = Color.Black;
+                PersonalInformation.ForeColor = Color.Black;
+                PrivacySecurity.ForeColor = Color.Black;
+                AccountManagement.ForeColor = Color.Orange;
+            }
+            else if (e.NewValue >= 850 && e.NewValue <= 950)
+            {
+                PublicProfile.ForeColor = Color.Black;
+                PersonalInformation.ForeColor = Color.Black;
+                AccountManagement.ForeColor = Color.Black;
+                PrivacySecurity.ForeColor = Color.Orange;
+            }
         }
     }
 }
