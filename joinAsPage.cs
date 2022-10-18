@@ -68,11 +68,10 @@ namespace Enibla_project
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            AdminPage adminpage = new AdminPage();
-            adminpage.Show();
-            this.Hide();
 
-            //hotel signup area
+            SPSignUpPage Sp = new SPSignUpPage();
+            Sp.Show();
+            this.Hide();
         }
 
         private void label7_Click(object sender, EventArgs e)

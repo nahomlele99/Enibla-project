@@ -15,14 +15,12 @@ namespace Enibla_project
         public static HomePage home;
         public HomePage()
         {
+            //Dashboard.both();
             InitializeComponent();
             home = this;
-        }
-
-        private void HomePage_Load(object sender, EventArgs e)
-        {
 
         }
+
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
@@ -106,6 +104,31 @@ namespace Enibla_project
             SettingPage settings = new SettingPage();
             settings.Show();
             this.Hide();
+        }
+
+        private void HistoryButton_Click(object sender, EventArgs e)
+        {
+            HistoryPage history =new HistoryPage();
+            history.Show();
+            this.Hide();
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            Additional Additionalorder = new Additional();
+            Additionalorder.Show();
+            this.Hide();
+        }
+
+        private void HotelNextButton_Click(object sender, EventArgs e)
+        {
+            //This is the button to change the hotel plus the curent hotel product list
+            new HomePage();
+        }
+
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        {
+            // This is the button to choose another food from the list
         }
     }
 }

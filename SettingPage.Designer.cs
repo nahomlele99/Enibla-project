@@ -40,10 +40,10 @@
             this.HistoryPic = new Enibla_project.KGPhotoBox2();
             this.SettingPic = new Enibla_project.KGPhotoBox2();
             this.searchPic = new Enibla_project.KGPhotoBox2();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.PublicProfile = new System.Windows.Forms.Label();
+            this.PersonalInformation = new System.Windows.Forms.Label();
+            this.AccountManagement = new System.Windows.Forms.Label();
+            this.PrivacySecurity = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -151,6 +151,7 @@
             this.HistoryButton.Size = new System.Drawing.Size(61, 70);
             this.HistoryButton.TabIndex = 21;
             this.HistoryButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HistoryButton.Click += new System.EventHandler(this.HistoryButton_Click);
             // 
             // SearchButton
             // 
@@ -281,46 +282,46 @@
             this.searchPic.TabStop = false;
             this.searchPic.Click += new System.EventHandler(this.SearchButton_Click);
             // 
-            // label1
+            // PublicProfile
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(854, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 18);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Public Profile";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.PublicProfile.AutoSize = true;
+            this.PublicProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PublicProfile.Location = new System.Drawing.Point(854, 37);
+            this.PublicProfile.Name = "PublicProfile";
+            this.PublicProfile.Size = new System.Drawing.Size(94, 18);
+            this.PublicProfile.TabIndex = 33;
+            this.PublicProfile.Text = "Public Profile";
+            this.PublicProfile.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // PersonalInformation
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(854, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 18);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Personal Information";
+            this.PersonalInformation.AutoSize = true;
+            this.PersonalInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PersonalInformation.Location = new System.Drawing.Point(854, 90);
+            this.PersonalInformation.Name = "PersonalInformation";
+            this.PersonalInformation.Size = new System.Drawing.Size(145, 18);
+            this.PersonalInformation.TabIndex = 34;
+            this.PersonalInformation.Text = "Personal Information";
             // 
-            // label3
+            // AccountManagement
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(854, 146);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 18);
-            this.label3.TabIndex = 35;
-            this.label3.Text = "Account Management";
+            this.AccountManagement.AutoSize = true;
+            this.AccountManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountManagement.Location = new System.Drawing.Point(854, 146);
+            this.AccountManagement.Name = "AccountManagement";
+            this.AccountManagement.Size = new System.Drawing.Size(152, 18);
+            this.AccountManagement.TabIndex = 35;
+            this.AccountManagement.Text = "Account Management";
             // 
-            // label4
+            // PrivacySecurity
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(854, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 18);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "Privacy and Security";
+            this.PrivacySecurity.AutoSize = true;
+            this.PrivacySecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrivacySecurity.Location = new System.Drawing.Point(854, 203);
+            this.PrivacySecurity.Name = "PrivacySecurity";
+            this.PrivacySecurity.Size = new System.Drawing.Size(125, 18);
+            this.PrivacySecurity.TabIndex = 36;
+            this.PrivacySecurity.Text = "Account Changes";
             // 
             // panel1
             // 
@@ -373,6 +374,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(635, 876);
             this.panel1.TabIndex = 37;
+            this.panel1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.panel1_Scroll);
             // 
             // bunifuThinButton26
             // 
@@ -1028,10 +1030,10 @@
             this.Controls.Add(this.kgPhotoBox21);
             this.Controls.Add(this.HomeButton);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.PrivacySecurity);
+            this.Controls.Add(this.AccountManagement);
+            this.Controls.Add(this.PersonalInformation);
+            this.Controls.Add(this.PublicProfile);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.LogoutPic);
@@ -1076,10 +1078,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label PublicProfile;
+        private System.Windows.Forms.Label PersonalInformation;
+        private System.Windows.Forms.Label AccountManagement;
+        private System.Windows.Forms.Label PrivacySecurity;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;

@@ -12,10 +12,19 @@ namespace Enibla_project
 {
     public partial class RandomHotelHome : UserControl
     {
+        ServiceProvider SP;
+
+
         public RandomHotelHome()
         {
             InitializeComponent();
-        }
+            SP = Dashboard.SelectedProduct();
+            SPLogo.ImageLocation = SP.LogoFile;
+            SPName.Text = SP.ServiceProviderName;
+            SPLocation.Navigate(SP.Location);
+            SPAddress.Text = SP.Address;
+
+    }
 
         private void clickForHotel(object sender, EventArgs e)
         {
