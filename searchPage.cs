@@ -17,6 +17,7 @@ namespace Enibla_project
         {
             InitializeComponent();
             search = this;
+            
         }
 
         private void bunifuThinButton26_Click(object sender, EventArgs e)
@@ -29,5 +30,74 @@ namespace Enibla_project
         {
            // pictureBox7.Image= ((System.Drawing.Bitmap)(Properties.Resources.));
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            if (UnderlinePanel.Location.X == 200)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X + 100, UnderlinePanel.Location.Y);
+            }
+            else if(UnderlinePanel.Location.X == 420)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X - 120, UnderlinePanel.Location.Y);
+            }
+            else if (UnderlinePanel.Location.X== 520)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X - 220, UnderlinePanel.Location.Y);
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            if (UnderlinePanel.Location.X == 300)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X + 120, UnderlinePanel.Location.Y);
+            }
+            else if (UnderlinePanel.Location.X == 200)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X + 220, UnderlinePanel.Location.Y);
+            }
+            else if (UnderlinePanel.Location.X == 520)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X - 100, UnderlinePanel.Location.Y);
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            if (UnderlinePanel.Location.X == 200)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X + 320, UnderlinePanel.Location.Y);
+            }
+            else if (UnderlinePanel.Location.X == 420){
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X + 100, UnderlinePanel.Location.Y);
+
+            }
+            else if (UnderlinePanel.Location.X == 300)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X + 220, UnderlinePanel.Location.Y);
+
+            }
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            if (UnderlinePanel.Location.X == 300)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X - 100, UnderlinePanel.Location.Y);
+
+            }
+            else if(UnderlinePanel.Location.X == 420)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X - 220, UnderlinePanel.Location.Y);
+            }
+            else if(UnderlinePanel.Location.X == 520)
+            {
+                UnderlinePanel.Location = new Point(UnderlinePanel.Location.X - 320, UnderlinePanel.Location.Y);
+            }
+        }
     }
+    
 }
+

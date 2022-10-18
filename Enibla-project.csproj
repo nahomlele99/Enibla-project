@@ -252,23 +252,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddFood.cs">
+    <Compile Include="Additional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddFood.Designer.cs">
-      <DependentUpon>AddFood.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AdminPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminPage.Designer.cs">
-      <DependentUpon>AdminPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AvailableProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AvailableProduct.Designer.cs">
-      <DependentUpon>AvailableProduct.cs</DependentUpon>
+    <Compile Include="Additional.Designer.cs">
+      <DependentUpon>Additional.cs</DependentUpon>
     </Compile>
     <Compile Include="CameraForProPic.cs">
       <SubType>Form</SubType>
@@ -276,6 +264,7 @@
     <Compile Include="CameraForProPic.Designer.cs">
       <DependentUpon>CameraForProPic.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs" />
     <Compile Include="EniblaDBDataSet.cs">
       <DependentUpon>EniblaDBDataSet.xsd</DependentUpon>
     </Compile>
@@ -290,6 +279,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="historylist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="historylist.Designer.cs">
+      <DependentUpon>historylist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryPage.Designer.cs">
+      <DependentUpon>HistoryPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="imagerestaurant.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -300,17 +301,30 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Products.cs" />
+    <Compile Include="searchList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="searchList.Designer.cs">
+      <DependentUpon>searchList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider.cs" />
+    <Compile Include="ServiceProviderPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceProviderPage.Designer.cs">
+      <DependentUpon>ServiceProviderPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="SettingPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SettingPage.Designer.cs">
       <DependentUpon>SettingPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shopping.cs">
+    <Compile Include="SPSignUpPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Shopping.Designer.cs">
-      <DependentUpon>Shopping.cs</DependentUpon>
+    <Compile Include="SPSignUpPage.Designer.cs">
+      <DependentUpon>SPSignUpPage.cs</DependentUpon>
     </Compile>
     <Compile Include="termsAndConditions.cs">
       <SubType>Form</SubType>
@@ -375,14 +389,8 @@
       <DependentUpon>SignupPage.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="AddFood.resx">
-      <DependentUpon>AddFood.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdminPage.resx">
-      <DependentUpon>AdminPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AvailableProduct.resx">
-      <DependentUpon>AvailableProduct.cs</DependentUpon>
+    <EmbeddedResource Include="Additional.resx">
+      <DependentUpon>Additional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CameraForProPic.resx">
       <DependentUpon>CameraForProPic.cs</DependentUpon>
@@ -390,14 +398,26 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="historylist.resx">
+      <DependentUpon>historylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryPage.resx">
+      <DependentUpon>HistoryPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="imagerestaurant.resx">
       <DependentUpon>imagerestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchList.resx">
+      <DependentUpon>searchList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceProviderPage.resx">
+      <DependentUpon>ServiceProviderPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SettingPage.resx">
       <DependentUpon>SettingPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shopping.resx">
-      <DependentUpon>Shopping.cs</DependentUpon>
+    <EmbeddedResource Include="SPSignUpPage.resx">
+      <DependentUpon>SPSignUpPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="termsAndConditions.resx">
       <DependentUpon>termsAndConditions.cs</DependentUpon>

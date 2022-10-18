@@ -226,12 +226,8 @@ C:\Users\User\Documents\C# projects\Enibla-project\bin\Debug\EntityFramework.Sql
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla-project.csproj.AssemblyReference.cache
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla-project.csproj.SuggestedBindingRedirects.cache
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla-project.exe.config
-C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.AddFoodProduct.resources
-C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.AdminPage.resources
-C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.AvailableProduct.resources
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.Form1.resources
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.imagerestaurant.resources
-C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.Shopping.resources
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.termsAndConditions.resources
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.HomePage.resources
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.joinAsPage.resources
@@ -291,3 +287,9 @@ C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla-project.csproj.Fody.Copy
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla-project.csproj.CopyComplete
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.SettingPage.resources
 C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.CameraForProPic.resources
+C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.searchList.resources
+C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.historylist.resources
+C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.HistoryPage.resources
+C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.Additional.resources
+C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.ServiceProviderPage.resources
+C:\Users\User\Documents\Enibla-project\obj\Debug\Enibla_project.SPSignUpPage.resources

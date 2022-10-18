@@ -52,11 +52,28 @@ namespace Enibla_project
                     }
                 }
             }
-            else if (Roles.SelectedItem.ToString() == "Service Provider" && Uname.Texts == "SAdmin" && Pword.Texts == "Sadmin")
+            else if (Roles.SelectedItem.ToString() == "Service Provider" )
             {
-                AdminPage SP = new AdminPage();
-                SP.Show();
-                this.Hide();
+                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
+                {
+                    if (c.State == System.Data.ConnectionState.Closed)
+                        c.Open();
+                    string query = "select * from ServiceProvider where AgentUsername = @Username And AgentPassword = @Password";
+                    using (SqlCommand cmd = new SqlCommand(query, c))
+                    {
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        cmd.Parameters.AddWithValue("@Username", Uname.Texts);
+                        cmd.Parameters.AddWithValue("@Password", Pword.Texts);
+                        Console.WriteLine(query);
+                        if (cmd.ExecuteReader().Read())
+                        {
+                            ServiceProviderPage SP = new ServiceProviderPage();
+                            SP.Show();
+                            this.Hide();
+                        }
+                    }
+                }
+
             }
             else if (Roles.SelectedItem.ToString() == "Service Provider")
             {

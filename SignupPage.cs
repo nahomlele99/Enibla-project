@@ -18,8 +18,9 @@ namespace Enibla_project
             
             InitializeComponent();
         }
-        string imglocation= "";
+        public static string imglocation = "";
         Image imgimage = null;
+
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -100,12 +101,14 @@ namespace Enibla_project
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            CameraForProPic Takepic = new CameraForProPic();
+            CameraForProPic Takepic = new CameraForProPic(fName.Texts);
             Takepic.Show();
-            //imgimage = Image.FromFile(Takepic.photo());
-            imglocation = Takepic.photo();
-            profilepic.ImageLocation = imglocation;
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            profilepic.ImageLocation = imglocation;
+            imgimage = Image.FromFile(imglocation);
         }
     }
 }
