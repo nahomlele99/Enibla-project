@@ -775,6 +775,7 @@
             this.label10.Size = new System.Drawing.Size(181, 24);
             this.label10.TabIndex = 28;
             this.label10.Text = "Personal information";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // kgTextBox3
             // 

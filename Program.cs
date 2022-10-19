@@ -16,7 +16,7 @@ namespace Enibla_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SPSignUpPage());
+            Application.Run(new HomeDelievry());
         }
     }
 }
