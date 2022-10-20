@@ -58,8 +58,6 @@
             this.searchList4 = new Enibla_project.searchList();
             this.searchList5 = new Enibla_project.searchList();
             this.searchList6 = new Enibla_project.searchList();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.searchList7 = new Enibla_project.searchList();
             this.searchList8 = new Enibla_project.searchList();
             this.searchList9 = new Enibla_project.searchList();
@@ -67,6 +65,8 @@
             this.searchList11 = new Enibla_project.searchList();
             this.searchList12 = new Enibla_project.searchList();
             this.searchList13 = new Enibla_project.searchList();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -506,22 +506,6 @@
             this.searchList6.Size = new System.Drawing.Size(150, 197);
             this.searchList6.TabIndex = 5;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.panel3.Location = new System.Drawing.Point(922, 104);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(3, 563);
-            this.panel3.TabIndex = 34;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.panel4.Location = new System.Drawing.Point(145, -1);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(3, 650);
-            this.panel4.TabIndex = 35;
-            // 
             // searchList7
             // 
             this.searchList7.BackColor = System.Drawing.Color.White;
@@ -584,6 +568,22 @@
             this.searchList13.Name = "searchList13";
             this.searchList13.Size = new System.Drawing.Size(150, 197);
             this.searchList13.TabIndex = 12;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.panel3.Location = new System.Drawing.Point(922, 104);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(3, 563);
+            this.panel3.TabIndex = 34;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.panel4.Location = new System.Drawing.Point(145, -1);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(3, 650);
+            this.panel4.TabIndex = 35;
             // 
             // searchPage
             // 
