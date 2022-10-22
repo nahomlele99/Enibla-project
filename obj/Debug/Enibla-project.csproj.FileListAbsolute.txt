@@ -368,3 +368,4 @@ C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeliveryOrder.
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeliverySetting.resources
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.PersonalInfo.resources
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.AcceptanceDelivery.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeliverySignUp.resources

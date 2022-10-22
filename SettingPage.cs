@@ -96,5 +96,10 @@ namespace Enibla_project
         {
 
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

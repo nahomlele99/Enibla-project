@@ -34,21 +34,21 @@
             this.SettingSp = new System.Windows.Forms.Label();
             this.Delivery = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HomeIcon = new Enibla_project.KGPhotoBox();
             this.settingIcon = new Enibla_project.KGPhotoBox();
             this.ManageIcon = new Enibla_project.KGPhotoBox();
             this.DeliveryIcon = new Enibla_project.KGPhotoBox();
             this.kgPhotoBox1 = new Enibla_project.KGPhotoBox();
             this.kgPhotoBox21 = new Enibla_project.KGPhotoBox2();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HomeIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ManageIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeliveryIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // HomePageSp
@@ -119,16 +119,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(678, 488);
             this.panel1.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(658, 751);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // HomeIcon
             // 
@@ -225,6 +215,16 @@
             this.kgPhotoBox21.TabIndex = 0;
             this.kgPhotoBox21.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(658, 751);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // ServiceProviderPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,13 +247,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.ServiceProviderPage_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HomeIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ManageIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeliveryIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

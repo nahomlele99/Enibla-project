@@ -44,16 +44,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.profilepic = new Enibla_project.KGPhotoBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.kgPhotoBox1 = new Enibla_project.KGPhotoBox();
-            ((System.ComponentModel.ISupportInitialize)(this.profilepic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.label9 = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.blackPerson = new Enibla_project.KGPhotoBox();
+            this.Girl = new Enibla_project.KGPhotoBox();
+            this.Ninja = new Enibla_project.KGPhotoBox();
+            this.WhitePerson = new Enibla_project.KGPhotoBox();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox1)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.blackPerson)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Girl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ninja)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WhitePerson)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPassword
@@ -65,7 +68,7 @@
             this.txtPassword.BorderSize = 1;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPassword.Location = new System.Drawing.Point(330, 372);
+            this.txtPassword.Location = new System.Drawing.Point(212, 372);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
@@ -87,7 +90,7 @@
             this.txtUName.BorderSize = 1;
             this.txtUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUName.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUName.Location = new System.Drawing.Point(330, 337);
+            this.txtUName.Location = new System.Drawing.Point(212, 325);
             this.txtUName.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtUName.Multiline = false;
             this.txtUName.Name = "txtUName";
@@ -109,7 +112,7 @@
             this.txtEmail.BorderSize = 1;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEmail.Location = new System.Drawing.Point(330, 303);
+            this.txtEmail.Location = new System.Drawing.Point(212, 277);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
@@ -131,7 +134,7 @@
             this.txtPhone.BorderSize = 1;
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPhone.Location = new System.Drawing.Point(330, 268);
+            this.txtPhone.Location = new System.Drawing.Point(212, 233);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtPhone.Multiline = false;
             this.txtPhone.Name = "txtPhone";
@@ -148,7 +151,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(239, 337);
+            this.label11.Location = new System.Drawing.Point(93, 325);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(83, 20);
             this.label11.TabIndex = 43;
@@ -163,7 +166,7 @@
             this.fName.BorderSize = 1;
             this.fName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fName.ForeColor = System.Drawing.Color.DimGray;
-            this.fName.Location = new System.Drawing.Point(330, 233);
+            this.fName.Location = new System.Drawing.Point(212, 193);
             this.fName.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.fName.Multiline = false;
             this.fName.Name = "fName";
@@ -229,7 +232,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(241, 373);
+            this.label6.Location = new System.Drawing.Point(98, 372);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 20);
             this.label6.TabIndex = 38;
@@ -239,7 +242,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(241, 303);
+            this.label5.Location = new System.Drawing.Point(99, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 20);
             this.label5.TabIndex = 37;
@@ -250,7 +253,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(241, 234);
+            this.label4.Location = new System.Drawing.Point(99, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 36;
@@ -260,7 +263,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(239, 269);
+            this.label3.Location = new System.Drawing.Point(99, 233);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 20);
             this.label3.TabIndex = 35;
@@ -271,7 +274,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(240, 173);
+            this.label2.Location = new System.Drawing.Point(170, 154);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(320, 17);
             this.label2.TabIndex = 34;
@@ -289,93 +292,6 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Sign Up";
             // 
-            // profilepic
-            // 
-            this.profilepic.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.profilepic.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.profilepic.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.profilepic.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.profilepic.BorderSize = 3;
-            this.profilepic.GradientAngle = 50F;
-            this.profilepic.Location = new System.Drawing.Point(691, 73);
-            this.profilepic.Name = "profilepic";
-            this.profilepic.Size = new System.Drawing.Size(181, 181);
-            this.profilepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.profilepic.TabIndex = 52;
-            this.profilepic.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(727, 342);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 16);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 51;
-            this.pictureBox4.TabStop = false;
-            // 
-            // bunifuThinButton23
-            // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "Upload";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.Gray;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(715, 327);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(157, 39);
-            this.bunifuThinButton23.TabIndex = 50;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(727, 289);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 16);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 49;
-            this.pictureBox3.TabStop = false;
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Empty;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Take photo";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Gray;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(715, 278);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(157, 39);
-            this.bunifuThinButton22.TabIndex = 48;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // kgPhotoBox1
             // 
             this.kgPhotoBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
@@ -392,6 +308,104 @@
             this.kgPhotoBox1.TabIndex = 53;
             this.kgPhotoBox1.TabStop = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.label9.Location = new System.Drawing.Point(0, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(258, 31);
+            this.label9.TabIndex = 55;
+            this.label9.Text = "Choose Your Avatar";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.guna2Panel1.Controls.Add(this.WhitePerson);
+            this.guna2Panel1.Controls.Add(this.Ninja);
+            this.guna2Panel1.Controls.Add(this.Girl);
+            this.guna2Panel1.Controls.Add(this.blackPerson);
+            this.guna2Panel1.Controls.Add(this.label9);
+            this.guna2Panel1.Location = new System.Drawing.Point(572, 206);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(305, 195);
+            this.guna2Panel1.TabIndex = 54;
+            // 
+            // blackPerson
+            // 
+            this.blackPerson.BackColor = System.Drawing.Color.SaddleBrown;
+            this.blackPerson.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.blackPerson.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.blackPerson.BorderColor2 = System.Drawing.Color.White;
+            this.blackPerson.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.blackPerson.BorderSize = 2;
+            this.blackPerson.GradientAngle = 50F;
+            this.blackPerson.Image = ((System.Drawing.Image)(resources.GetObject("blackPerson.Image")));
+            this.blackPerson.Location = new System.Drawing.Point(6, 39);
+            this.blackPerson.Name = "blackPerson";
+            this.blackPerson.Size = new System.Drawing.Size(74, 74);
+            this.blackPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.blackPerson.TabIndex = 61;
+            this.blackPerson.TabStop = false;
+            this.blackPerson.Click += new System.EventHandler(this.blackPerson_Click);
+            this.blackPerson.MouseHover += new System.EventHandler(this.blackPerson_MouseHover);
+            // 
+            // Girl
+            // 
+            this.Girl.BackColor = System.Drawing.Color.Gold;
+            this.Girl.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Girl.BorderColor = System.Drawing.Color.DarkOrchid;
+            this.Girl.BorderColor2 = System.Drawing.Color.Yellow;
+            this.Girl.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Girl.BorderSize = 2;
+            this.Girl.GradientAngle = 50F;
+            this.Girl.Image = ((System.Drawing.Image)(resources.GetObject("Girl.Image")));
+            this.Girl.Location = new System.Drawing.Point(117, 41);
+            this.Girl.Name = "Girl";
+            this.Girl.Size = new System.Drawing.Size(74, 74);
+            this.Girl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Girl.TabIndex = 62;
+            this.Girl.TabStop = false;
+            this.Girl.Click += new System.EventHandler(this.Girl_Click);
+            // 
+            // Ninja
+            // 
+            this.Ninja.BackColor = System.Drawing.Color.MintCream;
+            this.Ninja.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Ninja.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.Ninja.BorderColor2 = System.Drawing.Color.White;
+            this.Ninja.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Ninja.BorderSize = 2;
+            this.Ninja.GradientAngle = 50F;
+            this.Ninja.Image = ((System.Drawing.Image)(resources.GetObject("Ninja.Image")));
+            this.Ninja.Location = new System.Drawing.Point(228, 41);
+            this.Ninja.Name = "Ninja";
+            this.Ninja.Size = new System.Drawing.Size(74, 74);
+            this.Ninja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ninja.TabIndex = 63;
+            this.Ninja.TabStop = false;
+            this.Ninja.Click += new System.EventHandler(this.Ninja_Click);
+            // 
+            // WhitePerson
+            // 
+            this.WhitePerson.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.WhitePerson.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.WhitePerson.BorderColor2 = System.Drawing.Color.Aqua;
+            this.WhitePerson.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.WhitePerson.BorderSize = 2;
+            this.WhitePerson.GradientAngle = 50F;
+            this.WhitePerson.Image = ((System.Drawing.Image)(resources.GetObject("WhitePerson.Image")));
+            this.WhitePerson.Location = new System.Drawing.Point(6, 119);
+            this.WhitePerson.Name = "WhitePerson";
+            this.WhitePerson.Size = new System.Drawing.Size(74, 74);
+            this.WhitePerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.WhitePerson.TabIndex = 64;
+            this.WhitePerson.TabStop = false;
+            this.WhitePerson.Click += new System.EventHandler(this.WhitePerson_Click);
+            // 
             // DeliverySignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,12 +413,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(905, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.kgPhotoBox1);
-            this.Controls.Add(this.profilepic);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.bunifuThinButton23);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUName);
             this.Controls.Add(this.txtEmail);
@@ -422,10 +432,13 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "DeliverySignUp";
-            ((System.ComponentModel.ISupportInitialize)(this.profilepic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox1)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.blackPerson)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Girl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ninja)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WhitePerson)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -448,11 +461,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private KGPhotoBox profilepic;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private KGPhotoBox kgPhotoBox1;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private KGPhotoBox WhitePerson;
+        private KGPhotoBox Ninja;
+        private KGPhotoBox Girl;
+        private KGPhotoBox blackPerson;
     }
 }
