@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Enibla_project
@@ -126,6 +127,11 @@ namespace Enibla_project
                     using (SqlCommand cmd = new SqlCommand(query, c))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
+                        MessageBox.Show("Successfully Updated");
+                        DeliverySetting form = new DeliverySetting();
+                        form.Show();
+                        this.Hide();
+
                     }
                 }
             }catch(SqlException ex)
@@ -137,6 +143,20 @@ namespace Enibla_project
         private void Password_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                profilepic.Image = new Bitmap(open.FileName);
+                // image file path  
+               
+            }
         }
     }
 }

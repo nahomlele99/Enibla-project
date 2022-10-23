@@ -274,6 +274,12 @@
       <DependentUpon>CameraForProPic.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs" />
+    <Compile Include="DeactivateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeactivateAccount.Designer.cs">
+      <DependentUpon>DeactivateAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Delivery.cs" />
     <Compile Include="DeliveryLogin.cs">
       <SubType>Form</SubType>
@@ -339,6 +345,12 @@
     </Compile>
     <Compile Include="KGComboBox.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogOut.Designer.cs">
+      <DependentUpon>LogOut.cs</DependentUpon>
     </Compile>
     <Compile Include="PersonalInfo.cs">
       <SubType>Form</SubType>
@@ -449,6 +461,9 @@
     <EmbeddedResource Include="CameraForProPic.resx">
       <DependentUpon>CameraForProPic.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeactivateAccount.resx">
+      <DependentUpon>DeactivateAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeliveryLogin.resx">
       <DependentUpon>DeliveryLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -475,6 +490,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="imagerestaurant.resx">
       <DependentUpon>imagerestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOut.resx">
+      <DependentUpon>LogOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonalInfo.resx">
       <DependentUpon>PersonalInfo.cs</DependentUpon>

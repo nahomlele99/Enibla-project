@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Services.Description;
 using System.Windows.Forms;
 
 namespace Enibla_project
@@ -18,6 +19,10 @@ namespace Enibla_project
         public char gender { get; set; }
         public bool AcceptOrder { get; set; }
         
+        public string LogedUserPass { get; set; }
+       
+        public string LogedUserEmail{ get; set; }
+       
 
         public Byte[] Avatar { get; set; }
         public string Email { get; set; }
@@ -64,9 +69,37 @@ namespace Enibla_project
             
             
         }
-        public void load()
+        public  bool LogedUserInfo()
         {
-            // load it from the data base to the list
+            try
+            {
+                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
+                {
+                    if (c.State == System.Data.ConnectionState.Closed)
+                        c.Open();
+                    string query = "select * from LogedIn where Email = @Email And Password = @Password";
+                    using (SqlCommand cmd = new SqlCommand(query, c))
+                    {
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        cmd.Parameters.AddWithValue("@Email", this.LogedUserEmail);
+                        cmd.Parameters.AddWithValue("@Password", this.LogedUserPass);
+                        Console.WriteLine(query);
+
+                        if (cmd.ExecuteReader().Read())
+                        {
+                            return true;
+
+
+                        }
+                    }
+                }
+                return true;
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
         }
     }
 }

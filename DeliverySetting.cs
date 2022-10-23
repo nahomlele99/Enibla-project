@@ -102,5 +102,16 @@ namespace Enibla_project
             childform.Show();
 
         }
+
+        private void panelChild_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LogOut_Click(object sender, EventArgs e)
+        {
+            openChild(new LogOut());
+            hideSubMenu();
+        }
     }
 }
