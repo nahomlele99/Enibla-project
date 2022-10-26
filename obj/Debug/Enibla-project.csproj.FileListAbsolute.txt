@@ -364,3 +364,10 @@ C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla-project.csproj.Fody.Co
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla-project.csproj.CopyComplete
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeliveryLogin.resources
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.HomeDelievry.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeliveryOrder.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeliverySetting.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.PersonalInfo.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.AcceptanceDelivery.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeliverySignUp.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.LogOut.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeactivateAccount.resources

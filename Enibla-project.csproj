@@ -255,6 +255,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcceptanceDelivery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AcceptanceDelivery.Designer.cs">
+      <DependentUpon>AcceptanceDelivery.cs</DependentUpon>
+    </Compile>
     <Compile Include="Additional.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,11 +274,36 @@
       <DependentUpon>CameraForProPic.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs" />
+    <Compile Include="DeactivateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeactivateAccount.Designer.cs">
+      <DependentUpon>DeactivateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery.cs" />
     <Compile Include="DeliveryLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeliveryLogin.Designer.cs">
       <DependentUpon>DeliveryLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeliveryOrder.Designer.cs">
+      <DependentUpon>DeliveryOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliverySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliverySetting.Designer.cs">
+      <DependentUpon>DeliverySetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliverySignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliverySignUp.Designer.cs">
+      <DependentUpon>DeliverySignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="EniblaDBDataSet.cs">
       <DependentUpon>EniblaDBDataSet.xsd</DependentUpon>
@@ -314,6 +345,18 @@
     </Compile>
     <Compile Include="KGComboBox.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogOut.Designer.cs">
+      <DependentUpon>LogOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalInfo.Designer.cs">
+      <DependentUpon>PersonalInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Products.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -409,14 +452,29 @@
       <DependentUpon>SignupPage.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="AcceptanceDelivery.resx">
+      <DependentUpon>AcceptanceDelivery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Additional.resx">
       <DependentUpon>Additional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CameraForProPic.resx">
       <DependentUpon>CameraForProPic.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeactivateAccount.resx">
+      <DependentUpon>DeactivateAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeliveryLogin.resx">
       <DependentUpon>DeliveryLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryOrder.resx">
+      <DependentUpon>DeliveryOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliverySetting.resx">
+      <DependentUpon>DeliverySetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliverySignUp.resx">
+      <DependentUpon>DeliverySignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -432,6 +490,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="imagerestaurant.resx">
       <DependentUpon>imagerestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOut.resx">
+      <DependentUpon>LogOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalInfo.resx">
+      <DependentUpon>PersonalInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="searchList.resx">
       <DependentUpon>searchList.cs</DependentUpon>
