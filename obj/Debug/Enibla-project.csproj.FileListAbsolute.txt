@@ -371,3 +371,4 @@ C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.AcceptanceDeli
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeliverySignUp.resources
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.LogOut.resources
 C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.DeactivateAccount.resources
+C:\Users\DELL\Desktop\GitHub\KidusEnibla\obj\Debug\Enibla_project.HelpCenter.resources

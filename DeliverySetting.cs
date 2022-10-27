@@ -12,10 +12,13 @@ namespace Enibla_project
 {
     public partial class DeliverySetting : Form
     {
-        public DeliverySetting()
+        Delivery del;
+        string Username;
+        public DeliverySetting(Delivery dm)
         {
             InitializeComponent();
             customize();
+            del = dm;
         }
         private void customize()
         {
@@ -47,11 +50,13 @@ namespace Enibla_project
         }
         private void DeliverySetting_Load(object sender, EventArgs e)
         {
-
+            openChild(new PersonalInfo(del));
+           
         }
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
+            openChild(new PersonalInfo(del));
             ShowSubMenu(panelAccount);
         }
 
@@ -62,8 +67,7 @@ namespace Enibla_project
 
         private void btnPersonal_Click(object sender, EventArgs e)
         {
-            openChild(new PersonalInfo());
-            hideSubMenu();
+            
         }
 
         private void btnPassword_Click(object sender, EventArgs e)
@@ -73,13 +77,13 @@ namespace Enibla_project
 
         private void btnPrivacy_Click(object sender, EventArgs e)
         {
-            termsAndConditions terms = new termsAndConditions();
-            terms.Show();
+            openChild(new termsAndConditions());
             hideSubMenu();
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
+            openChild(new HelpCenter());
             hideSubMenu();
         }
 
@@ -110,8 +114,23 @@ namespace Enibla_project
 
         private void LogOut_Click(object sender, EventArgs e)
         {
-            openChild(new LogOut());
+            openChild(new LogOut(del));
             hideSubMenu();
+        }
+
+        private void btnDeliverySetting_Click(object sender, EventArgs e)
+        {
+
+            HomeDelievry HD = new HomeDelievry(del.Username);
+            HD.Show();
+            this.Hide();
+        }
+
+        private void btnDeactivate_Click(object sender, EventArgs e)
+        {
+            openChild(new DeactivateAccount(del));
+            hideSubMenu();
+
         }
     }
 }

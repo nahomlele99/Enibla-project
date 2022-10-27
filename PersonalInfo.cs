@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
@@ -21,48 +22,33 @@ namespace Enibla_project
 {
     public partial class PersonalInfo : Form
     {
-        public PersonalInfo()
+        Delivery dm;
+        char Gen;
+        string ImageFile;
+        Image Pic = null;
+        public PersonalInfo(Delivery del )
         {
+            dm = del;
+            DeliverySetting deliverySetting = new DeliverySetting(dm);
             InitializeComponent();
+            
+            
 
         }
         public static string imglocation = "";
         Image imgimage = null;
         private void PersonalInfo_Load(object sender, EventArgs e)
         {
+          txtUsername.Text = dm.Username;
+          txtPassword.Text = dm.Password;
+          txtName.Text = dm.FullName;
+          txtPhone.Text = dm.Phonenumber;
+          txtEmail.Text = dm.Email;
+          txtGender.Text = dm.gender.ToString();
+          ProPic.ImageLocation = dm.PicFile;
 
-            try
-            {
-                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
-                {
-                    if (c.State == System.Data.ConnectionState.Closed)
-                        c.Open();
-                    string query = "SELECT * FROM LogedIn";
-                    using (SqlCommand cmd = new SqlCommand(query, c))
-                    {
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        if (reader.Read())
-                        {
-                            
-                            txtUsername.Text = reader.GetValue(0).ToString();
-                            txtPassword.Text = reader.GetValue(1).ToString();
-                            txtName.Text = reader.GetValue(2).ToString();
-                            txtPhone.Text = reader.GetValue(3).ToString();
-                            txtEmail.Text = reader.GetValue(4).ToString();
-
-
-
-                        }
-                    }
-                }
-            }
-            catch(SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
-    
-
+       
         private void EditMode_Click(object sender, EventArgs e)
         {
             ReadingMode();
@@ -74,6 +60,8 @@ namespace Enibla_project
             txtPhone.ReadOnly = false;
             txtEmail.ReadOnly = false;
             txtPassword.ReadOnly = false;
+            txtGender.ReadOnly = false;
+            txtUsername.ReadOnly = false;
         }
 
         private void UploadPic_Click(object sender, EventArgs e)
@@ -84,7 +72,7 @@ namespace Enibla_project
             {
                 imgimage = Image.FromFile(dialog.FileName);
                 imglocation = dialog.FileName.ToString();
-                profilepic.ImageLocation = imglocation;
+                ProPic.ImageLocation = imglocation;
             }
         }
         byte[] ConvertImageToBytes(Image img)
@@ -102,43 +90,66 @@ namespace Enibla_project
                 return Image.FromStream(ms);
             }
         }
-        private void btnTakePhoto_Click(object sender, EventArgs e)
-        {
-            CameraForProPic Takepic = new CameraForProPic(txtName.Text);
-            Takepic.Show();
-        }
+       
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            profilepic.ImageLocation = imglocation;
+            ProPic.ImageLocation = imglocation;
             imgimage = Image.FromFile(imglocation);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            dm.Username = txtUsername.Text;
+            dm.Password= txtPassword.Text;
+            dm.FullName= txtName.Text;
+            dm.Phonenumber= txtPhone.Text;
+            dm.Email= txtEmail.Text;
+            dm.gender= Convert.ToChar(txtGender.Text);
+            dm.PicFile= ProPic.ImageLocation;
+            dm.UpdateLogedUser();
+        }
+        private void blackPerson_Click(object sender, EventArgs e)
+        {
+            ImageFile = @"C:\Users\DELL\Desktop\GitHub\KidusEnibla\Icons\blackperson.png";
+            ProPic.ImageLocation = ImageFile;
+            Pic = Image.FromFile(ImageFile);
+            ProPic.BorderColor = Color.LightSlateGray;
+            ProPic.BorderColor2 = Color.White;
+            Gen = 'M';
 
-            try
-            {
-                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
-                {
-                    if (c.State == System.Data.ConnectionState.Closed)
-                        c.Open();
-                    string query = "UPDATE LogedIn SET Username='" + txtUsername.Text + "',Password= '" + txtPassword.Text + "',Fullname='" + txtName.Text + "',Phonenumber= '" + txtPhone.Text + "',Email='" + txtEmail.Text + "'";
-                    using (SqlCommand cmd = new SqlCommand(query, c))
-                    {
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        MessageBox.Show("Successfully Updated");
-                        DeliverySetting form = new DeliverySetting();
-                        form.Show();
-                        this.Hide();
+        }
 
-                    }
-                }
-            }catch(SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
+        private void Girl_Click(object sender, EventArgs e)
+        {
+            ImageFile = @"C:\Users\DELL\Desktop\GitHub\KidusEnibla\Icons\girl.png";
+            ProPic.ImageLocation = ImageFile;
+            Pic = Image.FromFile(ImageFile);
+            ProPic.BorderColor = Color.DarkOrchid;
+            ProPic.BorderColor2 = Color.Yellow;
+            Gen = 'F';
+        }
 
-            }
+        private void Ninja_Click(object sender, EventArgs e)
+        {
+            ImageFile = @"C:\Users\DELL\Desktop\GitHub\KidusEnibla\Icons\person3.png";
+            ProPic.ImageLocation = ImageFile;
+            Pic = Image.FromFile(ImageFile);
+            ProPic.BorderColor = Color.LightSlateGray;
+            ProPic.BorderColor2 = Color.White;
+            Gen = 'F';
+
+        }
+
+        private void WhitePerson_Click(object sender, EventArgs e)
+        {
+            ImageFile = @"C:\Users\DELL\Desktop\GitHub\KidusEnibla\Icons\person2.png";
+            ProPic.ImageLocation = ImageFile;
+            Pic = Image.FromFile(ImageFile);
+            ProPic.BorderColor = Color.LightSlateGray;
+            ProPic.BorderColor2 = Color.Aqua;
+            Gen = 'M';
+
         }
         private void Password_Click(object sender, EventArgs e)
         {
@@ -147,15 +158,23 @@ namespace Enibla_project
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
-            OpenFileDialog open = new OpenFileDialog();
-            // image filters  
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (open.ShowDialog() == DialogResult.OK)
+            try
             {
-                // display image in picture box  
-                profilepic.Image = new Bitmap(open.FileName);
-                // image file path  
-               
+                string ImgLocation = "";
+                OpenFileDialog open = new OpenFileDialog();
+                // image filters  
+                open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.png; *.bmp)|*.jpg; *.jpeg; *.gif; *.png; *.bmp";
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    // display image in picture box  
+                    ImgLocation = open.FileName;
+                    ProPic.ImageLocation = ImgLocation;
+                    // image file path  
+
+                }
+            }catch(Exception)
+            {
+                MessageBox.Show("An Error Occured","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
     }

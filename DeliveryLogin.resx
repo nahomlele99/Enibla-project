@@ -9560,4 +9560,7 @@
         2rwbtXg3avBu1eDdq8G7V4N2rwbtRy5gQGQF3/mzv//Z
 </value>
   </data>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

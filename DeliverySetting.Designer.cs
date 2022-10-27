@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeliverySetting));
             this.panelSideway = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDeactivate = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnStatus = new Guna.UI2.WinForms.Guna2Button();
             this.panelAbout = new Guna.UI2.WinForms.Guna2Panel();
@@ -38,18 +39,15 @@
             this.btnPrivacy = new Guna.UI2.WinForms.Guna2Button();
             this.btnAbout = new Guna.UI2.WinForms.Guna2Button();
             this.panelAccount = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnPersonal = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccount = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDeliverySetting = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panelChild = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panelOther = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDeactivate = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btnDeliverySetting = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panelSideway.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panelAbout.SuspendLayout();
-            this.panelAccount.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.panelChild.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -69,7 +67,7 @@
             this.panelSideway.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideway.Location = new System.Drawing.Point(0, 0);
             this.panelSideway.Name = "panelSideway";
-            this.panelSideway.Size = new System.Drawing.Size(200, 432);
+            this.panelSideway.Size = new System.Drawing.Size(200, 659);
             this.panelSideway.TabIndex = 0;
             // 
             // guna2Panel2
@@ -82,6 +80,27 @@
             this.guna2Panel2.Size = new System.Drawing.Size(200, 100);
             this.guna2Panel2.TabIndex = 4;
             // 
+            // btnDeactivate
+            // 
+            this.btnDeactivate.Animated = true;
+            this.btnDeactivate.BorderColor = System.Drawing.Color.White;
+            this.btnDeactivate.BorderRadius = 10;
+            this.btnDeactivate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeactivate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeactivate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeactivate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeactivate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDeactivate.FillColor = System.Drawing.Color.Transparent;
+            this.btnDeactivate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnDeactivate.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnDeactivate.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeactivate.Location = new System.Drawing.Point(0, 0);
+            this.btnDeactivate.Name = "btnDeactivate";
+            this.btnDeactivate.Size = new System.Drawing.Size(200, 45);
+            this.btnDeactivate.TabIndex = 4;
+            this.btnDeactivate.Text = "Delete Account";
+            this.btnDeactivate.Click += new System.EventHandler(this.btnDeactivate_Click);
+            // 
             // guna2Button2
             // 
             this.guna2Button2.Animated = true;
@@ -91,12 +110,12 @@
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 55);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(200, 45);
             this.guna2Button2.TabIndex = 3;
@@ -199,33 +218,11 @@
             // 
             // panelAccount
             // 
-            this.panelAccount.Controls.Add(this.btnPersonal);
             this.panelAccount.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelAccount.Location = new System.Drawing.Point(0, 94);
             this.panelAccount.Name = "panelAccount";
             this.panelAccount.Size = new System.Drawing.Size(200, 47);
             this.panelAccount.TabIndex = 1;
-            // 
-            // btnPersonal
-            // 
-            this.btnPersonal.Animated = true;
-            this.btnPersonal.BorderColor = System.Drawing.Color.White;
-            this.btnPersonal.BorderRadius = 10;
-            this.btnPersonal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPersonal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPersonal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPersonal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPersonal.FillColor = System.Drawing.Color.Transparent;
-            this.btnPersonal.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.btnPersonal.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnPersonal.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPersonal.Location = new System.Drawing.Point(0, 0);
-            this.btnPersonal.Name = "btnPersonal";
-            this.btnPersonal.Size = new System.Drawing.Size(200, 45);
-            this.btnPersonal.TabIndex = 2;
-            this.btnPersonal.Text = "Personal Information";
-            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // btnAccount
             // 
@@ -257,6 +254,40 @@
             this.guna2Panel1.Size = new System.Drawing.Size(200, 49);
             this.guna2Panel1.TabIndex = 1;
             // 
+            // panelChild
+            // 
+            this.panelChild.AutoScroll = true;
+            this.panelChild.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panelChild.Controls.Add(this.guna2CirclePictureBox1);
+            this.panelChild.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChild.Location = new System.Drawing.Point(200, 0);
+            this.panelChild.Name = "panelChild";
+            this.panelChild.Size = new System.Drawing.Size(884, 607);
+            this.panelChild.TabIndex = 2;
+            this.panelChild.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChild_Paint);
+            // 
+            // panelOther
+            // 
+            this.panelOther.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelOther.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelOther.Location = new System.Drawing.Point(200, 607);
+            this.panelOther.Name = "panelOther";
+            this.panelOther.Size = new System.Drawing.Size(884, 52);
+            this.panelOther.TabIndex = 1;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(422, 133);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(255, 243);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // btnDeliverySetting
             // 
             this.btnDeliverySetting.Animated = true;
@@ -278,67 +309,14 @@
             this.btnDeliverySetting.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnDeliverySetting.Size = new System.Drawing.Size(49, 56);
             this.btnDeliverySetting.TabIndex = 7;
-            // 
-            // panelChild
-            // 
-            this.panelChild.AutoScroll = true;
-            this.panelChild.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panelChild.Controls.Add(this.guna2CirclePictureBox1);
-            this.panelChild.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChild.Location = new System.Drawing.Point(200, 0);
-            this.panelChild.Name = "panelChild";
-            this.panelChild.Size = new System.Drawing.Size(807, 380);
-            this.panelChild.TabIndex = 2;
-            this.panelChild.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChild_Paint);
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(383, 20);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(255, 243);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // panelOther
-            // 
-            this.panelOther.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelOther.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelOther.Location = new System.Drawing.Point(200, 380);
-            this.panelOther.Name = "panelOther";
-            this.panelOther.Size = new System.Drawing.Size(807, 52);
-            this.panelOther.TabIndex = 1;
-            // 
-            // btnDeactivate
-            // 
-            this.btnDeactivate.Animated = true;
-            this.btnDeactivate.BorderColor = System.Drawing.Color.White;
-            this.btnDeactivate.BorderRadius = 10;
-            this.btnDeactivate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeactivate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeactivate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeactivate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeactivate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDeactivate.FillColor = System.Drawing.Color.Transparent;
-            this.btnDeactivate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnDeactivate.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnDeactivate.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeactivate.Location = new System.Drawing.Point(0, 45);
-            this.btnDeactivate.Name = "btnDeactivate";
-            this.btnDeactivate.Size = new System.Drawing.Size(200, 45);
-            this.btnDeactivate.TabIndex = 4;
-            this.btnDeactivate.Text = "Deacctivate Account";
+            this.btnDeliverySetting.Click += new System.EventHandler(this.btnDeliverySetting_Click);
             // 
             // DeliverySetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1007, 432);
+            this.ClientSize = new System.Drawing.Size(1084, 659);
             this.ControlBox = false;
             this.Controls.Add(this.panelChild);
             this.Controls.Add(this.panelOther);
@@ -348,7 +326,6 @@
             this.panelSideway.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.panelAbout.ResumeLayout(false);
-            this.panelAccount.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.panelChild.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
@@ -367,7 +344,6 @@
         private Guna.UI2.WinForms.Guna2Button btnPrivacy;
         private Guna.UI2.WinForms.Guna2Button btnAbout;
         private Guna.UI2.WinForms.Guna2Panel panelAccount;
-        private Guna.UI2.WinForms.Guna2Button btnPersonal;
         private Guna.UI2.WinForms.Guna2CircleButton btnDeliverySetting;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;

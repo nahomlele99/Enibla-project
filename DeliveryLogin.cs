@@ -59,9 +59,9 @@ namespace Enibla_project
                             {
                                 mergeCommand.ExecuteNonQuery();
                             }
-                            HomeDelievry form = new HomeDelievry();
-                            form.Show();
-                            this.Hide();
+                           // HomeDelievry form = new HomeDelievry(this.);
+                            //form.Show();
+                            //this.Hide();
                                 
                               
                         }                              

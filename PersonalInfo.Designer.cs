@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.kgTextBox1 = new Enibla_project.KGTextBox();
-            this.profilepic = new Enibla_project.KGPhotoBox();
-            this.label9 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonalInfo));
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,57 +43,20 @@
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnUpload = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.profilepic)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtGender = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.WhitePerson = new Enibla_project.KGPhotoBox();
+            this.Ninja = new Enibla_project.KGPhotoBox();
+            this.Girl = new Enibla_project.KGPhotoBox();
+            this.blackPerson = new Enibla_project.KGPhotoBox();
+            this.ProPic = new Enibla_project.KGPhotoBox();
+            ((System.ComponentModel.ISupportInitialize)(this.WhitePerson)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ninja)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Girl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blackPerson)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProPic)).BeginInit();
             this.SuspendLayout();
-            // 
-            // kgTextBox1
-            // 
-            this.kgTextBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.kgTextBox1.BorderColor = System.Drawing.Color.Gray;
-            this.kgTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.kgTextBox1.BorderRadius = 8;
-            this.kgTextBox1.BorderSize = 1;
-            this.kgTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kgTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.kgTextBox1.Location = new System.Drawing.Point(266, 387);
-            this.kgTextBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.kgTextBox1.Multiline = false;
-            this.kgTextBox1.Name = "kgTextBox1";
-            this.kgTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.kgTextBox1.PasswordChar = false;
-            this.kgTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.kgTextBox1.PlaceholderText = "";
-            this.kgTextBox1.Size = new System.Drawing.Size(306, 29);
-            this.kgTextBox1.TabIndex = 34;
-            this.kgTextBox1.Texts = "";
-            this.kgTextBox1.UnderlinedStyle = false;
-            // 
-            // profilepic
-            // 
-            this.profilepic.BackColor = System.Drawing.Color.White;
-            this.profilepic.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.profilepic.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
-            this.profilepic.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.profilepic.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.profilepic.BorderSize = 4;
-            this.profilepic.GradientAngle = 50F;
-            this.profilepic.Location = new System.Drawing.Point(588, 53);
-            this.profilepic.Name = "profilepic";
-            this.profilepic.Size = new System.Drawing.Size(105, 105);
-            this.profilepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.profilepic.TabIndex = 29;
-            this.profilepic.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(171, 392);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 17);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "Full Name";
             // 
             // label6
             // 
@@ -135,7 +96,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(90, 94);
+            this.label1.Location = new System.Drawing.Point(90, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 17);
             this.label1.TabIndex = 36;
@@ -163,7 +124,7 @@
             this.btnEditMode.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnEditMode.ForeColor = System.Drawing.Color.White;
             this.btnEditMode.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnEditMode.Location = new System.Drawing.Point(17, 316);
+            this.btnEditMode.Location = new System.Drawing.Point(44, 501);
             this.btnEditMode.Name = "btnEditMode";
             this.btnEditMode.Size = new System.Drawing.Size(115, 45);
             this.btnEditMode.TabIndex = 41;
@@ -247,7 +208,7 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(331, 316);
+            this.btnSave.Location = new System.Drawing.Point(315, 501);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(115, 45);
             this.btnSave.TabIndex = 45;
@@ -259,7 +220,7 @@
             this.Password.AutoSize = true;
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Password.Location = new System.Drawing.Point(78, 274);
+            this.Password.Location = new System.Drawing.Point(86, 274);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(69, 17);
             this.Password.TabIndex = 46;
@@ -321,36 +282,155 @@
             this.txtUsername.Size = new System.Drawing.Size(257, 27);
             this.txtUsername.TabIndex = 49;
             // 
-            // btnUpload
+            // label3
             // 
-            this.btnUpload.Animated = true;
-            this.btnUpload.BorderRadius = 20;
-            this.btnUpload.BorderThickness = 2;
-            this.btnUpload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpload.FillColor = System.Drawing.Color.Silver;
-            this.btnUpload.Font = new System.Drawing.Font("Palatino Linotype", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpload.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnUpload.HoverState.CustomBorderColor = System.Drawing.Color.Black;
-            this.btnUpload.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpload.IndicateFocus = true;
-            this.btnUpload.Location = new System.Drawing.Point(561, 179);
-            this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(180, 45);
-            this.btnUpload.TabIndex = 50;
-            this.btnUpload.Text = "Upload Avatar";
-            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(86, 331);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "Gender";
+            // 
+            // txtGender
+            // 
+            this.txtGender.AutoRoundedCorners = true;
+            this.txtGender.BorderRadius = 12;
+            this.txtGender.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGender.DefaultText = "";
+            this.txtGender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGender.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGender.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGender.Location = new System.Drawing.Point(215, 331);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.PasswordChar = '\0';
+            this.txtGender.PlaceholderText = "";
+            this.txtGender.ReadOnly = true;
+            this.txtGender.SelectedText = "";
+            this.txtGender.Size = new System.Drawing.Size(257, 27);
+            this.txtGender.TabIndex = 52;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.Control;
+            this.label9.Location = new System.Drawing.Point(593, 252);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(164, 24);
+            this.label9.TabIndex = 72;
+            this.label9.Text = "Choose an Avatar:";
+            // 
+            // WhitePerson
+            // 
+            this.WhitePerson.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.WhitePerson.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.WhitePerson.BorderColor2 = System.Drawing.Color.Aqua;
+            this.WhitePerson.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.WhitePerson.BorderSize = 2;
+            this.WhitePerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.WhitePerson.GradientAngle = 50F;
+            this.WhitePerson.Image = ((System.Drawing.Image)(resources.GetObject("WhitePerson.Image")));
+            this.WhitePerson.Location = new System.Drawing.Point(599, 386);
+            this.WhitePerson.Name = "WhitePerson";
+            this.WhitePerson.Size = new System.Drawing.Size(74, 74);
+            this.WhitePerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.WhitePerson.TabIndex = 71;
+            this.WhitePerson.TabStop = false;
+            this.WhitePerson.Click += new System.EventHandler(this.WhitePerson_Click);
+            // 
+            // Ninja
+            // 
+            this.Ninja.BackColor = System.Drawing.Color.MintCream;
+            this.Ninja.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Ninja.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.Ninja.BorderColor2 = System.Drawing.Color.White;
+            this.Ninja.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Ninja.BorderSize = 2;
+            this.Ninja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Ninja.GradientAngle = 50F;
+            this.Ninja.Image = ((System.Drawing.Image)(resources.GetObject("Ninja.Image")));
+            this.Ninja.Location = new System.Drawing.Point(692, 386);
+            this.Ninja.Name = "Ninja";
+            this.Ninja.Size = new System.Drawing.Size(74, 74);
+            this.Ninja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ninja.TabIndex = 70;
+            this.Ninja.TabStop = false;
+            this.Ninja.Click += new System.EventHandler(this.Ninja_Click);
+            // 
+            // Girl
+            // 
+            this.Girl.BackColor = System.Drawing.Color.Gold;
+            this.Girl.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Girl.BorderColor = System.Drawing.Color.DarkOrchid;
+            this.Girl.BorderColor2 = System.Drawing.Color.Yellow;
+            this.Girl.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Girl.BorderSize = 2;
+            this.Girl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Girl.GradientAngle = 50F;
+            this.Girl.Image = ((System.Drawing.Image)(resources.GetObject("Girl.Image")));
+            this.Girl.Location = new System.Drawing.Point(692, 291);
+            this.Girl.Name = "Girl";
+            this.Girl.Size = new System.Drawing.Size(74, 74);
+            this.Girl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Girl.TabIndex = 69;
+            this.Girl.TabStop = false;
+            this.Girl.Click += new System.EventHandler(this.Girl_Click);
+            // 
+            // blackPerson
+            // 
+            this.blackPerson.BackColor = System.Drawing.Color.SaddleBrown;
+            this.blackPerson.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.blackPerson.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.blackPerson.BorderColor2 = System.Drawing.Color.White;
+            this.blackPerson.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.blackPerson.BorderSize = 2;
+            this.blackPerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.blackPerson.GradientAngle = 50F;
+            this.blackPerson.Image = ((System.Drawing.Image)(resources.GetObject("blackPerson.Image")));
+            this.blackPerson.Location = new System.Drawing.Point(599, 291);
+            this.blackPerson.Name = "blackPerson";
+            this.blackPerson.Size = new System.Drawing.Size(74, 74);
+            this.blackPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.blackPerson.TabIndex = 68;
+            this.blackPerson.TabStop = false;
+            this.blackPerson.Click += new System.EventHandler(this.blackPerson_Click);
+            // 
+            // ProPic
+            // 
+            this.ProPic.BackColor = System.Drawing.Color.White;
+            this.ProPic.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.ProPic.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(151)))), ((int)(((byte)(31)))));
+            this.ProPic.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ProPic.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.ProPic.BorderSize = 4;
+            this.ProPic.GradientAngle = 50F;
+            this.ProPic.Location = new System.Drawing.Point(588, 53);
+            this.ProPic.Name = "ProPic";
+            this.ProPic.Size = new System.Drawing.Size(169, 169);
+            this.ProPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ProPic.TabIndex = 29;
+            this.ProPic.TabStop = false;
             // 
             // PersonalInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(791, 382);
+            this.ClientSize = new System.Drawing.Size(884, 607);
             this.ControlBox = false;
-            this.Controls.Add(this.btnUpload);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.WhitePerson);
+            this.Controls.Add(this.Ninja);
+            this.Controls.Add(this.Girl);
+            this.Controls.Add(this.blackPerson);
+            this.Controls.Add(this.txtGender);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassword);
@@ -363,25 +443,26 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.kgTextBox1);
-            this.Controls.Add(this.profilepic);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.ProPic);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PersonalInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.PersonalInfo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.profilepic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WhitePerson)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ninja)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Girl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blackPerson)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private KGTextBox kgTextBox1;
-        private KGPhotoBox profilepic;
-        private System.Windows.Forms.Label label9;
+        private KGPhotoBox ProPic;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
@@ -396,6 +477,12 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtUsername;
-        private Guna.UI2.WinForms.Guna2Button btnUpload;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox txtGender;
+        private System.Windows.Forms.Label label9;
+        private KGPhotoBox WhitePerson;
+        private KGPhotoBox Ninja;
+        private KGPhotoBox Girl;
+        private KGPhotoBox blackPerson;
     }
 }

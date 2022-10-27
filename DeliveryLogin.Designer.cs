@@ -47,6 +47,7 @@
             this.kgPhotoBox1 = new Enibla_project.KGPhotoBox();
             this.Pword = new Enibla_project.KGTextBox();
             this.Email = new Enibla_project.KGTextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgPhotoBox1)).BeginInit();
@@ -229,7 +230,7 @@
             this.DelievryLogin.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DelievryLogin.ForeColor = System.Drawing.Color.White;
             this.DelievryLogin.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DelievryLogin.Location = new System.Drawing.Point(645, 399);
+            this.DelievryLogin.Location = new System.Drawing.Point(586, 416);
             this.DelievryLogin.Name = "DelievryLogin";
             this.DelievryLogin.Size = new System.Drawing.Size(180, 45);
             this.DelievryLogin.TabIndex = 36;
@@ -243,7 +244,7 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(393, 475);
+            this.label8.Location = new System.Drawing.Point(563, 6);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(234, 20);
             this.label8.TabIndex = 37;
@@ -263,7 +264,7 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.guna2Button5.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button5.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button5.Location = new System.Drawing.Point(666, 467);
+            this.guna2Button5.Location = new System.Drawing.Point(823, -2);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(120, 28);
             this.guna2Button5.TabIndex = 41;
@@ -377,5 +378,6 @@
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private KGPhotoBox kgPhotoBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

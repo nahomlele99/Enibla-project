@@ -12,6 +12,11 @@ namespace Enibla_project
 {
     public partial class DeliveryOrder : UserControl
     {
+        public string FoodName{ get; set; }
+        
+        public string Destination{ get; set; }
+        public string Starting{ get; set; }
+        public bool Status { get; set; }
         public DeliveryOrder()
         {
             InitializeComponent();
@@ -19,6 +24,7 @@ namespace Enibla_project
 
         private void DeliveryOrder_Load(object sender, EventArgs e)
         {
+
 
         }
     }
