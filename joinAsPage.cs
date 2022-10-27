@@ -87,6 +87,9 @@ namespace Enibla_project
                     panel1.BackColor = Color.FromArgb(248, 152, 34);
                 }
             }
+            DeliverySignUp SUP = new DeliverySignUp();
+            SUP.Show();
+            this.Hide();
 
         }
 

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Services.Description;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Enibla_project
 {
@@ -18,16 +19,14 @@ namespace Enibla_project
         public string Phonenumber { get; set; }
         public char gender { get; set; }
         public bool AcceptOrder { get; set; }
-        
-        public string LogedUserPass { get; set; }
-       
-        public string LogedUserEmail{ get; set; }
-       
-
         public Byte[] Avatar { get; set; }
         public string Email { get; set; }
 
-        public static List<User> users = new List<User>();
+        public string PicFile { get; set; }
+
+
+        public static List<Delivery> deliveryMan = new List<Delivery>();
+        
         public bool save()
         {
             try
@@ -36,7 +35,7 @@ namespace Enibla_project
                 {
                     if (c.State == System.Data.ConnectionState.Closed)
                         c.Open();
-                    string query = "Insert into Delivery values (@Username, @Password, @Fullname, @Phonenumber, @Email )";
+                    string query = "Insert into Delivery values (@Username, @Password, @Fullname, @Phonenumber, @Email, @PicFile, @Avatar,@Gender)";
                     using (SqlCommand cmd = new SqlCommand(query, c))
                     {
                         cmd.CommandType = System.Data.CommandType.Text;
@@ -45,7 +44,10 @@ namespace Enibla_project
                         cmd.Parameters.AddWithValue("@Fullname", this.FullName);
                         cmd.Parameters.AddWithValue("@Phonenumber", this.Phonenumber);
                         cmd.Parameters.AddWithValue("@Email", this.Email);
-                       
+                        cmd.Parameters.AddWithValue("@PicFile", this.PicFile);
+                        cmd.Parameters.AddWithValue("@Avatar", this.Avatar);
+                        cmd.Parameters.AddWithValue("@Gender", this.gender);
+
 
                         if (cmd.ExecuteNonQuery() == 1)
                         {
@@ -63,37 +65,26 @@ namespace Enibla_project
             }
 
         }
+        public bool UpdateLogedUser()
+        {
 
-        public void getAll()
-        {
-            
-            
-        }
-        public  bool LogedUserInfo()
-        {
+
             try
             {
                 using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
                 {
                     if (c.State == System.Data.ConnectionState.Closed)
                         c.Open();
-                    string query = "select * from LogedIn where Email = @Email And Password = @Password";
+                    string query = "UPDATE Delivery SET Password= '" + this.Password + "',Fullname='" + this.FullName + "',Phonenumber= '" + this.Phonenumber+ "',Email='" + this.Email + "',PicFile= '" + this.PicFile + "',Picture= '" +this.Avatar+ "',Gender= '"+ this.gender + "' WHERE Username= '" + this.Username + "'";
                     using (SqlCommand cmd = new SqlCommand(query, c))
                     {
-                        cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.Parameters.AddWithValue("@Email", this.LogedUserEmail);
-                        cmd.Parameters.AddWithValue("@Password", this.LogedUserPass);
-                        Console.WriteLine(query);
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        MessageBox.Show("Successfully Updated");
 
-                        if (cmd.ExecuteReader().Read())
-                        {
-                            return true;
-
-
-                        }
+                        return true;
                     }
                 }
-                return true;
+                
             }
             catch (SqlException ex)
             {
@@ -101,5 +92,76 @@ namespace Enibla_project
                 return false;
             }
         }
+        public bool DeleteLogedUser()
+        {
+
+
+            try
+            {
+                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
+                {
+                    if (c.State == System.Data.ConnectionState.Closed)
+                        c.Open();
+                    string query = "delete from Delivery where Username='" + this.Username + "';";
+                    using (SqlCommand cmd = new SqlCommand(query, c))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        MessageBox.Show("Successfully Deleted");
+
+                        return true;
+                    }
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+        public static void getAll()
+        {
+
+            try
+            {
+                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
+                {
+                    if (c.State == System.Data.ConnectionState.Closed)
+                        c.Open();
+                    string query = "SELECT * FROM Delivery ";
+                    using (SqlCommand cmd = new SqlCommand(query, c))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+
+                        while (reader.Read())
+                        {
+                            deliveryMan.Add(new Delivery()
+                            {
+                            FullName = reader["Fullname"].ToString(),
+                            Username = reader["Username"].ToString(),
+                            Password = reader["Password"].ToString(),
+                            Phonenumber = reader["Phonenumber"].ToString(),
+                            Email = reader["Email"].ToString(),
+                            gender = Convert.ToChar(reader["Gender"]),
+                            Avatar = (Byte[])reader["Picture"],
+                            PicFile = reader["PicFile"].ToString(),
+
+                        });
+                            
+                        }
+
+                    }
+                    
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                
+
+            }
+        }
+       
     }
 }

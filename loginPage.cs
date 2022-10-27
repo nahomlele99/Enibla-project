@@ -75,9 +75,28 @@ namespace Enibla_project
                 }
 
             }
-            else if (Roles.SelectedItem.ToString() == "Service Provider")
+            else if (Roles.SelectedItem.ToString() == "Delivery Man")
             {
-                MessageBox.Show("Not Currently Working");
+                using (SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["EniblaDBs"].ConnectionString))
+                {
+                    if (c.State == System.Data.ConnectionState.Closed)
+                        c.Open();
+                    string query = "select * from Delivery where Username = @Username And Password = @Password";
+                    using (SqlCommand cmd = new SqlCommand(query, c))
+                    {
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        cmd.Parameters.AddWithValue("@Username", Uname.Texts);
+                        cmd.Parameters.AddWithValue("@Password", Pword.Texts);
+                        Console.WriteLine(query);
+                        if (cmd.ExecuteReader().Read())
+                        {
+                            HomeDelievry DP = new HomeDelievry(Uname.Texts);
+                            DP.Show();
+                            this.Hide();
+                        }
+                    }
+                }
+
             }
             else
             {

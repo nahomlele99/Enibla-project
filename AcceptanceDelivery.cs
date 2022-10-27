@@ -15,6 +15,7 @@ namespace Enibla_project
         public AcceptanceDelivery()
         {
             InitializeComponent();
+            
         }
     }
 }
